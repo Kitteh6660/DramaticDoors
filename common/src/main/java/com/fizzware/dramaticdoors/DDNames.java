@@ -273,13 +273,13 @@ public class DDNames
     public static final String TALL_POISE = "tall_poise_door";
     
     // Environmental
-    public static final String SHORT_DARK_CHERRY = "short_dark_cherry_door";
     public static final String SHORT_PINE = "short_pine_door";
+    public static final String SHORT_PLUM = "short_plum_door";
     public static final String SHORT_WILLOW = "short_willow_door";
     public static final String SHORT_WISTERIA = "short_wisteria_door";
     
-    public static final String TALL_DARK_CHERRY = "tall_dark_cherry_door";
     public static final String TALL_PINE = "tall_pine_door";
+    public static final String TALL_PLUM = "tall_plum_door";
     public static final String TALL_WILLOW = "tall_willow_door";
     public static final String TALL_WISTERIA = "tall_wisteria_door";
 
@@ -309,6 +309,10 @@ public class DDNames
     public static final String TALL_RED_MUSHROOM = "tall_red_mushroom_door";
     
     // -- Let's Do Mods --
+    // Beach Party
+    public static final String SHORT_BEACHPARTY_PALM = "short_beachparty_palm_door";
+    public static final String TALL_BEACHPARTY_PALM = "tall_beachparty_palm_door";
+    
     // Blooming Nature
     public static final String SHORT_BN_ASPEN = "short_bn_aspen_door";
     public static final String SHORT_BN_BAOBAB = "short_bn_baobab_door";
@@ -681,9 +685,11 @@ public class DDNames
     public static final String TALL_WALNUT = "tall_walnut_door";
     
     // Ceilands
+    public static final String SHORT_CEILINUM = "short_ceilinum_door";
     public static final String SHORT_CEILTRUNK = "short_ceiltrunk_door";
     public static final String SHORT_LUZAWOOD = "short_luzawood_door";
 
+    public static final String TALL_CEILINUM = "tall_ceilinum_door";
     public static final String TALL_CEILTRUNK = "tall_ceiltrunk_door";
     public static final String TALL_LUZAWOOD = "tall_luzawood_door";
 
@@ -1137,8 +1143,8 @@ public class DDNames
     
     // Mo'Shiz
     public static final String SHORT_MS_IRON_BAR = "short_ms_iron_bar_door";
-    public static final String SHORT_MS_BAMBOO = "short_ms_bamboo_door";
-    public static final String SHORT_MS_CHERRY = "short_ms_cherry_door";
+    //public static final String SHORT_MS_BAMBOO = "short_ms_bamboo_door"; // Legacy
+    //public static final String SHORT_MS_CHERRY = "short_ms_cherry_door"; // Legacy
     public static final String SHORT_MS_GLOWOOD = "short_ms_glowood_door";
     public static final String SHORT_MS_HELLWOOD = "short_ms_hellwood_door";
     public static final String SHORT_MS_MAPLE = "short_ms_maple_door";
@@ -1166,8 +1172,8 @@ public class DDNames
     public static final String SHORT_MS_BROWN_GLASS = "short_ms_brown_glass_door";
     
     public static final String TALL_MS_IRON_BAR = "tall_ms_iron_bar_door";
-    public static final String TALL_MS_BAMBOO = "tall_ms_bamboo_door";
-    public static final String TALL_MS_CHERRY = "tall_ms_cherry_door";
+    //public static final String TALL_MS_BAMBOO = "tall_ms_bamboo_door"; // Legacy
+    //public static final String TALL_MS_CHERRY = "tall_ms_cherry_door"; // Legacy
     public static final String TALL_MS_GLOWOOD = "tall_ms_glowood_door";
     public static final String TALL_MS_HELLWOOD = "tall_ms_hellwood_door";
     public static final String TALL_MS_MAPLE = "tall_ms_maple_door";

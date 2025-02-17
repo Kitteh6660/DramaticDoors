@@ -16,7 +16,8 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.util.*;
+import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
@@ -150,8 +151,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock
         if (blockpos.getY() < context.getLevel().getMaxBuildHeight() - 2 && context.getLevel().getBlockState(blockpos.above()).canBeReplaced(context) && context.getLevel().getBlockState(blockpos.above(2)).canBeReplaced(context)) {
             Level level = context.getLevel();
             boolean flag = level.hasNeighborSignal(blockpos) || level.hasNeighborSignal(blockpos.above());
-            boolean waterfilled = level.getFluidState(blockpos).getType() == Fluids.WATER; 
-            return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(HINGE, this.getHinge(context)).setValue(POWERED, flag).setValue(OPEN, flag).setValue(THIRD, TripleBlockPart.LOWER).setValue(WATERLOGGED, waterfilled);
+            return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection()).setValue(HINGE, this.getHinge(context)).setValue(POWERED, flag).setValue(OPEN, flag).setValue(THIRD, TripleBlockPart.LOWER).setValue(WATERLOGGED, Boolean.valueOf(level.getFluidState(blockpos).getType() == Fluids.WATER));
         } else {
             return null;
         }
@@ -159,10 +159,8 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock
 
     @Override
     public void setPlacedBy(Level level, BlockPos pos, BlockState state, LivingEntity placer, ItemStack stack) {
-    	boolean waterfilled = level.getFluidState(pos.above(1)).getType() == Fluids.WATER; 
-    	boolean waterfilled2 = level.getFluidState(pos.above(2)).getType() == Fluids.WATER; 
-        level.setBlock(pos.above(), state.setValue(THIRD, TripleBlockPart.MIDDLE).setValue(WATERLOGGED, waterfilled), 3);
-        level.setBlock(pos.above().above(), state.setValue(THIRD, TripleBlockPart.UPPER).setValue(WATERLOGGED, waterfilled2), 3);
+        level.setBlock(pos.above(1), state.setValue(THIRD, TripleBlockPart.MIDDLE).setValue(WATERLOGGED, Boolean.valueOf(level.getFluidState(pos.above(1)).getType() == Fluids.WATER)), 3);
+        level.setBlock(pos.above(2), state.setValue(THIRD, TripleBlockPart.UPPER).setValue(WATERLOGGED, Boolean.valueOf(level.getFluidState(pos.above(2)).getType() == Fluids.WATER)), 3);
     }
 
     private DoorHingeSide getHinge(BlockPlaceContext context) {

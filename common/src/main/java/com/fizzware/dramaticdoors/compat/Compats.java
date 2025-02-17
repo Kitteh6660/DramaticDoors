@@ -114,9 +114,6 @@ public class Compats
 		if (isModLoaded("bountifulfares", checker)) {
 			BountifulFaresCompat.registerCompat();
 		}
-		if (isModLoaded("doapi", checker)) {
-			LetsDoCompat.registerCompat(checker);
-		}
 		if (isModLoaded("born_in_chaos_v1", checker)) {
 			BornInChaosCompat.registerCompat();
 		}
@@ -242,6 +239,9 @@ public class Compats
 		}
 		if (isModLoaded("integrateddynamics", checker)) {
 			IntegratedDynamicsCompat.registerCompat();
+		}
+		if (isModLoaded("doapi", checker)) {
+			LetsDoCompat.registerCompat(checker);
 		}
 		if (isModLoaded("malum", checker)) {
 			MalumCompat.registerCompat();

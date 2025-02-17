@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "dramaticdoors:item/tall_bm_blighted_balsa_door"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dramaticdoors:item/tall_bm_blighted_balsa_door"
+  }
 }

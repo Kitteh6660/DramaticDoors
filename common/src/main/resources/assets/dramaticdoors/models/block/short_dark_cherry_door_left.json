@@ -1,6 +1,0 @@
-{
-  "parent": "dramaticdoors:block/door_short_left",
-  "textures": {
-    "texture": "dramaticdoors:block/short_dark_cherry_door"
-  }
-}

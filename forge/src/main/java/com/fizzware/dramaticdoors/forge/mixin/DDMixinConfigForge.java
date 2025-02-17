@@ -27,9 +27,14 @@ public class DDMixinConfigForge implements IMixinConfigPlugin
 
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.DoorBlockMixin")) {
+		// Mixin into vanilla blocks: Door and Fence Gate.
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {
 			return DDConfigForge.waterloggableDoors.get();
 		}
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.FenceGateBlockMixin")) {
+			return DDConfigForge.waterloggableFenceGates.get();
+		}
+		// Mixin into modded blocks to prevent crash due to missing or duplicate waterlogged property.
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.JapaneseDoorBlockMixinForge")) {
 			return DDConfigForge.waterloggableDoors.get() && LoadingModList.get().getModFileById("mcwdoors") != null;
 		}
@@ -43,13 +48,16 @@ public class DDMixinConfigForge implements IMixinConfigPlugin
 			return DDConfigForge.waterloggableDoors.get() && LoadingModList.get().getModFileById("slidingdoors") != null;
 		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.DoTBDoorBlockMixin")) {
-			return DDConfigForge.waterloggableDoors.get() && LoadingModList.get().getModFileById("dawnoftimebuilder") != null;
-		}
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.FenceGateBlockMixin")) {
-			return DDConfigForge.waterloggableFenceGates.get();
+			if (!DDConfigForge.waterloggableDoors.get() || LoadingModList.get().getModFileById("dawnoftimebuilder") == null) {
+				return false;
+			}
+			return LoadingModList.get().getModFileById("dawnoftimebuilder").versionString().compareTo("1.20.1-1.5.9") < 0;
 		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.DoTBFenceGateBlockMixin")) {
-			return DDConfigForge.waterloggableFenceGates.get() && LoadingModList.get().getModFileById("dawnoftimebuilder") != null;
+			if (!DDConfigForge.waterloggableFenceGates.get() || LoadingModList.get().getModFileById("dawnoftimebuilder") == null) {
+				return false;
+			}
+			return LoadingModList.get().getModFileById("dawnoftimebuilder").versionString().compareTo("1.20.1-1.5.9") < 0;
 		}
 		return true;
 	}

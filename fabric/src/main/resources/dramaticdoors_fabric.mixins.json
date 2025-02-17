@@ -5,18 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "plugin": "com.fizzware.dramaticdoors.fabric.mixin.DDMixinConfigFabric",
   "mixins": [
-    "AdvancementManagerMixin",
-    "RecipeManagerMixin",
-    "BlockLootMixin",
-    "LandPathNodeMakerMixin",
-    "DoorBlockMixin",
-    "FenceGateBlockMixin",
-    "JapaneseDoorBlockMixinFabric",
-    "DoorInteractGoalMixin",
-    "OpenDoorsTaskMixin",
-    "PiglinBrainMixin",
-    "VillagerMixin",
-    "WitchMixin"
+    "JapaneseDoorBlockMixinFabric"
   ],
   "client": [
     "CPIMMixin"
@@ -28,5 +17,5 @@
     "defaultRequire": 1,
     "maxShiftBy": 2
   },
-  "refmap": "dramaticdoors_fabric.refmap.json"
+  "refmap": "dramaticdoors.refmap.json"
 }

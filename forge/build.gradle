@@ -10,9 +10,9 @@ base {
 }
 mixin {
     // Only uncomment if you need to generate the refmap. Remember to edit the refmap for the merged JAR file!
-    // if (!file('src/main/resources/${rootProject.mod_id}_forge.refmap.json').exists()) {
-    //   add(sourceSets.main, "${rootProject.mod_id}_forge.refmap.json")
-    // }
+    if (!file('src/main/resources/${rootProject.mod_id}.refmap.json').exists()) {
+         add(sourceSets.main, "${rootProject.mod_id}.refmap.json")
+    }
 }
 minecraft {
     mappings channel: 'official', version: rootProject.minecraft_version
@@ -27,6 +27,7 @@ minecraft {
             taskName 'runClient'
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+			arg "-mixin.config=" + "dramaticdoors.mixins.json"
 			arg "-mixin.config=" + "dramaticdoors_forge.mixins.json"
             mods {
                 modClientRun {
@@ -42,6 +43,7 @@ minecraft {
             taskName 'runServer'
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+			arg "-mixin.config=" + "dramaticdoors.mixins.json"
 			arg "-mixin.config=" + "dramaticdoors_forge.mixins.json"
             mods {
                 modServerRun {
@@ -118,6 +120,10 @@ tasks.withType(Javadoc).configureEach {
 }
 tasks.named("sourcesJar", Jar) {
     from(project(":common").sourceSets.main.allSource)
+}
+
+tasks.withType(Jar).configureEach {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
 
 processResources {

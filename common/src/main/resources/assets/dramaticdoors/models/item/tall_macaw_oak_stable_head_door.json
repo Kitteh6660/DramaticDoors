@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "dramaticdoors:item/macaw/tall_oak_stable_head_door"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dramaticdoors:item/macaw/tall_oak_stable_head_door"
+  }
 }

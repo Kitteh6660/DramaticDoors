@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "dramaticdoors:item/macaw/tall_spruce_japanese2_door"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dramaticdoors:item/macaw/tall_spruce_japanese2_door"
+  }
 }

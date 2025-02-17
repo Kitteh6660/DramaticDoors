@@ -12,6 +12,7 @@ import com.fizzware.dramaticdoors.blocks.TallSlidingDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallStableDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallWeatheringDoorBlock;
 import com.fizzware.dramaticdoors.compat.Compats;
+import com.fizzware.dramaticdoors.compat.DDCompatRecipe;
 import com.fizzware.dramaticdoors.items.ShortDoorItem;
 import com.fizzware.dramaticdoors.items.TallDoorItem;
 import com.fizzware.dramaticdoors.state.properties.SlidingDoorType;
@@ -66,7 +67,22 @@ public class DDRegistry
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BAMBOO, DDNames.SHORT_BAMBOO, Blocks.BAMBOO_DOOR, BlockSetType.BAMBOO, true);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_CRIMSON, DDNames.SHORT_CRIMSON, Blocks.CRIMSON_DOOR, BlockSetType.CRIMSON, true);
 		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_WARPED, DDNames.SHORT_WARPED, Blocks.WARPED_DOOR, BlockSetType.WARPED, true);
-	}
+		
+		// Add sawmill recipes so Fabric stops complaining.
+		if (Compats.isModLoaded("woodworks", Compats.modChecker) || Compats.isModLoaded("aurorasdeco", Compats.modChecker) || Compats.isModLoaded("sawmill", Compats.modChecker)) {
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_OAK, new ResourceLocation("minecraft", "oak_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SPRUCE, new ResourceLocation("minecraft", "spruce_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BIRCH, new ResourceLocation("minecraft", "birch_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_JUNGLE, new ResourceLocation("minecraft", "jungle_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ACACIA, new ResourceLocation("minecraft", "acacia_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DARK_OAK, new ResourceLocation("minecraft", "dark_oak_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MANGROVE, new ResourceLocation("minecraft", "mangrove_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHERRY, new ResourceLocation("minecraft", "cherry_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BAMBOO, new ResourceLocation("minecraft", "bamboo_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CRIMSON, new ResourceLocation("minecraft", "crimson_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WARPED, new ResourceLocation("minecraft", "warped_door"), true);
+		}
+	} 
 	
 	public static void registerDoorBlockAndItem(String tallname, @Nullable String shortname, Block block, BlockSetType blocksettype, boolean includeShort) {
 		Block tempBlock;

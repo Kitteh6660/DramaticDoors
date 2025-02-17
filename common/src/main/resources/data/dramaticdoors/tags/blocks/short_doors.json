@@ -31,6 +31,7 @@
     {"id": "dramaticdoors:short_waxed_weathered_door", "required": false},
     {"id": "dramaticdoors:short_waxed_rusted_door", "required": false},
     {"id": "dramaticdoors:short_aa_steel_door", "required": false},
+    {"id": "dramaticdoors:short_ceilinum_door", "required": false},
     {"id": "dramaticdoors:short_andesite_door", "required": false},
     {"id": "dramaticdoors:short_brass_door", "required": false},
     {"id": "dramaticdoors:short_cd_copper_door", "required": false},

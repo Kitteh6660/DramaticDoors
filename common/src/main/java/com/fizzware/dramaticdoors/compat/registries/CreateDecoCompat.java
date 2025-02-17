@@ -68,7 +68,7 @@ public class CreateDecoCompat
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_ANDESITE, new ResourceLocation("createdeco", "locked_andesite_door"), "tall_metal_door");
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_BRASS, new ResourceLocation("createdeco", "locked_brass_door"), "tall_metal_door");
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_copper_door"), "tall_metal_door");
-		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_COPPER, new ResourceLocation("createdeco", "locked_industrial_iron_door"), "tall_metal_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_INDUSTRIAL_IRON, new ResourceLocation("createdeco", "locked_industrial_iron_door"), "tall_metal_door");
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LOCKED_ZINC, new ResourceLocation("createdeco", "locked_zinc_door"), "tall_metal_door");
 	}
 }

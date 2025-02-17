@@ -17,6 +17,10 @@ public class DDCompatRecipe
 	public static List<JsonObject> SHORT_DOOR_RECIPES = new ArrayList<JsonObject>();
 	public static List<JsonObject> TALL_DOOR_RECIPES = new ArrayList<JsonObject>();
 	
+	public static final String WOODWORKS_SAWMILL = "woodworks:sawmill";
+	public static final String UNIVERSAL_SAWMILL = "sawmill:woodcutting";
+	public static final String AURORASDECO_SAWMILL = "aurorasdeco:woodcutting";
+	
 	public static JsonObject createShortDoorRecipe(String recipeID, ResourceLocation baseDoor) {
 		JsonObject json = createStonecutterRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID));
 		SHORT_DOOR_RECIPES.add(json);
@@ -26,20 +30,20 @@ public class DDCompatRecipe
 	public static void createShortDoorRecipe(String recipeID, ResourceLocation baseDoor, boolean isWood) {
 		JsonObject json;
 		if (isWood) {
-			if (Compats.WOODWORKS_INSTALLED || Compats.isModLoaded("aurorasdeco", Compats.modChecker) || Compats.isModLoaded("sawmill", Compats.modChecker)) {
+			if (Compats.isModLoaded("woodworks", Compats.modChecker) || Compats.isModLoaded("aurorasdeco", Compats.modChecker) || Compats.isModLoaded("sawmill", Compats.modChecker)) {
 				//Woodworks
-				if (Compats.WOODWORKS_INSTALLED) {
-					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), "woodworks:sawmill");
+				if (Compats.isModLoaded("woodworks", Compats.modChecker)) {
+					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), WOODWORKS_SAWMILL);
 					SHORT_DOOR_RECIPES.add(json);
 				}
 				//Universal Sawmill
 				if (Compats.isModLoaded("sawmill", Compats.modChecker)) {
-					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), "sawmill:woodcutting");
+					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), UNIVERSAL_SAWMILL);
 					SHORT_DOOR_RECIPES.add(json);
 				}
 				//Aurora's Decorations
 				if (Compats.isModLoaded("aurorasdeco", Compats.modChecker)) {
-					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), "aurorasdeco:woodcutting");
+					json = createSawmillRecipeJson(new ResourceLocation(baseDoor.getNamespace(), baseDoor.getPath()), new ResourceLocation("dramaticdoors:" + recipeID), AURORASDECO_SAWMILL);
 					SHORT_DOOR_RECIPES.add(json);
 				}
 			}

@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "dramaticdoors:item/macaw/tall_sliding_glass_door"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dramaticdoors:item/macaw/tall_sliding_glass_door"
+  }
 }

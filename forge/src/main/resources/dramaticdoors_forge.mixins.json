@@ -5,22 +5,11 @@
   "compatibilityLevel": "JAVA_17",
   "plugin": "com.fizzware.dramaticdoors.forge.mixin.DDMixinConfigForge",
   "mixins": [
-    "AdvancementManagerMixin",
-    "RecipeManagerMixin",
-    "BlockLootMixin",
-    "LandPathNodeMakerMixin",
-    "DoorBlockMixin",
-    "FenceGateBlockMixin",
     "DoTBDoorBlockMixin",
     "DoTBFenceGateBlockMixin",
     "JapaneseDoorBlockMixinForge",
     "LockableDoorMixin",
-    "SlidingDoorMixin",
-    "DoorInteractGoalMixin",
-    "OpenDoorsTaskMixin",
-    "PiglinBrainMixin",
-    "VillagerMixin",
-    "WitchMixin"
+    "SlidingDoorMixin"
   ],
   "client": [
   ],
@@ -30,5 +19,5 @@
     "defaultRequire": 1,
     "maxShiftBy": 2
   },
-  "refmap": "dramaticdoors_forge.refmap.json"
+  "refmap": "dramaticdoors.refmap.json"
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "dramaticdoors:item/tall_hexerei_mahogany_door"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "dramaticdoors:item/tall_hexerei_mahogany_door"
+  }
 }

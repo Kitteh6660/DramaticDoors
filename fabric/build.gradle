@@ -38,6 +38,7 @@ dependencies {
     modImplementation("com.simibubi.create:create-fabric-${rootProject.minecraft_version}:${rootProject.create_fabric_version}")
 	modImplementation "curse.maven:architectury-api-419699:4663009"
     modImplementation "curse.maven:cloth-config-348521:4633442"
+	// modImplementation "curse.maven:minecraft-transit-railway-266707:6001118"
 }
 
 var commonAW = project(":common").file("src/main/resources/dramaticdoors.accesswidener")
@@ -94,6 +95,10 @@ tasks.named("sourcesJar", Jar) {
     from(project(":common").sourceSets.main.allSource)
 }
 
+tasks.withType(Jar).configureEach {
+	duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+
 processResources {
     from project(":common").sourceSets.main.resources
 }
@@ -110,8 +115,4 @@ publishing {
             url "file://" + System.getenv("local_maven")
         }
     }
-}
-
-tasks.withType(Jar).configureEach {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }

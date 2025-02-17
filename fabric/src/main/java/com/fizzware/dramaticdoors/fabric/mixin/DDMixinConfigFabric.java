@@ -31,16 +31,16 @@ public class DDMixinConfigFabric implements IMixinConfigPlugin
 
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.fabric.mixin.DoorBlockMixin")) {
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {
 			return waterloggableDoors && !FabricLoader.getInstance().isModLoaded("fluidlogged");
 		}
 		if (mixinClassName.equals("com.fizzware.dramaticdoors.fabric.mixin.JapaneseDoorBlockMixinFabric")) {
 			return waterloggableDoors && FabricLoader.getInstance().isModLoaded("mcwdoors") && (!FabricLoader.getInstance().isModLoaded("forge"));
 		}
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.fabric.mixin.forge.JapaneseDoorBlockMixinForge")) {
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.forge.mixin.JapaneseDoorBlockMixinForge")) {
 			return waterloggableDoors && FabricLoader.getInstance().isModLoaded("mcwdoors") && FabricLoader.getInstance().isModLoaded("forge");
 		}
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.fabric.mixin.FenceGateBlockMixin")) {
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.FenceGateBlockMixin")) {
 			return waterloggableFenceGates && !FabricLoader.getInstance().isModLoaded("fluidlogged");
 		}
 		return true;

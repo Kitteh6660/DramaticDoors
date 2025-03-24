@@ -5,6 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "plugin": "com.fizzware.dramaticdoors.fabric.mixin.DDMixinConfigFabric",
   "mixins": [
+    "DoorBlockExtensionMixin",
     "JapaneseDoorBlockMixinFabric"
   ],
   "client": [

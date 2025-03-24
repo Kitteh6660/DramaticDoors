@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.fizzware.dramaticdoors.DramaticDoors;
-import com.jozufozu.flywheel.core.PartialModel;
-import com.simibubi.create.foundation.utility.Couple;
+import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 
+import net.createmod.catnip.data.Couple;
 import net.minecraft.resources.ResourceLocation;
 
 public class DDPartialModels
@@ -18,6 +18,6 @@ public class DDPartialModels
 	}
 	
 	private static PartialModel block(String path) {
-		return new PartialModel(new ResourceLocation(DramaticDoors.MOD_ID, "block/" + path));
+		return PartialModel.of(new ResourceLocation(DramaticDoors.MOD_ID, "block/" + path));
 	}
 }

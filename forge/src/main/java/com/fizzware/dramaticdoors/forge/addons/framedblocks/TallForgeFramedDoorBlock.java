@@ -90,6 +90,7 @@ public class TallForgeFramedDoorBlock extends TallDoorBlock implements IFramedBl
 		return useCamoOcclusionShapeForLightOcclusion(state);
 	}
 
+	@SuppressWarnings("removal")
 	@Override
 	public VoxelShape getOcclusionShape(BlockState state, BlockGetter level, BlockPos pos) {
 		return getCamoOcclusionShape(state, level, pos);

@@ -4,15 +4,15 @@ import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 import com.fizzware.dramaticdoors.forge.addons.create.TallForgeCreateSlidingDoorBlockEntity;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
-import com.jozufozu.flywheel.core.PartialModel;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
-import com.simibubi.create.foundation.utility.AngleHelper;
-import com.simibubi.create.foundation.utility.Couple;
-import com.simibubi.create.foundation.utility.Iterate;
 
+import dev.engine_room.flywheel.lib.model.baked.PartialModel;
+import net.createmod.catnip.data.Couple;
+import net.createmod.catnip.data.Iterate;
+import net.createmod.catnip.math.AngleHelper;
+import net.createmod.catnip.render.CachedBuffers;
+import net.createmod.catnip.render.SuperByteBuffer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
@@ -52,19 +52,19 @@ public class TallSlidingDoorBlockRenderer implements BlockEntityRenderer<TallFor
 
 			boolean flip = blockState.getValue(TallDoorBlock.HINGE) == DoorHingeSide.RIGHT;
 			for (boolean left : Iterate.trueAndFalse) {
-				SuperByteBuffer partial = CachedBufferer.partial(partials.get(left ^ flip), blockState);
+				SuperByteBuffer partial = CachedBuffers.partial(partials.get(left ^ flip), blockState);
 				float f = flip ? -1 : 1;
 
 				partial.translate(0, -1 / 512f, 0).translate(Vec3.atLowerCornerOf(facing.getNormal()).scale(value2 * 1 / 32f));
-				partial.rotateCentered(Direction.UP, Mth.DEG_TO_RAD * AngleHelper.horizontalAngle(facing.getClockWise()));
+				partial.rotateCentered(Mth.DEG_TO_RAD * AngleHelper.horizontalAngle(facing.getClockWise()), Direction.UP);
 
 				if (flip) {
 					partial.translate(0, 0, 1);
 				}
-				partial.rotateY(91 * f * value * value);
+				partial.rotateYDegrees(91 * f * value * value);
 
 				if (!left) {
-					partial.translate(0, 0, f / 2f).rotateY(-181 * f * value * value);
+					partial.translate(0, 0, f / 2f).rotateYDegrees(-181 * f * value * value);
 				}
 				if (flip) {
 					partial.translate(0, 0, -1 / 2f);
@@ -83,7 +83,7 @@ public class TallSlidingDoorBlockRenderer implements BlockEntityRenderer<TallFor
 			if (third == TripleBlockPart.UPPER) {
 				offsetY = 2;
 			}
-			CachedBufferer.block(blockState.setValue(TallDoorBlock.OPEN, false).setValue(TallDoorBlock.THIRD, third)).translate(0, offsetY > 0 ? offsetY - (1 / 512F) : 0, 0).translate(offset).light(light).renderInto(posestack, vb);
+			CachedBuffers.block(blockState.setValue(TallDoorBlock.OPEN, false).setValue(TallDoorBlock.THIRD, third)).translate(0, offsetY > 0 ? offsetY - (1 / 512F) : 0, 0).translate(offset).light(light).renderInto(posestack, vb);
 		}
 	}
 }

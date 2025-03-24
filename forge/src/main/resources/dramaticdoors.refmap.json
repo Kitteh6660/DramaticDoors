@@ -99,10 +99,6 @@
         "canUse()Z": "Lnet/minecraft/world/entity/ai/goal/DoorInteractGoal;m_8036_()Z",
         "Lnet/minecraft/world/level/block/DoorBlock;isWoodenDoor(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z": "Lnet/minecraft/world/level/block/DoorBlock;m_52745_(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)Z"
       },
-      "com/fizzware/dramaticdoors/forge/forge/mixin/DoTBFenceGateBlockMixin": {
-        "createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lorg/dawnoftimebuilder/block/templates/WaterloggedFenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V",
-        "Lnet/minecraft/world/level/block/FenceGateBlock;createBlockStateDefinition(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V": "Lnet/minecraft/world/level/block/FenceGateBlock;m_7926_(Lnet/minecraft/world/level/block/state/StateDefinition$Builder;)V"
-      },
       "com/fizzware/dramaticdoors/forge/mixin/OpenDoorsTaskMixin": {
         "Lnet/minecraft/server/level/ServerLevel;getBlockState(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;": "Lnet/minecraft/server/level/ServerLevel;m_8055_(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;",
         "closeDoorsThatIHaveOpenedOrPassedThrough(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;Ljava/util/Set;Ljava/util/Optional;)V": "Lnet/minecraft/world/entity/ai/behavior/InteractWithDoor;m_258036_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/pathfinder/Node;Lnet/minecraft/world/level/pathfinder/Node;Ljava/util/Set;Ljava/util/Optional;)V"

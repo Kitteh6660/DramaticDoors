@@ -18,7 +18,6 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemp
 
 public class TallDoorMovingInteraction extends SimpleBlockMovingInteraction
 {
-
 	@Override
 	protected BlockState handle(Player player, Contraption contraption, BlockPos pos, BlockState currentState) {
 		if (!(currentState.getBlock() instanceof TallDoorBlock)) {

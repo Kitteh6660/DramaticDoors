@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "plugin": "com.fizzware.dramaticdoors.forge.mixin.DDMixinConfigForge",
   "mixins": [
-    "DoTBDoorBlockMixin",
-    "DoTBFenceGateBlockMixin",
+    "DoorBlockExtensionMixin",
     "JapaneseDoorBlockMixinForge",
     "LockableDoorMixin",
     "SlidingDoorMixin"

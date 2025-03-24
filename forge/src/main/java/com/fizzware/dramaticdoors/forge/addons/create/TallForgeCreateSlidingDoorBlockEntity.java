@@ -8,9 +8,9 @@ import com.fizzware.dramaticdoors.forge.compat.CreateForgeCompat;
 import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.simibubi.create.foundation.blockEntity.SmartBlockEntity;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
 
+import net.createmod.catnip.animation.LerpedFloat;
+import net.createmod.catnip.animation.LerpedFloat.Chaser;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -19,6 +19,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class TallForgeCreateSlidingDoorBlockEntity extends SmartBlockEntity
 {
+	
 	private LerpedFloat animation;
 	int bridgeTicks;
 	boolean deferUpdate;

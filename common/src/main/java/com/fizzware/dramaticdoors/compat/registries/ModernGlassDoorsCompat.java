@@ -32,18 +32,18 @@ public class ModernGlassDoorsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_IRON_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "iron_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_OAK_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "oak_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SPRUCE_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "spruce_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BIRCH_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "birch_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JUNGLE_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "jungle_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ACACIA_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "acacia_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARK_OAK_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "dark_oak_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MANGROVE_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "mangrove_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BAMBOO_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "bamboo_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHERRY_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "cherry_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CRIMSON_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "crimson_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WARPED_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "warped_glass_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_IRON_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "iron_glass_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_OAK_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "oak_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SPRUCE_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "spruce_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BIRCH_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "birch_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JUNGLE_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "jungle_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ACACIA_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "acacia_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARK_OAK_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "dark_oak_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MANGROVE_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "mangrove_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BAMBOO_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "bamboo_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHERRY_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "cherry_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CRIMSON_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "crimson_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WARPED_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "warped_glass_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_IRON_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "iron_glass_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_OAK_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "oak_glass_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SPRUCE_GLASS, ResourceLocation.fromNamespaceAndPath("modern_glass_doors", "spruce_glass_door"));

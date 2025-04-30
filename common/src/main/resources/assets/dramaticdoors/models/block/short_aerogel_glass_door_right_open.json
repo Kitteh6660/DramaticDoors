@@ -1,0 +1,6 @@
+{
+  "parent": "dramaticdoors:block/door_short_right_open",
+  "textures": {
+    "texture": "dramaticdoors:block/short_aerogel_glass_door"
+  }
+}

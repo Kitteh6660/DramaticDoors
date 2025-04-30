@@ -21,8 +21,8 @@ public class WindsweptCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHESTNUT, ResourceLocation.fromNamespaceAndPath("windswept", "chestnut_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HOLLY, ResourceLocation.fromNamespaceAndPath("windswept", "holly_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHESTNUT, ResourceLocation.fromNamespaceAndPath("windswept", "chestnut_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HOLLY, ResourceLocation.fromNamespaceAndPath("windswept", "holly_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHESTNUT, ResourceLocation.fromNamespaceAndPath("windswept", "chestnut_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HOLLY, ResourceLocation.fromNamespaceAndPath("windswept", "holly_door"));
 		

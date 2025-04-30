@@ -21,8 +21,8 @@ public class EnderscapeCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CELESTIAL, ResourceLocation.fromNamespaceAndPath("enderscape", "celestial_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MURUSHROOM, ResourceLocation.fromNamespaceAndPath("enderscape", "murushroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CELESTIAL, ResourceLocation.fromNamespaceAndPath("enderscape", "celestial_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MURUSHROOM, ResourceLocation.fromNamespaceAndPath("enderscape", "murushroom_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CELESTIAL, ResourceLocation.fromNamespaceAndPath("enderscape", "celestial_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MURUSHROOM, ResourceLocation.fromNamespaceAndPath("enderscape", "murushroom_door"));
 		

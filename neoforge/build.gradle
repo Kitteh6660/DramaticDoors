@@ -2,51 +2,68 @@ plugins {
     id 'java-library'
     id 'eclipse'
     id 'idea'
-    id 'maven-publish'
-    id 'net.neoforged.gradle.userdev' version '7.0.+'
+    id 'net.neoforged.moddev' version '2.0.+'
 }
+base {
+    archivesBaseName = "neoforge" // "${rootProject.archives_base_name}-${project.name}"
+}
+sourceSets.main.resources.srcDir 'src/generated/resources'
 
-archivesBaseName = "neoforge" // "${rootProject.archives_base_name}-${project.name}"
+neoForge {
+    version = project.neoforge_version
 
-repositories {
-	maven { 
-	    url "https://cursemaven.com"
-        content { includeGroup "curse.maven" }
-	}
-    maven {
-        name = 'tterrag maven'
-        url = 'https://maven.tterrag.com/'
+    // This line is optional. Access Transformers are automatically detected
+    // accessTransformers = project.files('src/main/resources/META-INF/accesstransformer.cfg')
+    runs {
+        client {
+            client()
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        server {
+            server()
+            programArgument '--nogui'
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        gameTestServer {
+            type = "gameTestServer"
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+        data {
+            data()
+            programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
+        }
+		
+        configureEach {
+            logLevel = org.slf4j.event.Level.DEBUG
+        }
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
     }
 }
 
-minecraft.accessTransformers.file project(":common").file('src/main/resources/META-INF/accesstransformer.cfg')
-
-runs {
-    configureEach {
-	    workingDirectory project.file('run')
-	    systemProperty 'mixin.env.disableRefMap', 'true'
-        modSource project.sourceSets.main
-    }	
-	client {
-		systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
-	}
-	server {
-		systemProperty 'forge.enabledGameTestNamespaces', project.mod_id
-	}
-	data {
-		programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
-	}
+repositories {
+    maven { url = "https://cursemaven.com" }
+    maven { url = "https://maven.tterrag.com/" }
+    maven { url = "https://maven.createmod.net" }
+    maven { url = "https://maven.jt-dev.tech/releases" }
+	maven { url = "https://mvn.devos.one/snapshots" }
+	maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" }
 }
 
-sourceSets.main.resources.srcDir 'src/generated/resources'
-
 dependencies {
-    implementation("net.neoforged:neoforge:${project.neoforge_version}")
     compileOnly project(":common")
-	implementation("curse.maven:macaws-doors-378646:5439155")
-    // implementation("com.simibubi.create:create-${project.minecraft_version}:${project.create_version}:slim") { transitive = false }
-    // implementation("com.jozufozu.flywheel:flywheel-forge-${project.minecraft_version}:${project.flywheel_version}")
-    // implementation("com.tterrag.registrate:Registrate:${project.registrate_version}")
+	implementation("curse.maven:macaws-doors-378646:6146345")
+    // Create and all those dependencies.
+    implementation("com.simibubi.create:create-${rootProject.minecraft_version}:${rootProject.create_neoforge_version}:slim") { transitive = false }
+    implementation("net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:${ponder_neoforge_version}")
+    compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_neoforge_version}")
+    runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_neoforge_version}")
+    implementation("com.tterrag.registrate:Registrate:${rootProject.registrate_version}")
+    runtimeOnly("dev.engine-room.vanillin:vanillin-neoforge-${minecraft_version}:${vanillin_neoforge_version}")
 }
 
 TaskCollection.metaClass.excludingNeoTasks = { ->
@@ -56,29 +73,16 @@ TaskCollection.metaClass.excludingNeoTasks = { ->
 tasks.withType(JavaCompile).excludingNeoTasks().configureEach {
     source(project(":common").sourceSets.main.allSource)
 }
-
 tasks.withType(Javadoc).excludingNeoTasks().configureEach {
     source(project(":common").sourceSets.main.allJava)
 }
-
 tasks.named("sourcesJar", Jar) {
     from(project(":common").sourceSets.main.allSource)
 }
-
-tasks.withType(ProcessResources).excludingNeoTasks().configureEach {
+tasks.named("compileTestJava") {
+    enabled = false
+}
+processResources {
     from project(":common").sourceSets.main.resources
 }
 
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifactId base.archivesName.get()
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            url "file://" + System.getenv("local_maven")
-        }
-    }
-}

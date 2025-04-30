@@ -39,26 +39,26 @@ public class NaturesSpiritCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_ASPEN, ResourceLocation.fromNamespaceAndPath("natures_spirit", "aspen_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_CEDAR, ResourceLocation.fromNamespaceAndPath("natures_spirit", "cedar_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_COCONUT, ResourceLocation.fromNamespaceAndPath("natures_spirit", "coconut_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_CYPRESS, ResourceLocation.fromNamespaceAndPath("natures_spirit", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_FIR, ResourceLocation.fromNamespaceAndPath("natures_spirit", "fir_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_GHAF, ResourceLocation.fromNamespaceAndPath("natures_spirit", "ghaf_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_JOSHUA, ResourceLocation.fromNamespaceAndPath("natures_spirit", "joshua_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_LARCH, ResourceLocation.fromNamespaceAndPath("natures_spirit", "larch_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_MAHOGANY, ResourceLocation.fromNamespaceAndPath("natures_spirit", "mahogany_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_MAPLE, ResourceLocation.fromNamespaceAndPath("natures_spirit", "maple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_OLIVE, ResourceLocation.fromNamespaceAndPath("natures_spirit", "olive_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_PALO_VERDE, ResourceLocation.fromNamespaceAndPath("natures_spirit", "palo_verde_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_REDWOOD, ResourceLocation.fromNamespaceAndPath("natures_spirit", "redwood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_SAXAUL, ResourceLocation.fromNamespaceAndPath("natures_spirit", "saxaul_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_SUGI, ResourceLocation.fromNamespaceAndPath("natures_spirit", "sugi_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_WILLOW, ResourceLocation.fromNamespaceAndPath("natures_spirit", "willow_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_WISTERIA, ResourceLocation.fromNamespaceAndPath("natures_spirit", "wisteria_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_PAPER, ResourceLocation.fromNamespaceAndPath("natures_spirit", "paper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_FRAMED_PAPER, ResourceLocation.fromNamespaceAndPath("natures_spirit", "framed_paper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_BLOOMING_PAPER, ResourceLocation.fromNamespaceAndPath("natures_spirit", "blooming_paper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_ASPEN, ResourceLocation.fromNamespaceAndPath("natures_spirit", "aspen_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_CEDAR, ResourceLocation.fromNamespaceAndPath("natures_spirit", "cedar_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_COCONUT, ResourceLocation.fromNamespaceAndPath("natures_spirit", "coconut_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_CYPRESS, ResourceLocation.fromNamespaceAndPath("natures_spirit", "cypress_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_FIR, ResourceLocation.fromNamespaceAndPath("natures_spirit", "fir_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_GHAF, ResourceLocation.fromNamespaceAndPath("natures_spirit", "ghaf_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_JOSHUA, ResourceLocation.fromNamespaceAndPath("natures_spirit", "joshua_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_LARCH, ResourceLocation.fromNamespaceAndPath("natures_spirit", "larch_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_MAHOGANY, ResourceLocation.fromNamespaceAndPath("natures_spirit", "mahogany_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_MAPLE, ResourceLocation.fromNamespaceAndPath("natures_spirit", "maple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_OLIVE, ResourceLocation.fromNamespaceAndPath("natures_spirit", "olive_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_PALO_VERDE, ResourceLocation.fromNamespaceAndPath("natures_spirit", "palo_verde_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_REDWOOD, ResourceLocation.fromNamespaceAndPath("natures_spirit", "redwood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_SAXAUL, ResourceLocation.fromNamespaceAndPath("natures_spirit", "saxaul_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_SUGI, ResourceLocation.fromNamespaceAndPath("natures_spirit", "sugi_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_WILLOW, ResourceLocation.fromNamespaceAndPath("natures_spirit", "willow_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_WISTERIA, ResourceLocation.fromNamespaceAndPath("natures_spirit", "wisteria_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_PAPER, ResourceLocation.fromNamespaceAndPath("natures_spirit", "paper_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_FRAMED_PAPER, ResourceLocation.fromNamespaceAndPath("natures_spirit", "framed_paper_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NS_BLOOMING_PAPER, ResourceLocation.fromNamespaceAndPath("natures_spirit", "blooming_paper_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_NS_ASPEN, ResourceLocation.fromNamespaceAndPath("natures_spirit", "aspen_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_NS_CEDAR, ResourceLocation.fromNamespaceAndPath("natures_spirit", "cedar_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_NS_COCONUT, ResourceLocation.fromNamespaceAndPath("natures_spirit", "coconut_door"));

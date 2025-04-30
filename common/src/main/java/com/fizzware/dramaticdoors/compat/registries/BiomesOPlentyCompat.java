@@ -32,19 +32,19 @@ public class BiomesOPlentyCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_DEAD, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "dead_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_EMPYREAL, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "empyreal_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_FIR, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "fir_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_HELLBARK, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "hellbark_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_JACARANDA, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAGIC, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "magic_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAHOGANY, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "mahogany_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAPLE, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "maple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_PALM, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "palm_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_PINE, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "pine_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_REDWOOD, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "redwood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_UMBRAN, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "umbran_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_WILLOW, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_DEAD, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "dead_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_EMPYREAL, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "empyreal_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_FIR, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "fir_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_HELLBARK, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "hellbark_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_JACARANDA, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "jacaranda_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAGIC, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "magic_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAHOGANY, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "mahogany_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAPLE, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "maple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_PALM, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "palm_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_PINE, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "pine_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_REDWOOD, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "redwood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_UMBRAN, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "umbran_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_WILLOW, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "willow_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BOP_DEAD, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "dead_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BOP_EMPYREAL, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "empyreal_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BOP_FIR, ResourceLocation.fromNamespaceAndPath("biomesoplenty", "fir_door"));

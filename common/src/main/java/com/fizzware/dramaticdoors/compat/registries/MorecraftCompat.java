@@ -39,12 +39,12 @@ public class MorecraftCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_BONE, ResourceLocation.fromNamespaceAndPath("morecraft", "bone_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_GLASS, ResourceLocation.fromNamespaceAndPath("morecraft", "glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_SOUL_GLASS, ResourceLocation.fromNamespaceAndPath("morecraft", "soul_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERWOOD, ResourceLocation.fromNamespaceAndPath("morecraft", "netherwood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERBRICK, ResourceLocation.fromNamespaceAndPath("morecraft", "netherbrick_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERITE, ResourceLocation.fromNamespaceAndPath("morecraft", "netherite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_BONE, ResourceLocation.fromNamespaceAndPath("morecraft", "bone_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_GLASS, ResourceLocation.fromNamespaceAndPath("morecraft", "glass_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_SOUL_GLASS, ResourceLocation.fromNamespaceAndPath("morecraft", "soul_glass_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERWOOD, ResourceLocation.fromNamespaceAndPath("morecraft", "netherwood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERBRICK, ResourceLocation.fromNamespaceAndPath("morecraft", "netherbrick_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MORECRAFT_NETHERITE, ResourceLocation.fromNamespaceAndPath("morecraft", "netherite_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_BONE, ResourceLocation.fromNamespaceAndPath("morecraft", "bone_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_GLASS, ResourceLocation.fromNamespaceAndPath("morecraft", "glass_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MORECRAFT_SOUL_GLASS, ResourceLocation.fromNamespaceAndPath("morecraft", "soul_glass_door"));

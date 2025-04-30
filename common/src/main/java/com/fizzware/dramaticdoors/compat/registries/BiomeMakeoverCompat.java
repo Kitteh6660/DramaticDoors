@@ -23,10 +23,10 @@ public class BiomeMakeoverCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BM_ANCIENT_OAK, ResourceLocation.fromNamespaceAndPath("biomemakeover", "ancient_oak_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BM_BLIGHTED_BALSA, ResourceLocation.fromNamespaceAndPath("biomemakeover", "blighted_balsa_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BM_SWAMP_CYPRESS, ResourceLocation.fromNamespaceAndPath("biomemakeover", "swamp_cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BM_WILLOW, ResourceLocation.fromNamespaceAndPath("biomemakeover", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BM_ANCIENT_OAK, ResourceLocation.fromNamespaceAndPath("biomemakeover", "ancient_oak_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BM_BLIGHTED_BALSA, ResourceLocation.fromNamespaceAndPath("biomemakeover", "blighted_balsa_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BM_SWAMP_CYPRESS, ResourceLocation.fromNamespaceAndPath("biomemakeover", "swamp_cypress_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BM_WILLOW, ResourceLocation.fromNamespaceAndPath("biomemakeover", "willow_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BM_ANCIENT_OAK, ResourceLocation.fromNamespaceAndPath("biomemakeover", "ancient_oak_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BM_BLIGHTED_BALSA, ResourceLocation.fromNamespaceAndPath("biomemakeover", "blighted_balsa_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BM_SWAMP_CYPRESS, ResourceLocation.fromNamespaceAndPath("biomemakeover", "swamp_cypress_door"));

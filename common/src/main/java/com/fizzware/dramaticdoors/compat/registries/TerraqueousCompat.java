@@ -33,20 +33,20 @@ public class TerraqueousCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_LIGHT_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "light_cloud_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_DENSE_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "dense_cloud_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_STORM_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "storm_cloud_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_APPLE, ResourceLocation.fromNamespaceAndPath("terraqueous", "apple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_BANANA, ResourceLocation.fromNamespaceAndPath("terraqueous", "banana_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_CHERRY, ResourceLocation.fromNamespaceAndPath("terraqueous", "cherry_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_COCONUT, ResourceLocation.fromNamespaceAndPath("terraqueous", "coconut_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_LEMON, ResourceLocation.fromNamespaceAndPath("terraqueous", "lemon_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_MANGO, ResourceLocation.fromNamespaceAndPath("terraqueous", "mango_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_MULBERRY, ResourceLocation.fromNamespaceAndPath("terraqueous", "mulberry_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_ORANGE, ResourceLocation.fromNamespaceAndPath("terraqueous", "orange_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PEACH, ResourceLocation.fromNamespaceAndPath("terraqueous", "peach_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PEAR, ResourceLocation.fromNamespaceAndPath("terraqueous", "pear_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PLUM, ResourceLocation.fromNamespaceAndPath("terraqueous", "plum_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_LIGHT_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "light_cloud_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_DENSE_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "dense_cloud_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_STORM_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "storm_cloud_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_APPLE, ResourceLocation.fromNamespaceAndPath("terraqueous", "apple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_BANANA, ResourceLocation.fromNamespaceAndPath("terraqueous", "banana_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_CHERRY, ResourceLocation.fromNamespaceAndPath("terraqueous", "cherry_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_COCONUT, ResourceLocation.fromNamespaceAndPath("terraqueous", "coconut_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_LEMON, ResourceLocation.fromNamespaceAndPath("terraqueous", "lemon_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_MANGO, ResourceLocation.fromNamespaceAndPath("terraqueous", "mango_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_MULBERRY, ResourceLocation.fromNamespaceAndPath("terraqueous", "mulberry_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_ORANGE, ResourceLocation.fromNamespaceAndPath("terraqueous", "orange_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PEACH, ResourceLocation.fromNamespaceAndPath("terraqueous", "peach_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PEAR, ResourceLocation.fromNamespaceAndPath("terraqueous", "pear_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PLUM, ResourceLocation.fromNamespaceAndPath("terraqueous", "plum_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TQ_LIGHT_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "light_cloud_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TQ_DENSE_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "dense_cloud_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TQ_STORM_CLOUD, ResourceLocation.fromNamespaceAndPath("terraqueous", "storm_cloud_door"));

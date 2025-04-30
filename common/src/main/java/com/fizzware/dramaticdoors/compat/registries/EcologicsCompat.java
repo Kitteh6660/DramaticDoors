@@ -23,10 +23,10 @@ public class EcologicsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_AZALEA, ResourceLocation.fromNamespaceAndPath("ecologics", "azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_FLOWERING_AZALEA, ResourceLocation.fromNamespaceAndPath("ecologics", "flowering_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_COCONUT, ResourceLocation.fromNamespaceAndPath("ecologics", "coconut_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_WALNUT, ResourceLocation.fromNamespaceAndPath("ecologics", "walnut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_AZALEA, ResourceLocation.fromNamespaceAndPath("ecologics", "azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_FLOWERING_AZALEA, ResourceLocation.fromNamespaceAndPath("ecologics", "flowering_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_COCONUT, ResourceLocation.fromNamespaceAndPath("ecologics", "coconut_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECO_WALNUT, ResourceLocation.fromNamespaceAndPath("ecologics", "walnut_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECO_AZALEA, ResourceLocation.fromNamespaceAndPath("ecologics", "azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECO_FLOWERING_AZALEA, ResourceLocation.fromNamespaceAndPath("ecologics", "flowering_azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECO_COCONUT, ResourceLocation.fromNamespaceAndPath("ecologics", "coconut_door"));

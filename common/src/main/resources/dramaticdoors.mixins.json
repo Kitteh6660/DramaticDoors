@@ -1,0 +1,28 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "com.fizzware.dramaticdoors.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AdvancementManagerMixin",
+    "RecipeManagerMixin",
+    "BlockLootMixin",
+    "WalkNodeEvaluatorMixin",
+    "DoorBlockMixin",
+    "FenceGateBlockMixin",
+    "DoorInteractGoalMixin",
+    "OpenDoorsTaskMixin",
+    "PiglinBrainMixin",
+    "VillagerMixin",
+    "WitchMixin"
+  ],
+  "client": [
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1,
+    "maxShiftBy": 2
+  },
+  "refmap": "dramaticdoors.refmap.json"
+}

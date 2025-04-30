@@ -22,9 +22,9 @@ public class UndergardenCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GRONGLE, ResourceLocation.fromNamespaceAndPath("undergarden", "grongle_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SMOGSTEM, ResourceLocation.fromNamespaceAndPath("undergarden", "smogstem_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WIGGLEWOOD, ResourceLocation.fromNamespaceAndPath("undergarden", "wigglewood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GRONGLE, ResourceLocation.fromNamespaceAndPath("undergarden", "grongle_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SMOGSTEM, ResourceLocation.fromNamespaceAndPath("undergarden", "smogstem_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WIGGLEWOOD, ResourceLocation.fromNamespaceAndPath("undergarden", "wigglewood_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GRONGLE, ResourceLocation.fromNamespaceAndPath("undergarden", "grongle_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SMOGSTEM, ResourceLocation.fromNamespaceAndPath("undergarden", "smogstem_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WIGGLEWOOD, ResourceLocation.fromNamespaceAndPath("undergarden", "wigglewood_door"));

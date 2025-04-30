@@ -20,7 +20,7 @@ public class NewWorldCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FIR, ResourceLocation.fromNamespaceAndPath("newworld", "fir_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FIR, ResourceLocation.fromNamespaceAndPath("newworld", "fir_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FIR, ResourceLocation.fromNamespaceAndPath("newworld", "fir_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FIR, ResourceLocation.fromNamespaceAndPath("newworld", "fir_door"), true);

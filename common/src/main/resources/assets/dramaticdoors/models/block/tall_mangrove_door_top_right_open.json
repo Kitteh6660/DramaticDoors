@@ -1,8 +1,7 @@
 {
-    "parent": "block/door_top_right_open",
-    "textures": {
-        "bottom": "dramaticdoors:block/tall_mangrove_door_bottom",
-        "middle": "dramaticdoors:block/tall_mangrove_door_middle",
-        "top": "dramaticdoors:block/tall_mangrove_door_top"
-    }
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "dramaticdoors:block/tall_mangrove_door_bottom",
+    "top": "dramaticdoors:block/tall_mangrove_door_top"
+  }
 }

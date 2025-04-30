@@ -2,16 +2,15 @@ package com.fizzware.dramaticdoors.neoforge;
 
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.compat.Compats;
+import com.fizzware.dramaticdoors.config.DDConfigCommon;
 import com.fizzware.dramaticdoors.neoforge.client.RenderHandler;
 import com.fizzware.dramaticdoors.neoforge.compat.AutomaticDoorCompat;
 import com.fizzware.dramaticdoors.neoforge.compat.QuarkDoubleDoorCompat;
-import com.fizzware.dramaticdoors.neoforge.config.DDConfigNF;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.fml.loading.FMLEnvironment;
@@ -26,7 +25,7 @@ public class DramaticDoorsNeoForge
     	// Please let this be a normal field trip.    	
     	// With the Mr. Fizzware? No freakin' way! Register events for the Magic NeoForge Bus to take them on an extraordinary trip.
     	Compats.modChecker = NeoforgeUtils.INSTANCE;
-    	container.registerConfig(ModConfig.Type.STARTUP, DDConfigNF.CONFIG);
+    	DDConfigCommon.initializeConfigs();
     	bus.register(DDNeoForgeRegistry.class);
     	bus.register(NeoforgeUtils.class);
     	

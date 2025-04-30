@@ -50,6 +50,9 @@ public class DDModelProvider extends FabricModelProvider
 		this.blockStateOutput = blockStateModelGenerator.blockStateOutput;
 		// Data-gen the block models as necessary.
 		for (Block block : BuiltInRegistries.BLOCK.stream().filter(block -> block instanceof ShortDoorBlock || block instanceof TallDoorBlock).toList()) {
+			if (BuiltInRegistries.BLOCK.getKey(block).toString().contains("macaw") || BuiltInRegistries.BLOCK.getKey(block).toString().contains("chipped") || BuiltInRegistries.BLOCK.getKey(block).toString().contains("manyideas")) {
+				continue; // May comment out if need to generate models for those three many doors mods.
+			}
 			if (block instanceof ShortDoorBlock) {
 				createShortDoor(block);
 			}

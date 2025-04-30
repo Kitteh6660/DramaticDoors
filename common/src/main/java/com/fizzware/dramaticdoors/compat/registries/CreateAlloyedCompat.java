@@ -21,8 +21,8 @@ public class CreateAlloyedCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STEEL, ResourceLocation.fromNamespaceAndPath("alloyed", "steel_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LOCKED_STEEL, ResourceLocation.fromNamespaceAndPath("alloyed", "locked_steel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STEEL, ResourceLocation.fromNamespaceAndPath("alloyed", "steel_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LOCKED_STEEL, ResourceLocation.fromNamespaceAndPath("alloyed", "locked_steel_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_STEEL, ResourceLocation.fromNamespaceAndPath("alloyed", "steel_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LOCKED_STEEL, ResourceLocation.fromNamespaceAndPath("alloyed", "locked_steel_door"));
 		

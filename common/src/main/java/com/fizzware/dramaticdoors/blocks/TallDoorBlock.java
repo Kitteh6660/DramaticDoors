@@ -98,6 +98,10 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
     @Override
     public BlockState updateShape(BlockState stateIn, Direction facing, BlockState facingState, LevelAccessor level, BlockPos currentPos, BlockPos facingPos) {
         TripleBlockPart tripleblockpart = stateIn.getValue(THIRD);
+		stateIn = stateIn.setValue(WATERLOGGED, level.getFluidState(currentPos).getType() == Fluids.WATER);
+		if (stateIn.getValue(WATERLOGGED)) {
+			level.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+		}
         if (facing.getAxis() != Direction.Axis.Y || (tripleblockpart == TripleBlockPart.LOWER != (facing == Direction.UP)) && (tripleblockpart == TripleBlockPart.UPPER != (facing == Direction.DOWN))) {
         	return tripleblockpart == TripleBlockPart.LOWER && facing == Direction.DOWN && !stateIn.canSurvive(level, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(stateIn, facing, facingState, level, currentPos, facingPos);
         }
@@ -301,6 +305,9 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock {
 	            this.playSound((Entity)null, level, pos, flag);
 	            tryOpenDoubleDoor(level, state, pos);
 	            level.setBlock(pos, state.setValue(POWERED, flag).setValue(OPEN, flag), 2);
+				if (state.getValue(WATERLOGGED)) {
+					level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
+				}
         	}
         }
     }

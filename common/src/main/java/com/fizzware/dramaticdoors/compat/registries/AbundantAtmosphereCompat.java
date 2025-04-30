@@ -21,8 +21,8 @@ public class AbundantAtmosphereCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ASH, ResourceLocation.fromNamespaceAndPath("abundant_atmosphere", "ash_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GOURDROT, ResourceLocation.fromNamespaceAndPath("abundant_atmosphere", "gourdrot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ASH, ResourceLocation.fromNamespaceAndPath("abundant_atmosphere", "ash_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GOURDROT, ResourceLocation.fromNamespaceAndPath("abundant_atmosphere", "gourdrot_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ASH, ResourceLocation.fromNamespaceAndPath("abundant_atmosphere", "ash_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GOURDROT, ResourceLocation.fromNamespaceAndPath("abundant_atmosphere", "gourdrot_door"));
 		

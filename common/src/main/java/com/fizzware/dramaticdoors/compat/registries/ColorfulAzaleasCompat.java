@@ -26,13 +26,13 @@ public class ColorfulAzaleasCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AZULE_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "azule_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRIGHT_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "bright_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FISS_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "fiss_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROZE_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "roze_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TECAL_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "tecal_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TITANIUM_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "titanium_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WALNUT_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "walnut_azalea_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AZULE_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "azule_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRIGHT_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "bright_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FISS_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "fiss_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROZE_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "roze_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TECAL_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "tecal_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TITANIUM_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "titanium_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WALNUT_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "walnut_azalea_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AZULE_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "azule_azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BRIGHT_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "bright_azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FISS_AZALEA, ResourceLocation.fromNamespaceAndPath("colorfulazaleas", "fiss_azalea_door"));

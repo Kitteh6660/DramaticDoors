@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "dramaticdoors:item/tall_dark_cherry_door"
-    }
-}

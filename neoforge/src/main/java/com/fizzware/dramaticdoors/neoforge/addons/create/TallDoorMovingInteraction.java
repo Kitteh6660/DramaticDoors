@@ -1,4 +1,4 @@
-/*package com.fizzware.dramaticdoors.neoforge.addons.create;
+package com.fizzware.dramaticdoors.neoforge.addons.create;
 
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
@@ -18,7 +18,6 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemp
 
 public class TallDoorMovingInteraction extends SimpleBlockMovingInteraction
 {
-
 	@Override
 	protected BlockState handle(Player player, Contraption contraption, BlockPos pos, BlockState currentState) {
 		if (!(currentState.getBlock() instanceof TallDoorBlock)) {
@@ -46,11 +45,11 @@ public class TallDoorMovingInteraction extends SimpleBlockMovingInteraction
 		}
 		StructureBlockInfo info = contraption.getBlocks().get(otherPos);
 		StructureBlockInfo info2 = contraption.getBlocks().get(otherPos2);
-		if (info.state().hasProperty(DoorBlock.OPEN)) {
+		if (info != null && info.state().hasProperty(DoorBlock.OPEN)) {
 			BlockState newState = info.state().cycle(DoorBlock.OPEN);
 			setContraptionBlockData(contraption.entity, otherPos, new StructureBlockInfo(info.pos(), newState, info.nbt()));
 		}
-		if (info2.state().hasProperty(DoorBlock.OPEN)) {
+		if (info2 != null && info2.state().hasProperty(DoorBlock.OPEN)) {
 			BlockState newState = info2.state().cycle(DoorBlock.OPEN);
 			setContraptionBlockData(contraption.entity, otherPos2, new StructureBlockInfo(info2.pos(), newState, info2.nbt()));
 		}
@@ -81,4 +80,3 @@ public class TallDoorMovingInteraction extends SimpleBlockMovingInteraction
 		return true;
 	}
 }
-*/

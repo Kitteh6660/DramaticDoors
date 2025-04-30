@@ -54,8 +54,8 @@ public class SupplementariesCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GOLD, ResourceLocation.fromNamespaceAndPath("supplementaries", "gold_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHERITE, ResourceLocation.fromNamespaceAndPath("supplementaries", "netherite_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GOLD, ResourceLocation.fromNamespaceAndPath("supplementaries", "gold_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHERITE, ResourceLocation.fromNamespaceAndPath("supplementaries", "netherite_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GOLD, ResourceLocation.fromNamespaceAndPath("supplementaries", "gold_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_NETHERITE, ResourceLocation.fromNamespaceAndPath("supplementaries", "netherite_door"));
 		

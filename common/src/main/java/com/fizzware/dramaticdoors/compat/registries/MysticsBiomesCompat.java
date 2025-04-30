@@ -25,12 +25,12 @@ public class MysticsBiomesCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_CHERRY, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "cherry_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_JACARANDA, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_MAPLE, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "maple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_PEACH, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "peach_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_SEA_FOAM, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "sea_foam_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_STRAWBERRY, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "strawberry_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_CHERRY, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "cherry_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_JACARANDA, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "jacaranda_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_MAPLE, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "maple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_PEACH, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "peach_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_SEA_FOAM, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "sea_foam_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_STRAWBERRY, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "strawberry_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_CHERRY, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "cherry_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_JACARANDA, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "jacaranda_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_MAPLE, ResourceLocation.fromNamespaceAndPath("mysticsbiomes", "maple_door"));

@@ -21,8 +21,8 @@ public class GardensOfTheDeadCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SOULBLIGHT, ResourceLocation.fromNamespaceAndPath("gardens_of_the_dead", "soulblight_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WHISTLECANE, ResourceLocation.fromNamespaceAndPath("gardens_of_the_dead", "whistlecane_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SOULBLIGHT, ResourceLocation.fromNamespaceAndPath("gardens_of_the_dead", "soulblight_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WHISTLECANE, ResourceLocation.fromNamespaceAndPath("gardens_of_the_dead", "whistlecane_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SOULBLIGHT, ResourceLocation.fromNamespaceAndPath("gardens_of_the_dead", "soulblight_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WHISTLECANE, ResourceLocation.fromNamespaceAndPath("gardens_of_the_dead", "whistlecane_door"));
 		

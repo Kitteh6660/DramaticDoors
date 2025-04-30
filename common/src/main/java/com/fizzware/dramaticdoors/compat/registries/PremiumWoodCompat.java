@@ -25,12 +25,12 @@ public class PremiumWoodCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_MAGIC, ResourceLocation.fromNamespaceAndPath("premium_wood", "magic_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_MAPLE, ResourceLocation.fromNamespaceAndPath("premium_wood", "maple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_PURPLE_HEART, ResourceLocation.fromNamespaceAndPath("premium_wood", "purple_heart_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_SILVERBELL, ResourceLocation.fromNamespaceAndPath("premium_wood", "silverbell_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_TIGER, ResourceLocation.fromNamespaceAndPath("premium_wood", "tiger_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_WILLOW, ResourceLocation.fromNamespaceAndPath("premium_wood", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_MAGIC, ResourceLocation.fromNamespaceAndPath("premium_wood", "magic_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_MAPLE, ResourceLocation.fromNamespaceAndPath("premium_wood", "maple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_PURPLE_HEART, ResourceLocation.fromNamespaceAndPath("premium_wood", "purple_heart_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_SILVERBELL, ResourceLocation.fromNamespaceAndPath("premium_wood", "silverbell_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_TIGER, ResourceLocation.fromNamespaceAndPath("premium_wood", "tiger_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_WILLOW, ResourceLocation.fromNamespaceAndPath("premium_wood", "willow_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PW_MAGIC, ResourceLocation.fromNamespaceAndPath("premium_wood", "magic_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PW_MAPLE, ResourceLocation.fromNamespaceAndPath("premium_wood", "maple_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PW_PURPLE_HEART, ResourceLocation.fromNamespaceAndPath("premium_wood", "purple_heart_door"));

@@ -21,8 +21,8 @@ public class CinderscapesCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SCORCHED, ResourceLocation.fromNamespaceAndPath("cinderscapes", "scorched_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_UMBRAL, ResourceLocation.fromNamespaceAndPath("cinderscapes", "umbral_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SCORCHED, ResourceLocation.fromNamespaceAndPath("cinderscapes", "scorched_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_UMBRAL, ResourceLocation.fromNamespaceAndPath("cinderscapes", "umbral_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SCORCHED, ResourceLocation.fromNamespaceAndPath("cinderscapes", "scorched_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_UMBRAL, ResourceLocation.fromNamespaceAndPath("cinderscapes", "umbral_door"));
 		

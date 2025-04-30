@@ -7,17 +7,15 @@ import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
-import com.fizzware.dramaticdoors.neoforge.config.DDConfigNF;
+import com.fizzware.dramaticdoors.config.DDConfigCommon;
 
-import net.neoforged.fml.loading.FMLPaths;
 import net.neoforged.fml.loading.LoadingModList;
 
 public class DDMixinConfigNeoForge implements IMixinConfigPlugin
 {
-
 	@Override
 	public void onLoad(String mixinPackage) {
-		DDConfigNF.loadConfig(DDConfigNF.CONFIG, FMLPaths.CONFIGDIR.get().resolve("dramaticdoors-startup.toml"));
+		DDConfigCommon.initializeConfigs();
 	}
 
 	@Override
@@ -27,14 +25,14 @@ public class DDMixinConfigNeoForge implements IMixinConfigPlugin
 
 	@Override
 	public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.neoforge.common.mixin.DoorBlockMixin")) {
-			return DDConfigNF.waterloggableDoors.get();
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.DoorBlockMixin")) {
+			return DDConfigCommon.waterloggableDoors;
 		}
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.neoforge.forge.mixin.JapaneseDoorBlockMixinNeoForge")) {
-			return DDConfigNF.waterloggableDoors.get() && LoadingModList.get().getModFileById("mcwdoors") != null;
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.neoforge.mixin.JapaneseDoorBlockMixinNeoForge")) {
+			return DDConfigCommon.waterloggableDoors && LoadingModList.get().getModFileById("mcwdoors") != null;
 		}
-		if (mixinClassName.equals("com.fizzware.dramaticdoors.neoforge.common.mixin.FenceGateBlockMixin")) {
-			return DDConfigNF.waterloggableFenceGates.get();
+		if (mixinClassName.equals("com.fizzware.dramaticdoors.mixin.FenceGateBlockMixin")) {
+			return DDConfigCommon.waterloggableFenceGates;
 		}
 		return true;
 	}

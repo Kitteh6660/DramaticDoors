@@ -1,8 +1,11 @@
 package com.fizzware.dramaticdoors.neoforge;
 
+import java.nio.file.Path;
+
+import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.fizzware.dramaticdoors.DramaticDoors;
 import com.fizzware.dramaticdoors.compat.CompatChecker;
-import com.fizzware.dramaticdoors.neoforge.config.DDConfigNF;
+import com.fizzware.dramaticdoors.config.DDConfigCommon;
 import com.fizzware.dramaticdoors.registry.DDCreativeTabs;
 import com.fizzware.dramaticdoors.registry.DDNames;
 import com.fizzware.dramaticdoors.registry.DDRegistry;
@@ -37,13 +40,35 @@ public class NeoforgeUtils implements CompatChecker
 		if (!FMLEnvironment.production) {
 			return true;
 		}
-		return DDConfigNF.devMode.get();
+		return DDConfigCommon.devMode;
 	}
     
 	@Override
 	public boolean isQuarkModuleEnabled() {
 		return INSTANCE.isModLoaded("quark");
 	}
+	
+    public static boolean getConfigBooleanValue(Path path, String variable) {
+    	final CommentedFileConfig configData = CommentedFileConfig.builder(path).sync().build();
+    	configData.load();
+    	if (configData.get(variable) != null) {
+    		return configData.get(variable);
+    	}
+    	else {
+    		return false;
+    	}
+    }
+    
+    public static int getConfigIntValue(Path path, String variable) {
+    	final CommentedFileConfig configData = CommentedFileConfig.builder(path).sync().build();
+    	configData.load();
+    	if (configData.get(variable) != null) {
+    		return configData.get(variable);
+    	}
+    	else {
+    		return 0;
+    	}
+    }
 	
 	@SubscribeEvent
     public static void assignItemsToTabs(BuildCreativeModeTabContentsEvent event) {

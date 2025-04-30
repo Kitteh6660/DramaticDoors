@@ -20,7 +20,7 @@ public class DeeperDarkerCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECHO, ResourceLocation.fromNamespaceAndPath("deeperdarker", "echo_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ECHO, ResourceLocation.fromNamespaceAndPath("deeperdarker", "echo_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ECHO, ResourceLocation.fromNamespaceAndPath("deeperdarker", "echo_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ECHO, ResourceLocation.fromNamespaceAndPath("deeperdarker", "echo_door"), true);

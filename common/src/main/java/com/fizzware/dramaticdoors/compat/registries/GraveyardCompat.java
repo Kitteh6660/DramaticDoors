@@ -20,10 +20,10 @@ public class GraveyardCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARK_IRON, ResourceLocation.fromNamespaceAndPath("graveyard", "dark_iron_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARK_IRON, ResourceLocation.fromNamespaceAndPath("graveyard", "dark_iron_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DARK_IRON, ResourceLocation.fromNamespaceAndPath("graveyard", "dark_iron_door"));
 		
-		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DARK_IRON, ResourceLocation.fromNamespaceAndPath("graveyard", "dark_iron_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DARK_IRON, ResourceLocation.fromNamespaceAndPath("graveyard", "dark_iron_door"), false);
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_DARK_IRON, ResourceLocation.fromNamespaceAndPath("graveyard", "dark_iron_door"), "tall_metal_door");
 	}
 }

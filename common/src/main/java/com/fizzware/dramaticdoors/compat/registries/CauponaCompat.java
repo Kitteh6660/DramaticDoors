@@ -20,7 +20,7 @@ public class CauponaCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WALNUT, ResourceLocation.fromNamespaceAndPath("caupona", "walnut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WALNUT, ResourceLocation.fromNamespaceAndPath("caupona", "walnut_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WALNUT, ResourceLocation.fromNamespaceAndPath("caupona", "walnut_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WALNUT, ResourceLocation.fromNamespaceAndPath("caupona", "walnut_door"), true);

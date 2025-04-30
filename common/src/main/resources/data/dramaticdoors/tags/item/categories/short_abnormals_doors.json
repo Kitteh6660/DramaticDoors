@@ -17,6 +17,23 @@
     {"id": "dramaticdoors:short_driftwood_door", "required": false},
     {"id": "dramaticdoors:short_river_door", "required": false},
     {"id": "dramaticdoors:short_tooth_door", "required": false},
-    {"id": "dramaticdoors:short_glass_door", "required": false}
+    {"id": "dramaticdoors:short_glass_door", "required": false},
+    {"id": "dramaticdoors:short_black_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_gray_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_light_gray_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_white_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_red_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_orange_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_yellow_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_lime_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_green_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_cyan_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_blue_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_purple_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_magenta_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_pink_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_light_blue_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_brown_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:short_arid_glass_door", "required": false}
   ]
 }

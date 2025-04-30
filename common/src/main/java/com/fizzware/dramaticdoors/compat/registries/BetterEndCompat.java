@@ -31,18 +31,18 @@ public class BetterEndCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERMINITE, ResourceLocation.fromNamespaceAndPath("betterend", "terminite_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_THALLASIUM, ResourceLocation.fromNamespaceAndPath("betterend", "thallasium_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DRAGON_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "dragon_tree_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_END_LOTUS, ResourceLocation.fromNamespaceAndPath("betterend", "end_lotus_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HELIX_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "helix_tree_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JELLYSHROOM, ResourceLocation.fromNamespaceAndPath("betterend", "jellyshroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LACUGROVE, ResourceLocation.fromNamespaceAndPath("betterend", "lacugrove_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LUCERNIA, ResourceLocation.fromNamespaceAndPath("betterend", "lucernia_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MOSSY_GLOWSHROOM, ResourceLocation.fromNamespaceAndPath("betterend", "mossy_glowshroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PYTHADENDRON, ResourceLocation.fromNamespaceAndPath("betterend", "pythadendron_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TENANEA, ResourceLocation.fromNamespaceAndPath("betterend", "tenanea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_UMBRELLA_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "umbrella_tree_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TERMINITE, ResourceLocation.fromNamespaceAndPath("betterend", "terminite_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_THALLASIUM, ResourceLocation.fromNamespaceAndPath("betterend", "thallasium_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DRAGON_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "dragon_tree_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_END_LOTUS, ResourceLocation.fromNamespaceAndPath("betterend", "end_lotus_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HELIX_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "helix_tree_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JELLYSHROOM, ResourceLocation.fromNamespaceAndPath("betterend", "jellyshroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LACUGROVE, ResourceLocation.fromNamespaceAndPath("betterend", "lacugrove_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LUCERNIA, ResourceLocation.fromNamespaceAndPath("betterend", "lucernia_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MOSSY_GLOWSHROOM, ResourceLocation.fromNamespaceAndPath("betterend", "mossy_glowshroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PYTHADENDRON, ResourceLocation.fromNamespaceAndPath("betterend", "pythadendron_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TENANEA, ResourceLocation.fromNamespaceAndPath("betterend", "tenanea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_UMBRELLA_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "umbrella_tree_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TERMINITE, ResourceLocation.fromNamespaceAndPath("betterend", "terminite_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_THALLASIUM, ResourceLocation.fromNamespaceAndPath("betterend", "thallasium_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DRAGON_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "dragon_tree_door"));
@@ -56,8 +56,8 @@ public class BetterEndCompat
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TENANEA, ResourceLocation.fromNamespaceAndPath("betterend", "tenanea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_UMBRELLA_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "umbrella_tree_door"));
 		
-		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERMINITE, ResourceLocation.fromNamespaceAndPath("betterend", "terminite_door"));
-		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_THALLASIUM, ResourceLocation.fromNamespaceAndPath("betterend", "thallasium_door"));
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TERMINITE, ResourceLocation.fromNamespaceAndPath("betterend", "terminite_door"), false);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_THALLASIUM, ResourceLocation.fromNamespaceAndPath("betterend", "thallasium_door"), false);
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DRAGON_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "dragon_tree_door"), true);
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_END_LOTUS, ResourceLocation.fromNamespaceAndPath("betterend", "end_lotus_door"), true);
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_HELIX_TREE, ResourceLocation.fromNamespaceAndPath("betterend", "helix_tree_door"), true);

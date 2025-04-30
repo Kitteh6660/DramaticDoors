@@ -22,14 +22,14 @@ public class BountifulFaresCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_CERAMIC, ResourceLocation.fromNamespaceAndPath("bountifulfares", "ceramic_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_HOARY, ResourceLocation.fromNamespaceAndPath("bountifulfares", "hoary_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_WALNUT, ResourceLocation.fromNamespaceAndPath("bountifulfares", "walnut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_CERAMIC, ResourceLocation.fromNamespaceAndPath("bountifulfares", "ceramic_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_HOARY, ResourceLocation.fromNamespaceAndPath("bountifulfares", "hoary_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_WALNUT, ResourceLocation.fromNamespaceAndPath("bountifulfares", "walnut_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BF_CERAMIC, ResourceLocation.fromNamespaceAndPath("bountifulfares", "ceramic_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BF_HOARY, ResourceLocation.fromNamespaceAndPath("bountifulfares", "hoary_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BF_WALNUT, ResourceLocation.fromNamespaceAndPath("bountifulfares", "walnut_door"));
 		
-		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BF_CERAMIC, ResourceLocation.fromNamespaceAndPath("bountifulfares", "ceramic_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BF_CERAMIC, ResourceLocation.fromNamespaceAndPath("bountifulfares", "ceramic_door"), false);
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BF_HOARY, ResourceLocation.fromNamespaceAndPath("bountifulfares", "hoary_door"), true);
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BF_WALNUT, ResourceLocation.fromNamespaceAndPath("bountifulfares", "walnut_door"), true);
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BF_CERAMIC, ResourceLocation.fromNamespaceAndPath("bountifulfares", "ceramic_door"), "tall_misc_door");

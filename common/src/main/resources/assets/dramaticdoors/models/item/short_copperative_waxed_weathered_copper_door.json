@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dramaticdoors:item/short_copperative_weathered_copper_door"
+  }
+}

@@ -21,8 +21,8 @@ public class PyromancerCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PYROWOOD, ResourceLocation.fromNamespaceAndPath("pyromancer", "pyrowood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROTTEN_PLANKS, ResourceLocation.fromNamespaceAndPath("pyromancer", "rotten_planks_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PYROWOOD, ResourceLocation.fromNamespaceAndPath("pyromancer", "pyrowood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROTTEN_PLANKS, ResourceLocation.fromNamespaceAndPath("pyromancer", "rotten_planks_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PYROWOOD, ResourceLocation.fromNamespaceAndPath("pyromancer", "pyrowood_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ROTTEN_PLANKS, ResourceLocation.fromNamespaceAndPath("pyromancer", "rotten_planks_door"));
 		

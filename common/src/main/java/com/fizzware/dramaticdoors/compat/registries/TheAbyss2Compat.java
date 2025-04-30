@@ -26,13 +26,13 @@ public class TheAbyss2Compat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLARU, ResourceLocation.fromNamespaceAndPath("theabyss", "blaru_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOG, ResourceLocation.fromNamespaceAndPath("theabyss", "bog_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FROZEN, ResourceLocation.fromNamespaceAndPath("theabyss", "frozen_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ABYSSAL_JUNGLE, ResourceLocation.fromNamespaceAndPath("theabyss", "jungle_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SAL, ResourceLocation.fromNamespaceAndPath("theabyss", "sal_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SLIMED, ResourceLocation.fromNamespaceAndPath("theabyss", "slimed_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_VIGILANT, ResourceLocation.fromNamespaceAndPath("theabyss", "vigilant_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLARU, ResourceLocation.fromNamespaceAndPath("theabyss", "blaru_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOG, ResourceLocation.fromNamespaceAndPath("theabyss", "bog_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FROZEN, ResourceLocation.fromNamespaceAndPath("theabyss", "frozen_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ABYSSAL_JUNGLE, ResourceLocation.fromNamespaceAndPath("theabyss", "jungle_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SAL, ResourceLocation.fromNamespaceAndPath("theabyss", "sal_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SLIMED, ResourceLocation.fromNamespaceAndPath("theabyss", "slimed_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_VIGILANT, ResourceLocation.fromNamespaceAndPath("theabyss", "vigilant_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLARU, ResourceLocation.fromNamespaceAndPath("theabyss", "blaru_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BOG, ResourceLocation.fromNamespaceAndPath("theabyss", "bog_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FROZEN, ResourceLocation.fromNamespaceAndPath("theabyss", "frozen_door"));

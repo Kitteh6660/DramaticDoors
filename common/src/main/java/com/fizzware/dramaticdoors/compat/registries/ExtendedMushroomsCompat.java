@@ -23,10 +23,10 @@ public class ExtendedMushroomsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MUSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "mushroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POISONOUS_MUSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "poisonous_mushroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GLOWSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "glowshroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HONEY_FUNGUS, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "honey_fungus_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MUSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "mushroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POISONOUS_MUSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "poisonous_mushroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GLOWSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "glowshroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HONEY_FUNGUS, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "honey_fungus_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MUSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "mushroom_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_POISONOUS_MUSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "poisonous_mushroom_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GLOWSHROOM, ResourceLocation.fromNamespaceAndPath("extendedmushrooms", "glowshroom_door"));

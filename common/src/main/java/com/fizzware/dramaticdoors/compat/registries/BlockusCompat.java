@@ -26,13 +26,13 @@ public class BlockusCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_RAW_BAMBOO, ResourceLocation.fromNamespaceAndPath("blockus", "raw_bamboo_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_BLACKSTONE, ResourceLocation.fromNamespaceAndPath("blockus", "blackstone_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_CHARRED, ResourceLocation.fromNamespaceAndPath("blockus", "charred_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED, ResourceLocation.fromNamespaceAndPath("blockus", "obsidian_reinforced_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_PAPER, ResourceLocation.fromNamespaceAndPath("blockus", "paper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_STONE, ResourceLocation.fromNamespaceAndPath("blockus", "stone_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_WHITE_OAK, ResourceLocation.fromNamespaceAndPath("blockus", "white_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_RAW_BAMBOO, ResourceLocation.fromNamespaceAndPath("blockus", "raw_bamboo_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_BLACKSTONE, ResourceLocation.fromNamespaceAndPath("blockus", "blackstone_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_CHARRED, ResourceLocation.fromNamespaceAndPath("blockus", "charred_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_OBSIDIAN_REINFORCED, ResourceLocation.fromNamespaceAndPath("blockus", "obsidian_reinforced_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_PAPER, ResourceLocation.fromNamespaceAndPath("blockus", "paper_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_STONE, ResourceLocation.fromNamespaceAndPath("blockus", "stone_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOCKUS_WHITE_OAK, ResourceLocation.fromNamespaceAndPath("blockus", "white_oak_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_RAW_BAMBOO, ResourceLocation.fromNamespaceAndPath("blockus", "raw_bamboo_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_BLACKSTONE, ResourceLocation.fromNamespaceAndPath("blockus", "blackstone_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOCKUS_CHARRED, ResourceLocation.fromNamespaceAndPath("blockus", "charred_door"));

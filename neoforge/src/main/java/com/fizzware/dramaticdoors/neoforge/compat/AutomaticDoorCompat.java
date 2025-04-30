@@ -7,7 +7,7 @@ import java.util.List;
 
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 import com.fizzware.dramaticdoors.compat.Compats;
-import com.fizzware.dramaticdoors.neoforge.config.DDConfigNF;
+import com.fizzware.dramaticdoors.neoforge.NeoforgeUtils;
 import com.fizzware.dramaticdoors.tags.DDBlockTags;
 
 import net.minecraft.core.BlockPos;
@@ -25,9 +25,9 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 // This class file provides compatibility for Serilum's Automatic Doors. Doesn't directly require Collective.
 public class AutomaticDoorCompat
 {
-	protected static int doorOpenTime = DDConfigNF.getConfigIntValue(DDConfigNF.CONFIG, FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.doorOpenTime");
-	protected static boolean shouldOpenIronDoors = DDConfigNF.getConfigBooleanValue(DDConfigNF.CONFIG, FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.shouldOpenIronDoors");
-	protected static boolean preventOpeningOnSneak = DDConfigNF.getConfigBooleanValue(DDConfigNF.CONFIG, FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.preventOpeningOnSneak");
+	protected static int doorOpenTime = NeoforgeUtils.getConfigIntValue(FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.doorOpenTime");
+	protected static boolean shouldOpenIronDoors = NeoforgeUtils.getConfigBooleanValue(FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.shouldOpenIronDoors");
+	protected static boolean preventOpeningOnSneak = NeoforgeUtils.getConfigBooleanValue(FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.preventOpeningOnSneak");
 	
 	public static HashMap<Level, List<BlockPos>> toclosedoors = new HashMap<Level, List<BlockPos>>();
 	public static HashMap<Level, List<BlockPos>> newclosedoors = new HashMap<Level, List<BlockPos>>();
@@ -43,9 +43,9 @@ public class AutomaticDoorCompat
 			return;
 		}
 		//Reload config.
-		doorOpenTime = DDConfigNF.getConfigIntValue(DDConfigNF.CONFIG, FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.doorOpenTime");
-		shouldOpenIronDoors = DDConfigNF.getConfigBooleanValue(DDConfigNF.CONFIG, FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.shouldOpenIronDoors");
-		preventOpeningOnSneak = DDConfigNF.getConfigBooleanValue(DDConfigNF.CONFIG, FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.preventOpeningOnSneak");
+		doorOpenTime = NeoforgeUtils.getConfigIntValue(FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.doorOpenTime");
+		shouldOpenIronDoors = NeoforgeUtils.getConfigBooleanValue(FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.shouldOpenIronDoors");
+		preventOpeningOnSneak = NeoforgeUtils.getConfigBooleanValue(FMLPaths.CONFIGDIR.get().resolve("automaticdoors-common.toml"), "General.preventOpeningOnSneak");
 		
 		toclosedoors.put(world, new ArrayList<BlockPos>());
 		newclosedoors.put(world, new ArrayList<BlockPos>());

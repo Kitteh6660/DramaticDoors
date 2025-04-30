@@ -18,6 +18,9 @@ public class LetsDoCompat
 	}
 	
 	private static void registerBlocksItems(CompatChecker checker) {
+		if (Compats.isModLoaded("beachparty", checker)) {
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BEACHPARTY_PALM, DDNames.SHORT_BEACHPARTY_PALM, DDRegistry.getBlockFromResourceLocation(ResourceLocation.fromNamespaceAndPath("beachparty", "palm_door")), BlockSetType.ACACIA, true);			
+		}
 		if (Compats.isModLoaded("bloomingnature", checker)) {
 			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BN_ASPEN, DDNames.SHORT_BN_ASPEN, DDRegistry.getBlockFromResourceLocation(ResourceLocation.fromNamespaceAndPath("bloomingnature", "aspen_door")), BlockSetType.BIRCH, true);
 			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BN_BAOBAB, DDNames.SHORT_BN_BAOBAB, DDRegistry.getBlockFromResourceLocation(ResourceLocation.fromNamespaceAndPath("bloomingnature", "baobab_door")), BlockSetType.ACACIA, true);
@@ -39,16 +42,23 @@ public class LetsDoCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
+		if (Compats.isModLoaded("beachparty", checker)) {
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BEACHPARTY_PALM, ResourceLocation.fromNamespaceAndPath("beachparty", "palm_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BEACHPARTY_PALM, ResourceLocation.fromNamespaceAndPath("beachparty", "palm_door"));
+			
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BEACHPARTY_PALM, ResourceLocation.fromNamespaceAndPath("beachparty", "palm_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BEACHPARTY_PALM, ResourceLocation.fromNamespaceAndPath("beachparty", "palm_door"), "tall_wooden_door");
+		}
 		if (Compats.isModLoaded("bloomingnature", checker)) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_ASPEN, ResourceLocation.fromNamespaceAndPath("bloomingnature", "aspen_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_BAOBAB, ResourceLocation.fromNamespaceAndPath("bloomingnature", "baobab_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_CHESTNUT, ResourceLocation.fromNamespaceAndPath("bloomingnature", "chestnut_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_EBONY, ResourceLocation.fromNamespaceAndPath("bloomingnature", "ebony_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_FAN_PALM, ResourceLocation.fromNamespaceAndPath("bloomingnature", "fan_palm_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_FIR, ResourceLocation.fromNamespaceAndPath("bloomingnature", "fir_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_LARCH, ResourceLocation.fromNamespaceAndPath("bloomingnature", "larch_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_SWAMP_CYPRESS, ResourceLocation.fromNamespaceAndPath("bloomingnature", "swamp_cypress_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_SWAMP_OAK, ResourceLocation.fromNamespaceAndPath("bloomingnature", "swamp_oak_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_ASPEN, ResourceLocation.fromNamespaceAndPath("bloomingnature", "aspen_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_BAOBAB, ResourceLocation.fromNamespaceAndPath("bloomingnature", "baobab_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_CHESTNUT, ResourceLocation.fromNamespaceAndPath("bloomingnature", "chestnut_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_EBONY, ResourceLocation.fromNamespaceAndPath("bloomingnature", "ebony_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_FAN_PALM, ResourceLocation.fromNamespaceAndPath("bloomingnature", "fan_palm_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_FIR, ResourceLocation.fromNamespaceAndPath("bloomingnature", "fir_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_LARCH, ResourceLocation.fromNamespaceAndPath("bloomingnature", "larch_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_SWAMP_CYPRESS, ResourceLocation.fromNamespaceAndPath("bloomingnature", "swamp_cypress_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_SWAMP_OAK, ResourceLocation.fromNamespaceAndPath("bloomingnature", "swamp_oak_door"), true);
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BN_ASPEN, ResourceLocation.fromNamespaceAndPath("bloomingnature", "aspen_door"));
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BN_BAOBAB, ResourceLocation.fromNamespaceAndPath("bloomingnature", "baobab_door"));
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BN_CHESTNUT, ResourceLocation.fromNamespaceAndPath("bloomingnature", "chestnut_door"));

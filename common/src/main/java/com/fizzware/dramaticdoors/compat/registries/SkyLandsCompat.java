@@ -22,9 +22,9 @@ public class SkyLandsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FIERY_PLANKS, ResourceLocation.fromNamespaceAndPath("flying_stuff", "fiery_planks_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LAVIC_PLANKS, ResourceLocation.fromNamespaceAndPath("flying_stuff", "lavic_planks_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GLACIATED, ResourceLocation.fromNamespaceAndPath("flying_stuff", "glaciated_planks_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FIERY_PLANKS, ResourceLocation.fromNamespaceAndPath("flying_stuff", "fiery_planks_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LAVIC_PLANKS, ResourceLocation.fromNamespaceAndPath("flying_stuff", "lavic_planks_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GLACIATED, ResourceLocation.fromNamespaceAndPath("flying_stuff", "glaciated_planks_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FIERY_PLANKS, ResourceLocation.fromNamespaceAndPath("flying_stuff", "fiery_planks_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LAVIC_PLANKS, ResourceLocation.fromNamespaceAndPath("flying_stuff", "lavic_planks_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GLACIATED, ResourceLocation.fromNamespaceAndPath("flying_stuff", "glaciated_planks_door"));

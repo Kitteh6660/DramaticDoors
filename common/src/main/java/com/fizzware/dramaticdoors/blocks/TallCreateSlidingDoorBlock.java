@@ -9,6 +9,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
@@ -49,7 +50,6 @@ public abstract class TallCreateSlidingDoorBlock extends TallDoorBlock
 	
 	public TallCreateSlidingDoorBlock(BlockSetType blockset, Block from, boolean isFolding) {
 		super(blockset, from);
-		this.registerDefaultState(this.stateDefinition.any().setValue(DDBlockStateProperties.VISIBLE, true));
 		this.folds = isFolding;
 	}
 	
@@ -87,6 +87,22 @@ public abstract class TallCreateSlidingDoorBlock extends TallDoorBlock
 			return pFacingState.is(this) && pFacingState.getValue(THIRD) != part ? blockState.setValue(VISIBLE, pFacingState.getValue(VISIBLE)) : Blocks.AIR.defaultBlockState();
 		}
 		return blockState;
+	}
+	
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext pContext) {
+		BlockState stateForPlacement = super.getStateForPlacement(pContext);
+		if (stateForPlacement != null && stateForPlacement.getValue(OPEN)) {
+			return stateForPlacement.setValue(OPEN, false).setValue(POWERED, false);
+		}
+		return stateForPlacement;
+	}
+
+	@Override
+	public void onPlace(BlockState pState, Level pLevel, BlockPos pPos, BlockState pOldState, boolean pIsMoving) {
+		if (!pOldState.is(this)) {
+			deferUpdate(pLevel, pPos);
+		}
 	}
 	
 	@Override

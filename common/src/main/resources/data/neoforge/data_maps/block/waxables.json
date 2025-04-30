@@ -2,28 +2,28 @@
   "replace": false,
   "values": {
     "dramaticdoors:short_copper_door": {
-      "next_oxidation_stage": "dramaticdoors:short_waxed_copper_door"
+      "waxed": "dramaticdoors:short_waxed_copper_door"
     },
     "dramaticdoors:short_exposed_copper_door": {
-      "next_oxidation_stage": "dramaticdoors:short_waxed_exposed_copper_door"
+      "waxed": "dramaticdoors:short_waxed_exposed_copper_door"
     },
     "dramaticdoors:short_weathered_copper_door": {
-      "next_oxidation_stage": "dramaticdoors:short_waxed_weathered_copper_door"
+      "waxed": "dramaticdoors:short_waxed_weathered_copper_door"
     },
     "dramaticdoors:short_oxidized_copper_door": {
-      "next_oxidation_stage": "dramaticdoors:short_waxed_oxidized_copper_door"
+      "waxed": "dramaticdoors:short_waxed_oxidized_copper_door"
     },
     "dramaticdoors:tall_copper_door": {
-      "next_oxidation_stage": "dramaticdoors:tall_waxed_copper_door"
+      "waxed": "dramaticdoors:tall_waxed_copper_door"
     },
     "dramaticdoors:tall_exposed_copper_door": {
-      "next_oxidation_stage": "dramaticdoors:tall_waxed_exposed_copper_door"
+      "waxed": "dramaticdoors:tall_waxed_exposed_copper_door"
     },
     "dramaticdoors:tall_weathered_copper_door": {
-      "next_oxidation_stage": "dramaticdoors:tall_waxed_weathered_copper_door"
+      "waxed": "dramaticdoors:tall_waxed_weathered_copper_door"
     },
     "dramaticdoors:tall_oxidized_copper_door": {
-      "next_oxidation_stage": "dramaticdoors:tall_waxed_oxidized_copper_door"
+      "waxed": "dramaticdoors:tall_waxed_oxidized_copper_door"
     }
   }
 }

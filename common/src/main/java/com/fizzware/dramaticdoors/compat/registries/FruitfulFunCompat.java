@@ -29,8 +29,8 @@ public class FruitfulFunCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FF_CITRUS, ResourceLocation.fromNamespaceAndPath("fruitfulfun", "citrus_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FF_REDLOVE, ResourceLocation.fromNamespaceAndPath("fruitfulfun", "redlove_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FF_CITRUS, ResourceLocation.fromNamespaceAndPath("fruitfulfun", "citrus_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FF_REDLOVE, ResourceLocation.fromNamespaceAndPath("fruitfulfun", "redlove_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FF_CITRUS, ResourceLocation.fromNamespaceAndPath("fruitfulfun", "citrus_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FF_REDLOVE, ResourceLocation.fromNamespaceAndPath("fruitfulfun", "redlove_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FF_REDLOVE_SLIDING, ResourceLocation.fromNamespaceAndPath("fruitfulfun", "redlove_sliding_door"));

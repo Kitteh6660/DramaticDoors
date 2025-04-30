@@ -22,9 +22,9 @@ public class TinkersConstructCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOODSHROOM, ResourceLocation.fromNamespaceAndPath("tconstruct", "bloodshroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GREENHEART, ResourceLocation.fromNamespaceAndPath("tconstruct", "greenheart_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SKYROOT, ResourceLocation.fromNamespaceAndPath("tconstruct", "skyroot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLOODSHROOM, ResourceLocation.fromNamespaceAndPath("tconstruct", "bloodshroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GREENHEART, ResourceLocation.fromNamespaceAndPath("tconstruct", "greenheart_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SKYROOT, ResourceLocation.fromNamespaceAndPath("tconstruct", "skyroot_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLOODSHROOM, ResourceLocation.fromNamespaceAndPath("tconstruct", "bloodshroom_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GREENHEART, ResourceLocation.fromNamespaceAndPath("tconstruct", "greenheart_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SKYROOT, ResourceLocation.fromNamespaceAndPath("tconstruct", "skyroot_door"));

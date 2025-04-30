@@ -54,8 +54,20 @@ public class Compats
 		if (isModLoaded("aether", checker)) {
 			AetherCompat.registerCompat();
 		}
+		if (isModLoaded("gravitation", checker)) {
+			AetherGravitationCompat.registerCompat();
+		}
 		if (isModLoaded("aether_redux", checker)) {
 			AetherReduxCompat.registerCompat();
+		}
+		if (isModLoaded("ancient_aether", checker)) {
+			AncientAetherCompat.registerCompat();
+		}
+		if (isModLoaded("ars_nouveau", checker)) {
+			ArsNouveauCompat.registerCompat();
+		}
+		if (isModLoaded("arts_and_crafts", checker)) {
+			ArtsAndCraftsCompat.registerCompat();
 		}
 		if (isModLoaded("theabyss", checker)) {
 			TheAbyss2Compat.registerCompat();
@@ -140,9 +152,6 @@ public class Compats
 		}*/
 		if (isModLoaded("createdeco", checker)) {
 			CreateDecoCompat.registerCompat();
-		}
-		if (isModLoaded("create_things_and_misc", checker)) {
-			CreateMiscThingsCompat.registerCompat();
 		}
 		if (isModLoaded("darkerdepths", checker)) {
 			DarkerDepthsCompat.registerCompat();
@@ -231,6 +240,9 @@ public class Compats
 		if (isModLoaded("malum", checker)) {
 			MalumCompat.registerCompat();
 		}
+		if (isModLoaded("minestuck", checker)) {
+			MinestuckCompat.registerCompat();
+		}
 		if (isModLoaded("modern_glass_doors", checker)) {
 			ModernGlassDoorsCompat.registerCompat();
 		}
@@ -306,9 +318,9 @@ public class Compats
     	if (isModLoaded("thermal_foundation", checker)) {
     		ThermalFoundationCompat.registerCompat();
     	}
-    	/*if (isModLoaded("thingamajigs", checker)) {
-    		ThingamajigsCompat.registerCompat(); // NYI: Not Yet Implemented
-    	}*/
+    	if (isModLoaded("thingamajigs", checker)) {
+    		ThingamajigsCompat.registerCompat();
+    	}
     	if (isModLoaded("traverse", checker)) {
     		TraverseCompat.registerCompat();
     	}
@@ -342,6 +354,10 @@ public class Compats
     	}
     	if (isModLoaded("manyideas_doors", checker)) {
     		ManyIdeasCompat.registerCompat();
+    	}
+    	// Backport mods.
+    	if (isModLoaded("earlyupdate_two", checker) || isModLoaded("palegardenbackport", checker)) {
+    		PaleGardenBackportCompat.registerCompat(checker);
     	}
     	initializedCompat = true;
     }

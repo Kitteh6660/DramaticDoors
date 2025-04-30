@@ -1,8 +1,0 @@
-{
-    "parent": "dramaticdoors:block/door_middle_left",
-    "textures": {
-        "bottom": "dramaticdoors:block/tall_byg_blue_enchanted_door_middle",
-        "middle": "dramaticdoors:block/tall_byg_blue_enchanted_door_middle",
-        "top": "dramaticdoors:block/tall_byg_blue_enchanted_door_middle"
-    }
-}

@@ -2,7 +2,6 @@ plugins {
     id 'java'
     id 'idea'
 	id 'eclipse'
-    id 'maven-publish'
     id 'fabric-loom'
 }
 base {
@@ -13,25 +12,24 @@ repositories {
     maven { url "https://maven.terraformersmc.com/releases" }
 	maven { url "https://cursemaven.com" } 
 	// All the maven repositories I have to declare just for Create Fabric :(
+    maven { url "https://maven.createmod.net" }
+    maven { url "https://maven.tterrag.com/" }
     maven { url "https://mvn.devos.one/snapshots/" }
+    maven { url "https://mvn.devos.one/releases/" }
 	maven { url "https://maven.cafeteria.dev/releases" }
 	maven { url "https://maven.jamieswhiteshirt.com/libs-release" }
+	maven { url "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" }
 	maven { url "https://jitpack.io/" }
-	maven {
-		url = "https://maven.tterrag.com/"
-		content {
-			includeGroup("com.jozufozu.flywheel")
-		}
-	}
 }
+
 dependencies {
     minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
     mappings loom.officialMojangMappings()
     implementation project(":common")
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
-    modImplementation "com.terraformersmc:modmenu:11.0.1", { exclude module: "fabric-api" }
-	modImplementation "curse.maven:macaws-doors-378646:5439190"
+    modImplementation "com.terraformersmc:modmenu:11.0.3", { exclude module: "fabric-api" }
+	modImplementation "curse.maven:macaws-doors-378646:6146461"
     // modImplementation("com.simibubi.create:create-fabric-${rootProject.minecraft_version}:${rootProject.create_fabric_version}")
 }
 
@@ -58,7 +56,7 @@ loom {
             ideConfigGenerated(true)
             runDir("run")
         }
-		datagen {
+        datagen {
             inherit server
             name "Data Generation"
             vmArg "-Dfabric-api.datagen"
@@ -69,9 +67,14 @@ loom {
     }
 }
 
-java {
-	sourceCompatibility = JavaVersion.VERSION_21
-	targetCompatibility = JavaVersion.VERSION_21
+sourceSets {
+    main {
+        resources {
+            srcDirs += [
+                    'src/generated'
+            ]
+        }
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
@@ -83,25 +86,9 @@ tasks.withType(Javadoc).configureEach {
 tasks.named("sourcesJar", Jar) {
     from(project(":common").sourceSets.main.allSource)
 }
-
-processResources {
-    from(project(":common").sourceSets.main.resources)
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifactId base.archivesName.get()
-            from components.java
-        }
-    }
-    repositories {
-        maven {
-            url "file://" + System.getenv("local_maven")
-        }
-    }
-}
-
 tasks.withType(Jar).configureEach {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+	duplicatesStrategy = DuplicatesStrategy.INCLUDE
+}
+processResources {
+    from project(":common").sourceSets.main.resources
 }

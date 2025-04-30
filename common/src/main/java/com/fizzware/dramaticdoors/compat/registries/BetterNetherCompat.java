@@ -30,17 +30,17 @@ public class BetterNetherCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ANCHOR_TREE, ResourceLocation.fromNamespaceAndPath("betternether", "anchor_tree_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BONE_CIN, ResourceLocation.fromNamespaceAndPath("betternether", "bone_cincinnasite_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BONE_REED, ResourceLocation.fromNamespaceAndPath("betternether", "bone_reed_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MUSHROOM_FIR, ResourceLocation.fromNamespaceAndPath("betternether", "mushroom_fir_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_MUSHROOM, ResourceLocation.fromNamespaceAndPath("betternether", "nether_mushroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_REED, ResourceLocation.fromNamespaceAndPath("betternether", "nether_reed_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_SAKURA, ResourceLocation.fromNamespaceAndPath("betternether", "nether_sakura_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBEUS, ResourceLocation.fromNamespaceAndPath("betternether", "rubeus_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STALAGNATE, ResourceLocation.fromNamespaceAndPath("betternether", "stalagnate_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WART, ResourceLocation.fromNamespaceAndPath("betternether", "wart_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_WILLOW, ResourceLocation.fromNamespaceAndPath("betternether", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ANCHOR_TREE, ResourceLocation.fromNamespaceAndPath("betternether", "anchor_tree_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BONE_CIN, ResourceLocation.fromNamespaceAndPath("betternether", "bone_cincinnasite_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BONE_REED, ResourceLocation.fromNamespaceAndPath("betternether", "bone_reed_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MUSHROOM_FIR, ResourceLocation.fromNamespaceAndPath("betternether", "mushroom_fir_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_MUSHROOM, ResourceLocation.fromNamespaceAndPath("betternether", "nether_mushroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_REED, ResourceLocation.fromNamespaceAndPath("betternether", "nether_reed_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_SAKURA, ResourceLocation.fromNamespaceAndPath("betternether", "nether_sakura_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBEUS, ResourceLocation.fromNamespaceAndPath("betternether", "rubeus_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STALAGNATE, ResourceLocation.fromNamespaceAndPath("betternether", "stalagnate_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WART, ResourceLocation.fromNamespaceAndPath("betternether", "wart_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_WILLOW, ResourceLocation.fromNamespaceAndPath("betternether", "willow_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ANCHOR_TREE, ResourceLocation.fromNamespaceAndPath("betternether", "anchor_tree_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BONE_CIN, ResourceLocation.fromNamespaceAndPath("betternether", "bone_cincinnasite_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BONE_REED, ResourceLocation.fromNamespaceAndPath("betternether", "bone_reed_door"));

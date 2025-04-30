@@ -29,10 +29,10 @@ public class BewitchmentCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BW_CYPRESS, ResourceLocation.fromNamespaceAndPath("bewitchment", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DRAGONS_BLOOD, ResourceLocation.fromNamespaceAndPath("bewitchment", "dragons_blood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ELDER, ResourceLocation.fromNamespaceAndPath("bewitchment", "elder_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JUNIPER, ResourceLocation.fromNamespaceAndPath("bewitchment", "juniper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BW_CYPRESS, ResourceLocation.fromNamespaceAndPath("bewitchment", "cypress_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DRAGONS_BLOOD, ResourceLocation.fromNamespaceAndPath("bewitchment", "dragons_blood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ELDER, ResourceLocation.fromNamespaceAndPath("bewitchment", "elder_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JUNIPER, ResourceLocation.fromNamespaceAndPath("bewitchment", "juniper_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CYPRESS, ResourceLocation.fromNamespaceAndPath("bewitchment", "cypress_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DRAGONS_BLOOD, ResourceLocation.fromNamespaceAndPath("bewitchment", "dragons_blood_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ELDER, ResourceLocation.fromNamespaceAndPath("bewitchment", "elder_door"));
@@ -48,7 +48,7 @@ public class BewitchmentCompat
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_JUNIPER, ResourceLocation.fromNamespaceAndPath("bewitchment", "juniper_door"), "tall_wooden_door");
 		
 		if (Compats.isModLoaded("bwplus", checker)) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YEW, ResourceLocation.fromNamespaceAndPath("bwplus", "yew_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YEW, ResourceLocation.fromNamespaceAndPath("bwplus", "yew_door"), true);
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_YEW, ResourceLocation.fromNamespaceAndPath("bwplus", "yew_door"));
 			
 			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_YEW, ResourceLocation.fromNamespaceAndPath("bwplus", "yew_door"), true);

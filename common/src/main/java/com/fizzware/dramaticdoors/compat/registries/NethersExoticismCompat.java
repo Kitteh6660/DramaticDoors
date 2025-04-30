@@ -21,8 +21,8 @@ public class NethersExoticismCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JABOTICABA, ResourceLocation.fromNamespaceAndPath("nethers_exoticism", "jaboticaba_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RAMBOUTAN, ResourceLocation.fromNamespaceAndPath("nethers_exoticism", "ramboutan_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JABOTICABA, ResourceLocation.fromNamespaceAndPath("nethers_exoticism", "jaboticaba_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RAMBOUTAN, ResourceLocation.fromNamespaceAndPath("nethers_exoticism", "ramboutan_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_JABOTICABA, ResourceLocation.fromNamespaceAndPath("nethers_exoticism", "jaboticaba_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RAMBOUTAN, ResourceLocation.fromNamespaceAndPath("nethers_exoticism", "ramboutan_door"));
 		

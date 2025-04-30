@@ -23,10 +23,10 @@ public class EdenRingCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AURITIS, ResourceLocation.fromNamespaceAndPath("edenring", "auritis_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BALLOON_MUSHROOM, ResourceLocation.fromNamespaceAndPath("edenring", "balloon_mushroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRAIN_TREE, ResourceLocation.fromNamespaceAndPath("edenring", "brain_tree_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PULSE_TREE, ResourceLocation.fromNamespaceAndPath("edenring", "pulse_tree_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AURITIS, ResourceLocation.fromNamespaceAndPath("edenring", "auritis_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BALLOON_MUSHROOM, ResourceLocation.fromNamespaceAndPath("edenring", "balloon_mushroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRAIN_TREE, ResourceLocation.fromNamespaceAndPath("edenring", "brain_tree_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PULSE_TREE, ResourceLocation.fromNamespaceAndPath("edenring", "pulse_tree_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AURITIS, ResourceLocation.fromNamespaceAndPath("edenring", "auritis_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BALLOON_MUSHROOM, ResourceLocation.fromNamespaceAndPath("edenring", "balloon_mushroom_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BRAIN_TREE, ResourceLocation.fromNamespaceAndPath("edenring", "brain_tree_door"));

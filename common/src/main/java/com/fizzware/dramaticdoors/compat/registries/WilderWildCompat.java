@@ -22,9 +22,9 @@ public class WilderWildCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_BAOBAB, ResourceLocation.fromNamespaceAndPath("wilderwild", "baobab_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_CYPRESS, ResourceLocation.fromNamespaceAndPath("wilderwild", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_PALM, ResourceLocation.fromNamespaceAndPath("wilderwild", "palm_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_BAOBAB, ResourceLocation.fromNamespaceAndPath("wilderwild", "baobab_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_CYPRESS, ResourceLocation.fromNamespaceAndPath("wilderwild", "cypress_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WW_PALM, ResourceLocation.fromNamespaceAndPath("wilderwild", "palm_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WW_BAOBAB, ResourceLocation.fromNamespaceAndPath("wilderwild", "baobab_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WW_CYPRESS, ResourceLocation.fromNamespaceAndPath("wilderwild", "cypress_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WW_PALM, ResourceLocation.fromNamespaceAndPath("wilderwild", "palm_door"));

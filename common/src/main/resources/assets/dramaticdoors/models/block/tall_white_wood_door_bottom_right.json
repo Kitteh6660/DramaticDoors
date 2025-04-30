@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "dramaticdoors:block/tall_white_wood_door_bottom",
+    "top": "dramaticdoors:block/tall_white_wood_door_top"
+  }
+}

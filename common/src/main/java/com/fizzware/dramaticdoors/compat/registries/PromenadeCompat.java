@@ -22,9 +22,9 @@ public class PromenadeCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROMENADE_CHERRY_OAK, ResourceLocation.fromNamespaceAndPath("promenade", "cherry_oak_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROMENADE_DARK_AMARANTH, ResourceLocation.fromNamespaceAndPath("promenade", "dark_amaranth_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROMENADE_PALM, ResourceLocation.fromNamespaceAndPath("promenade", "palm_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROMENADE_CHERRY_OAK, ResourceLocation.fromNamespaceAndPath("promenade", "cherry_oak_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROMENADE_DARK_AMARANTH, ResourceLocation.fromNamespaceAndPath("promenade", "dark_amaranth_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROMENADE_PALM, ResourceLocation.fromNamespaceAndPath("promenade", "palm_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PROMENADE_CHERRY_OAK, ResourceLocation.fromNamespaceAndPath("promenade", "cherry_oak_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PROMENADE_DARK_AMARANTH, ResourceLocation.fromNamespaceAndPath("promenade", "dark_amaranth_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PROMENADE_PALM, ResourceLocation.fromNamespaceAndPath("promenade", "palm_door"));

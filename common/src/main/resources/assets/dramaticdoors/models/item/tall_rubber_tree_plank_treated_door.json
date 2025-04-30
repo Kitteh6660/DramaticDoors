@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dramaticdoors:item/tall_rubber_tree_plank_treated_door"
+  }
+}

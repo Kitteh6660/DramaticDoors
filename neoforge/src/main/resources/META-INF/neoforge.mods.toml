@@ -1,0 +1,37 @@
+# The Mod TOML file for Dramatic Doors.
+
+modLoader="javafml"
+loaderVersion="[2,)"
+
+license="MIT" # License Schmicense
+
+[[mods]]
+    modId="${mod_id}"
+    version="${mod_version}"
+    displayName="Dramatic Doors"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/dramatic-doors"
+    logoFile="icon.png"
+    issueTrackerURL="https://github.com/Kitteh6660/DramaticDoors/issues"
+    authors="FizzWare"
+    credits="Thanks to the creators of Minecraft and Forge.\n    Kitteh6660 for maintaining and updating this mod.\n    WenXin2 for the updated Pokecube compat."
+    description="${description}"
+
+[[mixins]] # Common Mixins
+config = "${mod_id}.mixins.json"
+
+[[mixins]] # NeoForge Mixins
+config = "${mod_id}_neoforge.mixins.json"
+
+[[dependencies.dramaticdoors]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.1,1.22)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.dramaticdoors]]
+    modId="neoforge"
+    mandatory=false
+    versionRange="[21.1.0,)"
+    ordering="AFTER"
+    side="BOTH"

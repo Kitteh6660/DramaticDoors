@@ -24,11 +24,11 @@ public class DeepAetherCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CONBERRY, ResourceLocation.fromNamespaceAndPath("deep_aether", "conberry_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CRUDEROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "cruderoot_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROSEROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "roseroot_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SUNROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "sunroot_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YAGROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "yagroot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CONBERRY, ResourceLocation.fromNamespaceAndPath("deep_aether", "conberry_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CRUDEROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "cruderoot_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROSEROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "roseroot_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SUNROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "sunroot_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YAGROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "yagroot_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CONBERRY, ResourceLocation.fromNamespaceAndPath("deep_aether", "conberry_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CRUDEROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "cruderoot_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ROSEROOT, ResourceLocation.fromNamespaceAndPath("deep_aether", "roseroot_door"));

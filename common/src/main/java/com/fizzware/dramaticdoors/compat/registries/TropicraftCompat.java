@@ -24,11 +24,11 @@ public class TropicraftCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_BAMBOO, ResourceLocation.fromNamespaceAndPath("tropicraft", "bamboo_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_MAHOGANY, ResourceLocation.fromNamespaceAndPath("tropicraft", "mahogany_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_MANGROVE, ResourceLocation.fromNamespaceAndPath("tropicraft", "mangrove_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_PALM, ResourceLocation.fromNamespaceAndPath("tropicraft", "palm_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_THATCH, ResourceLocation.fromNamespaceAndPath("tropicraft", "thatch_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_BAMBOO, ResourceLocation.fromNamespaceAndPath("tropicraft", "bamboo_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_MAHOGANY, ResourceLocation.fromNamespaceAndPath("tropicraft", "mahogany_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_MANGROVE, ResourceLocation.fromNamespaceAndPath("tropicraft", "mangrove_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_PALM, ResourceLocation.fromNamespaceAndPath("tropicraft", "palm_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_THATCH, ResourceLocation.fromNamespaceAndPath("tropicraft", "thatch_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TC_BAMBOO, ResourceLocation.fromNamespaceAndPath("tropicraft", "bamboo_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TC_MAHOGANY, ResourceLocation.fromNamespaceAndPath("tropicraft", "mahogany_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TC_MANGROVE, ResourceLocation.fromNamespaceAndPath("tropicraft", "mangrove_door"));

@@ -1,4 +1,4 @@
-/*package com.fizzware.dramaticdoors.neoforge.addons.create;
+package com.fizzware.dramaticdoors.neoforge.addons.create;
 
 import com.fizzware.dramaticdoors.blocks.ShortDoorBlock;
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
@@ -55,4 +55,3 @@ public class ShortDoorMovingInteraction extends SimpleBlockMovingInteraction
 		return true;
 	}
 }
-*/

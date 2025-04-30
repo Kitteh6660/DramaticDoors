@@ -20,7 +20,7 @@ public class BetterArchaeologyCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROTTEN, ResourceLocation.fromNamespaceAndPath("betterarcheology", "rotten_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROTTEN, ResourceLocation.fromNamespaceAndPath("betterarcheology", "rotten_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ROTTEN, ResourceLocation.fromNamespaceAndPath("betterarcheology", "rotten_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ROTTEN, ResourceLocation.fromNamespaceAndPath("betterarcheology", "rotten_door"), true);

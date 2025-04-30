@@ -20,7 +20,7 @@ public class XPSAdditionsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SOUL_COPPER, ResourceLocation.fromNamespaceAndPath("xps_additions", "soul_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SOUL_COPPER, ResourceLocation.fromNamespaceAndPath("xps_additions", "soul_copper_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SOUL_COPPER, ResourceLocation.fromNamespaceAndPath("xps_additions", "soul_copper_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SOUL_COPPER, ResourceLocation.fromNamespaceAndPath("xps_additions", "soul_copper_door"), false);

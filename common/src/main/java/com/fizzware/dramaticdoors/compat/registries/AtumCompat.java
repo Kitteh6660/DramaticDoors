@@ -28,15 +28,15 @@ public class AtumCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DEADWOOD, ResourceLocation.fromNamespaceAndPath("atum", "deadwood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PALM, ResourceLocation.fromNamespaceAndPath("atum", "palm_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE, ResourceLocation.fromNamespaceAndPath("atum", "limestone_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_CRACKED, ResourceLocation.fromNamespaceAndPath("atum", "limestone_cracked_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_SMALL, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_small_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_LARGE, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_large_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_CRACKED_BRICK, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_cracked_brick_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_CHISELED, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_chiseled_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_CARVED, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_carved_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DEADWOOD, ResourceLocation.fromNamespaceAndPath("atum", "deadwood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PALM, ResourceLocation.fromNamespaceAndPath("atum", "palm_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE, ResourceLocation.fromNamespaceAndPath("atum", "limestone_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_CRACKED, ResourceLocation.fromNamespaceAndPath("atum", "limestone_cracked_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_SMALL, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_small_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_LARGE, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_large_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_CRACKED_BRICK, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_cracked_brick_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_CHISELED, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_chiseled_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIMESTONE_BRICK_CARVED, ResourceLocation.fromNamespaceAndPath("atum", "limestone_brick_carved_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DEADWOOD, ResourceLocation.fromNamespaceAndPath("atum", "deadwood_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PALM, ResourceLocation.fromNamespaceAndPath("atum", "palm_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LIMESTONE, ResourceLocation.fromNamespaceAndPath("atum", "limestone_door"));

@@ -16,19 +16,19 @@ public class EnlightenedEndCompat
 	}
 	
 	private static void registerBlocksItems() {
-		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_CONGEALED, DDNames.SHORT_CONGEALED, DDRegistry.getBlockFromResourceLocation(ResourceLocation.fromNamespaceAndPath("enlightened_end", "ebony_door")), BlockSetType.CRIMSON, true);
-		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_EE_EBONY, DDNames.SHORT_EE_EBONY, DDRegistry.getBlockFromResourceLocation(ResourceLocation.fromNamespaceAndPath("enlightened_end", "congealed_door")), BlockSetType.CRIMSON, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_CERULEAN, DDNames.SHORT_CERULEAN, DDRegistry.getBlockFromResourceLocation(ResourceLocation.fromNamespaceAndPath("enlightened_end", "cerulean_door")), BlockSetType.CRIMSON, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_INDIGO, DDNames.SHORT_INDIGO, DDRegistry.getBlockFromResourceLocation(ResourceLocation.fromNamespaceAndPath("enlightened_end", "indigo_door")), BlockSetType.CRIMSON, true);
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CONGEALED, ResourceLocation.fromNamespaceAndPath("enlightened_end", "ebony_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EE_EBONY, ResourceLocation.fromNamespaceAndPath("enlightened_end", "congealed_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CONGEALED, ResourceLocation.fromNamespaceAndPath("enlightened_end", "ebony_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EE_EBONY, ResourceLocation.fromNamespaceAndPath("enlightened_end", "congealed_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CERULEAN, ResourceLocation.fromNamespaceAndPath("enlightened_end", "cerulean_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_INDIGO, ResourceLocation.fromNamespaceAndPath("enlightened_end", "indigo_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CERULEAN, ResourceLocation.fromNamespaceAndPath("enlightened_end", "cerulean_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_INDIGO, ResourceLocation.fromNamespaceAndPath("enlightened_end", "indigo_door"));
 		
-		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CONGEALED, ResourceLocation.fromNamespaceAndPath("enlightened_end", "ebony_door"), true);
-		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EE_EBONY, ResourceLocation.fromNamespaceAndPath("enlightened_end", "congealed_door"), true);
-		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CONGEALED, ResourceLocation.fromNamespaceAndPath("enlightened_end", "ebony_door"), "tall_wooden_door");
-		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EE_EBONY, ResourceLocation.fromNamespaceAndPath("enlightened_end", "congealed_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CERULEAN, ResourceLocation.fromNamespaceAndPath("enlightened_end", "cerulean_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_INDIGO, ResourceLocation.fromNamespaceAndPath("enlightened_end", "indigo_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CERULEAN, ResourceLocation.fromNamespaceAndPath("enlightened_end", "cerulean_door"), "tall_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_INDIGO, ResourceLocation.fromNamespaceAndPath("enlightened_end", "indigo_door"), "tall_wooden_door");
 	}
 }

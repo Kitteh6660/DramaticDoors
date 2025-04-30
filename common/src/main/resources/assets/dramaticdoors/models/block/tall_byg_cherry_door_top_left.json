@@ -1,8 +1,0 @@
-{
-    "parent": "block/door_top_left",
-    "textures": {
-        "bottom": "dramaticdoors:block/tall_byg_cherry_door_bottom",
-        "middle": "dramaticdoors:block/tall_byg_cherry_door_middle",
-        "top": "dramaticdoors:block/tall_byg_cherry_door_top"
-    }
-}

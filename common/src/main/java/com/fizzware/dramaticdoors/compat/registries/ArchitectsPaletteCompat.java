@@ -20,7 +20,7 @@ public class ArchitectsPaletteCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWISTED, ResourceLocation.fromNamespaceAndPath("architects_palette", "twisted_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWISTED, ResourceLocation.fromNamespaceAndPath("architects_palette", "twisted_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TWISTED, ResourceLocation.fromNamespaceAndPath("architects_palette", "twisted_door"));
 	
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TWISTED, ResourceLocation.fromNamespaceAndPath("architects_palette", "twisted_door"), true);

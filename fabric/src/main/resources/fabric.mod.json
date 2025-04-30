@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "dramaticdoors",
-  "version": "${version}",
+  "version": "${mod_version}",
 
   "name": "Dramatic Doors (NeoQuiFab)",
   "description": "${description}",
@@ -29,6 +29,7 @@
     ]
   },
   "mixins": [
+    "dramaticdoors.mixins.json",
     "dramaticdoors_fabric.mixins.json"
   ],
   "accessWidener": "dramaticdoors.accesswidener",

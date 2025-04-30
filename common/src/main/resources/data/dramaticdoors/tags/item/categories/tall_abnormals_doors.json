@@ -17,6 +17,23 @@
     {"id": "dramaticdoors:tall_driftwood_door", "required": false},
     {"id": "dramaticdoors:tall_river_door", "required": false},
     {"id": "dramaticdoors:tall_tooth_door", "required": false},
-    {"id": "dramaticdoors:tall_glass_door", "required": false}
+    {"id": "dramaticdoors:tall_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_black_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_gray_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_light_gray_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_white_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_red_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_orange_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_yellow_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_lime_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_green_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_cyan_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_blue_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_purple_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_magenta_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_pink_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_light_blue_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_brown_stained_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_arid_glass_door", "required": false}
   ]
 }

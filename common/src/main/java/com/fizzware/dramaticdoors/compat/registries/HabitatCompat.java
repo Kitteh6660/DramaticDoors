@@ -20,7 +20,7 @@ public class HabitatCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FAIRY_RING_MUSHROOM,ResourceLocation.fromNamespaceAndPath("habitat", "fairy_ring_mushroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FAIRY_RING_MUSHROOM,ResourceLocation.fromNamespaceAndPath("habitat", "fairy_ring_mushroom_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FAIRY_RING_MUSHROOM, ResourceLocation.fromNamespaceAndPath("habitat", "fairy_ring_mushroom_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FAIRY_RING_MUSHROOM, ResourceLocation.fromNamespaceAndPath("habitat", "fairy_ring_mushroom_door"), true);

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "dramaticdoors:block/tall_bubble_door_bottom",
+    "top": "dramaticdoors:block/tall_bubble_door_top"
+  }
+}

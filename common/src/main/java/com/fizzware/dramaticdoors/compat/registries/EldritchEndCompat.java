@@ -24,11 +24,11 @@ public class EldritchEndCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "etyr_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CORRUPTED_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "corrupted_etyr_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DECADENT_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "decadent_etyr_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PERTURBED_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "perturbed_etyr_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PRIMORDIAL, ResourceLocation.fromNamespaceAndPath("eldritch_end", "primordial_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "etyr_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CORRUPTED_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "corrupted_etyr_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DECADENT_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "decadent_etyr_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PERTURBED_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "perturbed_etyr_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PRIMORDIAL, ResourceLocation.fromNamespaceAndPath("eldritch_end", "primordial_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "etyr_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CORRUPTED_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "corrupted_etyr_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DECADENT_ETYR, ResourceLocation.fromNamespaceAndPath("eldritch_end", "decadent_etyr_door"));

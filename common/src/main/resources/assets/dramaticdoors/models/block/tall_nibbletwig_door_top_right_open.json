@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/door_top_right_open",
   "textures": {
-    "bottom": "dramaticdoors:block/tall_nibbletwig_door_bottom",
-    "top": "dramaticdoors:block/tall_nibbletwig_door_top"
+    "bottom": "dramaticdoors:block/tall_nibbletwig_plank_door_bottom",
+    "top": "dramaticdoors:block/tall_nibbletwig_plank_door_top"
   }
 }

@@ -21,8 +21,8 @@ public class EnhancedMushroomsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BROWN_MUSHROOM, ResourceLocation.fromNamespaceAndPath("enhanced_mushrooms", "brown_mushroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RED_MUSHROOM, ResourceLocation.fromNamespaceAndPath("enhanced_mushrooms", "red_mushroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BROWN_MUSHROOM, ResourceLocation.fromNamespaceAndPath("enhanced_mushrooms", "brown_mushroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RED_MUSHROOM, ResourceLocation.fromNamespaceAndPath("enhanced_mushrooms", "red_mushroom_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BROWN_MUSHROOM, ResourceLocation.fromNamespaceAndPath("enhanced_mushrooms", "brown_mushroom_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RED_MUSHROOM, ResourceLocation.fromNamespaceAndPath("enhanced_mushrooms", "red_mushroom_door"));
 		

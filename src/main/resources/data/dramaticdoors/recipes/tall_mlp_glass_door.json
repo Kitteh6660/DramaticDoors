@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "tall_glass_door",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "modernlife:glass_door"
+        }
+    },
+    "result": {
+        "item": "dramaticdoors:tall_mlp_glass_door",
+        "count": 2
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "modernlife"
+        }
+    ]
+}

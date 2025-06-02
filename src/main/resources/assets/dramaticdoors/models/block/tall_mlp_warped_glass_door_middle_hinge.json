@@ -1,0 +1,8 @@
+{
+    "parent": "dramaticdoors:block/door_middle_rh",
+    "textures": {
+        "bottom": "dramaticdoors:block/tall_mlp_warped_glass_door_middle",
+        "middle": "dramaticdoors:block/tall_mlp_warped_glass_door_middle",
+        "top": "dramaticdoors:block/tall_mlp_warped_glass_door_middle"
+    }
+}

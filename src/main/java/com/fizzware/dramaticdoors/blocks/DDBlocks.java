@@ -2,7 +2,9 @@ package com.fizzware.dramaticdoors.blocks;
 
 import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DramaticDoors;
+import com.fizzware.dramaticdoors.items.TallDoorItem;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.WeatheringCopper.WeatherState;
@@ -871,7 +873,20 @@ public class DDBlocks {
 	public static final RegistryObject<Block> TALL_MANYIDEAS_WARPED_ORIGIN_DOOR = BLOCKS.register(DDNames.TALL_MANYIDEAS_WARPED_ORIGIN, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("manyideas_doors", "door_warped_origin"))));
 	public static final RegistryObject<Block> TALL_MANYIDEAS_WARPED_RUSTIC_DOOR = BLOCKS.register(DDNames.TALL_MANYIDEAS_WARPED_RUSTIC, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("manyideas_doors", "door_warped_rustic"))));
 	public static final RegistryObject<Block> TALL_MANYIDEAS_WARPED_SHOJI_DOOR = BLOCKS.register(DDNames.TALL_MANYIDEAS_WARPED_SHOJI, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("manyideas_doors", "door_warped_shoji"))));
-	
+
+    //ModernLife with ModernLifePatch
+    public static final RegistryObject<Block> TALL_MLP_MODERN_WHITE_DOOR = BLOCKS.register(DDNames.TALL_MLP_MODERN_WHITE, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "modern_white_door"))));
+    public static final RegistryObject<Block> TALL_MLP_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_CRIMSON_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_CRIMSON_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "crimson_glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_JUNGLE_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_JUNGLE_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "jungle_glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_IRON_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_IRON_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "iron_glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_WARPED_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_WARPED_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "warped_glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_DARK_OAK_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_DARK_OAK_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "dark_oak_glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_ACACIA_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_ACACIA_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "acacia_glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_BIRCH_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_BIRCH_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "birch_glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_SPRUCE_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_SPRUCE_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "spruce_glass_door"))));
+    public static final RegistryObject<Block> TALL_MLP_OAK_GLASS_DOOR = BLOCKS.register(DDNames.TALL_MLP_OAK_GLASS, () -> new TallDoorBlock(getBlockByKey(new ResourceLocation("modernlife", "oak_glass_door"))));
+
     public static Block getBlockByKey(ResourceLocation loc) {
     	return getBlockByKey(loc, Blocks.OAK_DOOR);
     }

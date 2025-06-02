@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "group": "tall_modern_door",
+    "pattern": [
+        "#",
+        "#",
+        "#"
+    ],
+    "key": {
+        "#": {
+            "item": "modernlife:modern_white_door"
+        }
+    },
+    "result": {
+        "item": "dramaticdoors:tall_mlp_modern_white_door",
+        "count": 2
+    },
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "modernlife"
+        }
+    ]
+}

@@ -928,6 +928,15 @@
     {"id": "dramaticdoors:tall_manyideas_warped_heart_door", "required": false},
     {"id": "dramaticdoors:tall_manyideas_warped_origin_door", "required": false},
     {"id": "dramaticdoors:tall_manyideas_warped_rustic_door", "required": false},
-    {"id": "dramaticdoors:tall_manyideas_warped_shoji_door", "required": false}
+    {"id": "dramaticdoors:tall_manyideas_warped_shoji_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_crimson_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_jungle_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_warped_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_dark_oak_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_acacia_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_birch_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_spruce_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_oak_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_modern_white_door", "required": false}
   ]
 }

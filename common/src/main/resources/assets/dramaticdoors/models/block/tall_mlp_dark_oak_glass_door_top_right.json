@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/door_top_right",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "bottom": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom",
+        "top": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top"
+    }
+}

@@ -108,6 +108,6 @@ license="MIT"
 [[dependencies.dramaticdoors]]
     modId="dawnoftimebuilder"
     mandatory=false
-    versionRange="[1.20.1-1.5.9,)"
+    versionRange="[1.5.9,)"
     ordering="AFTER"
     side="BOTH"

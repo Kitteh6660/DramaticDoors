@@ -368,6 +368,9 @@ public class Compats
     	if (isModLoaded("earlyupdate_two", checker) || isModLoaded("palegardenbackport", checker)) {
     		PaleGardenBackportCompat.registerCompat(checker);
     	}
+		if (isModLoaded("modernlife", checker) && isModLoaded("modernlifepatch", checker)) {
+			ModernLifeCompat.registerCompat();
+		}
     	initializedCompat = true;
     }
     

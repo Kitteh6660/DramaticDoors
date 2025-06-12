@@ -1796,6 +1796,18 @@
   "block.dramaticdoors.tall_manyideas_warped_rustic_door": "高诡异木乡村门",
   "block.dramaticdoors.tall_manyideas_warped_shoji_door": "高诡异木障子门",
 
+  "block.dramaticdoors.tall_mlp_modern_white_door": "高大现代白色门",
+  "block.dramaticdoors.tall_mlp_glass_door": "高大玻璃门",
+  "block.dramaticdoors.tall_mlp_crimson_glass_door": "高大深红色玻璃门",
+  "block.dramaticdoors.tall_mlp_jungle_glass_door": "高大丛林玻璃门",
+  "block.dramaticdoors.tall_mlp_iron_glass_door": "高大铁框玻璃门",
+  "block.dramaticdoors.tall_mlp_warped_glass_door": "高大诡异木玻璃门",
+  "block.dramaticdoors.tall_mlp_dark_oak_glass_door": "高大深色橡木玻璃门",
+  "block.dramaticdoors.tall_mlp_acacia_glass_door": "高大金合欢木玻璃门",
+  "block.dramaticdoors.tall_mlp_birch_glass_door": "高大白桦木玻璃门",
+  "block.dramaticdoors.tall_mlp_spruce_glass_door": "高大云杉木玻璃门",
+  "block.dramaticdoors.tall_mlp_oak_glass_door": "高大橡木玻璃门",
+
   "itemGroup.dramaticdoors": "Dramatic Doors",
   "itemGroup.dramaticdoors_chipped": "Dramatic Doors丨Chipped",
   "itemGroup.dramaticdoors_macaw": "Dramatic Doors丨Macaw的门",

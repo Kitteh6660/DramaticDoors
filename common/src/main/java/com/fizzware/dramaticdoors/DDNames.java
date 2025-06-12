@@ -2621,4 +2621,17 @@ public class DDNames
     public static final String TALL_MANYIDEAS_WARPED_ORIGIN = "tall_manyideas_warped_origin_door";
     public static final String TALL_MANYIDEAS_WARPED_RUSTIC = "tall_manyideas_warped_rustic_door";
     public static final String TALL_MANYIDEAS_WARPED_SHOJI = "tall_manyideas_warped_shoji_door";
+
+    //ModernLife with ModernLifePatch
+    public static final String TALL_MLP_MODERN_WHITE = "tall_mlp_modern_white_door";
+    public static final String TALL_MLP_GLASS = "tall_mlp_glass_door";
+    public static final String TALL_MLP_CRIMSON_GLASS = "tall_mlp_crimson_glass_door";
+    public static final String TALL_MLP_JUNGLE_GLASS = "tall_mlp_jungle_glass_door";
+    public static final String TALL_MLP_IRON_GLASS = "tall_mlp_iron_glass_door";
+    public static final String TALL_MLP_WARPED_GLASS = "tall_mlp_warped_glass_door";
+    public static final String TALL_MLP_DARK_OAK_GLASS = "tall_mlp_dark_oak_glass_door";
+    public static final String TALL_MLP_ACACIA_GLASS = "tall_mlp_acacia_glass_door";
+    public static final String TALL_MLP_BIRCH_GLASS = "tall_mlp_birch_glass_door";
+    public static final String TALL_MLP_SPRUCE_GLASS = "tall_mlp_spruce_glass_door";
+    public static final String TALL_MLP_OAK_GLASS = "tall_mlp_oak_glass_door";
 }

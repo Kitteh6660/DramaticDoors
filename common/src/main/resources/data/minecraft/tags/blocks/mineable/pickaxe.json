@@ -380,6 +380,8 @@
     {"id": "dramaticdoors:tall_manyideas_iron_safe_door", "required": false},
     {"id": "dramaticdoors:tall_manyideas_iron_ship_door", "required": false},
     {"id": "dramaticdoors:tall_manyideas_iron_space_door", "required": false},
-    {"id": "dramaticdoors:tall_manyideas_iron_stone_brick_door", "required": false}
+    {"id": "dramaticdoors:tall_manyideas_iron_stone_brick_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_iron_glass_door", "required": false},
+    {"id": "dramaticdoors:tall_mlp_glass_door", "required": false}
   ]
 }

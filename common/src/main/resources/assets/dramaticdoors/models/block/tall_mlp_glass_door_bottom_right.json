@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 48],
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"1": "dramaticdoors:block/tall_mlp_glass_door",
+		"particle": "dramaticdoors:block/tall_mlp_glass_door"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [3, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 0]},
+			"faces": {
+				"north": {"uv": [9, 10.66667, 7.5, 16], "texture": "#1"},
+				"east": {"uv": [8, 10.66667, 0, 16], "texture": "#1"},
+				"south": {"uv": [9, 10.66667, 7.5, 16], "texture": "#1"},
+				"west": {"uv": [8, 10.66667, 0, 16], "texture": "#1"},
+				"down": {"uv": [9, 0, 10.5, 5.33333], "texture": "#1"}
+			}
+		}
+	]
+}

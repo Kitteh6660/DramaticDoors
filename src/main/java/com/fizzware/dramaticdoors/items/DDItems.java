@@ -866,7 +866,19 @@ public class DDItems {
     public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_ORIGIN_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_ORIGIN, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_ORIGIN_DOOR.get(), conditionalTabProperties("manyideas_doors", DramaticDoors.MANYIDEAS_TAB)));
     public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_RUSTIC_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_RUSTIC, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_RUSTIC_DOOR.get(), conditionalTabProperties("manyideas_doors", DramaticDoors.MANYIDEAS_TAB)));
     public static final RegistryObject<Item> TALL_MANYIDEAS_WARPED_SHOJI_DOOR = ITEMS.register(DDNames.TALL_MANYIDEAS_WARPED_SHOJI, () -> new TallDoorItem(DDBlocks.TALL_MANYIDEAS_WARPED_SHOJI_DOOR.get(), conditionalTabProperties("manyideas_doors", DramaticDoors.MANYIDEAS_TAB)));
-    
+
+    //ModernLife with ModernLifePatch
+    public static final RegistryObject<Item> TALL_MLP_MODERN_WHITE_DOOR = ITEMS.register(DDNames.TALL_MLP_MODERN_WHITE, () -> new TallDoorItem(DDBlocks.TALL_MLP_MODERN_WHITE_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_CRIMSON_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_CRIMSON_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_CRIMSON_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_JUNGLE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_JUNGLE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_JUNGLE_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_IRON_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_IRON_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_IRON_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_WARPED_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_WARPED_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_WARPED_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_DARK_OAK_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_DARK_OAK_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_DARK_OAK_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_ACACIA_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_ACACIA_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_ACACIA_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_BIRCH_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_BIRCH_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_BIRCH_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_SPRUCE_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_SPRUCE_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_SPRUCE_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
+    public static final RegistryObject<Item> TALL_MLP_OAK_GLASS_DOOR = ITEMS.register(DDNames.TALL_MLP_OAK_GLASS, () -> new TallDoorItem(DDBlocks.TALL_MLP_OAK_GLASS_DOOR.get(), conditionalTabProperties("modernlifepatch")));
 	private static Item.Properties conditionalTabProperties(String modid) {
      return conditionalTabProperties(modid, DramaticDoors.MAIN_TAB);
 	}

@@ -1,0 +1,184 @@
+{
+    "variants": {
+        "facing=east,third=lower,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom"
+        },
+        "facing=south,third=lower,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom",
+            "y": 90
+        },
+        "facing=west,third=lower,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom",
+            "y": 180
+        },
+        "facing=north,third=lower,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom",
+            "y": 270
+        },
+        "facing=east,third=lower,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom_hinge"
+        },
+        "facing=south,third=lower,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom_hinge",
+            "y": 90
+        },
+        "facing=west,third=lower,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom_hinge",
+            "y": 180
+        },
+        "facing=north,third=lower,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom_hinge",
+            "y": 270
+        },
+        "facing=east,third=lower,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom_hinge",
+            "y": 90
+        },
+        "facing=south,third=lower,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom_hinge",
+            "y": 180
+        },
+        "facing=west,third=lower,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom_hinge",
+            "y": 270
+        },
+        "facing=north,third=lower,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom_hinge"
+        },
+        "facing=east,third=lower,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom",
+            "y": 270
+        },
+        "facing=south,third=lower,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom"
+        },
+        "facing=west,third=lower,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom",
+            "y": 90
+        },
+        "facing=north,third=lower,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_bottom",
+            "y": 180
+        },
+        "facing=east,third=upper,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top"
+        },
+        "facing=south,third=upper,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top",
+            "y": 90
+        },
+        "facing=west,third=upper,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top",
+            "y": 180
+        },
+        "facing=north,third=upper,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top",
+            "y": 270
+        },
+        "facing=east,third=upper,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top_hinge"
+        },
+        "facing=south,third=upper,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top_hinge",
+            "y": 90
+        },
+        "facing=west,third=upper,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top_hinge",
+            "y": 180
+        },
+        "facing=north,third=upper,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top_hinge",
+            "y": 270
+        },
+        "facing=east,third=upper,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top_hinge",
+            "y": 90
+        },
+        "facing=south,third=upper,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top_hinge",
+            "y": 180
+        },
+        "facing=west,third=upper,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top_hinge",
+            "y": 270
+        },
+        "facing=north,third=upper,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top_hinge"
+        },
+        "facing=east,third=upper,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top",
+            "y": 270
+        },
+        "facing=south,third=upper,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top"
+        },
+        "facing=west,third=upper,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top",
+            "y": 90
+        },
+        "facing=north,third=upper,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_top",
+            "y": 180
+        },
+        "facing=east,third=middle,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle"
+        },
+        "facing=south,third=middle,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle",
+            "y": 90
+        },
+        "facing=west,third=middle,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle",
+            "y": 180
+        },
+        "facing=north,third=middle,hinge=left,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle",
+            "y": 270
+        },
+        "facing=east,third=middle,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle_hinge"
+        },
+        "facing=south,third=middle,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle_hinge",
+            "y": 90
+        },
+        "facing=west,third=middle,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle_hinge",
+            "y": 180
+        },
+        "facing=north,third=middle,hinge=right,open=false": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle_hinge",
+            "y": 270
+        },
+        "facing=east,third=middle,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle_hinge",
+            "y": 90
+        },
+        "facing=south,third=middle,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle_hinge",
+            "y": 180
+        },
+        "facing=west,third=middle,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle_hinge",
+            "y": 270
+        },
+        "facing=north,third=middle,hinge=left,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle_hinge"
+        },
+        "facing=east,third=middle,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle",
+            "y": 270
+        },
+        "facing=south,third=middle,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle"
+        },
+        "facing=west,third=middle,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle",
+            "y": 90
+        },
+        "facing=north,third=middle,hinge=right,open=true": {
+            "model": "dramaticdoors:block/tall_mlp_dark_oak_glass_door_middle",
+            "y": 180
+        }
+    }
+}

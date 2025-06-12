@@ -822,6 +822,18 @@
   "block.dramaticdoors.tall_manyideas_warped_rustic_door": "Tall Warped Rustic Door",
   "block.dramaticdoors.tall_manyideas_warped_shoji_door": "Tall Warped Shoji Door",
 
+  "block.dramaticdoors.tall_mlp_modern_white_door": "Tall Modern White Door",
+  "block.dramaticdoors.tall_mlp_glass_door": "Tall Glass Door",
+  "block.dramaticdoors.tall_mlp_crimson_glass_door": "Tall Crimson Glass Door",
+  "block.dramaticdoors.tall_mlp_jungle_glass_door": "Tall Jungle Glass Door",
+  "block.dramaticdoors.tall_mlp_iron_glass_door": "Tall Iron Glass Door",
+  "block.dramaticdoors.tall_mlp_warped_glass_door": "Tall Warped Glass Door",
+  "block.dramaticdoors.tall_mlp_dark_oak_glass_door": "Tall Dark Oak Glass Door",
+  "block.dramaticdoors.tall_mlp_acacia_glass_door": "Tall Acacia Glass Door",
+  "block.dramaticdoors.tall_mlp_birch_glass_door": "Tall Birch Glass Door",
+  "block.dramaticdoors.tall_mlp_spruce_glass_door": "Tall Spruce Glass Door",
+  "block.dramaticdoors.tall_mlp_oak_glass_door": "Tall Oak Glass Door",
+
   "itemGroup.dramaticdoors": "Dramatic Doors",
   "itemGroup.dramaticdoors_chipped": "Dramatic Doors: Chipped",
   "itemGroup.dramaticdoors_macaw": "Dramatic Doors: Macaw's Doors",

@@ -399,7 +399,19 @@
   "block.dramaticdoors.tall_macaw_spruce_tropical_door": "Высокая Spruce Tropical дверь",
   "block.dramaticdoors.tall_macaw_warped_tropical_door": "Высокая Warped Tropical дверь",
 
+  "block.dramaticdoors.tall_mlp_modern_white_door": "Высокая современная белая дверь",
+  "block.dramaticdoors.tall_mlp_glass_door": "Высокая стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_crimson_glass_door": "Высокая малиновая стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_jungle_glass_door": "Высокая тропическая стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_iron_glass_door": "Высокая железная стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_warped_glass_door": "Высокая искажённая стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_dark_oak_glass_door": "Высокая тёмная дубовая стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_acacia_glass_door": "Высокая акациевая стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_birch_glass_door": "Высокая берёзовая стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_spruce_glass_door": "Высокая еловая стеклянная дверь",
+  "block.dramaticdoors.tall_mlp_oak_glass_door": "Высокая дубовая стеклянная дверь",
+
   "itemGroup.dramaticdoors": "Dramatic Doors",
-  "itemGroup.dramaticdoors_chipped": "Dramatic Doors: Chipped"
+  "itemGroup.dramaticdoors_chipped": "Dramatic Doors: Chipped",
   "itemGroup.dramaticdoors_macaw": "Dramatic Doors: Macaw's Doors"
 }

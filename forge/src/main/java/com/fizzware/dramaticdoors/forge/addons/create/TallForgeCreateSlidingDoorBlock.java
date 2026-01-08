@@ -2,7 +2,6 @@ package com.fizzware.dramaticdoors.forge.addons.create;
 
 import com.fizzware.dramaticdoors.blocks.TallCreateSlidingDoorBlock;
 import com.fizzware.dramaticdoors.forge.compat.CreateForgeCompat;
-import com.fizzware.dramaticdoors.state.properties.DDBlockStateProperties;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import com.simibubi.create.content.contraptions.ContraptionWorld;
 import com.simibubi.create.content.equipment.wrench.IWrenchable;
@@ -20,7 +19,6 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -28,27 +26,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class TallForgeCreateSlidingDoorBlock extends TallCreateSlidingDoorBlock implements IWrenchable, IBE<TallForgeCreateSlidingDoorBlockEntity>
 {
-
-	protected static final VoxelShape SE_AABB = Block.box(0.0D, 0.0D, -13.0D, 3.0D, 16.0D, 3.0D);
-	protected static final VoxelShape ES_AABB = Block.box(-13.0D, 0.0D, 0.0D, 3.0D, 16.0D, 3.0D);
-	protected static final VoxelShape NW_AABB = Block.box(13.0D, 0.0D, 13.0D, 16.0D, 16.0D, 29.0D);
-	protected static final VoxelShape WN_AABB = Block.box(13.0D, 0.0D, 13.0D, 29.0D, 16.0D, 16.0D);
-	protected static final VoxelShape SW_AABB = Block.box(13.0D, 0.0D, -13.0D, 16.0D, 16.0D, 3.0D);
-	protected static final VoxelShape WS_AABB = Block.box(13.0D, 0.0D, 0.0D, 29.0D, 16.0D, 3.0D);
-	protected static final VoxelShape NE_AABB = Block.box(0.0D, 0.0D, 13.0D, 3.0D, 16.0D, 29.0D);
-	protected static final VoxelShape EN_AABB = Block.box(-13.0D, 0.0D, 13.0D, 3.0D, 16.0D, 16.0D);
-
-	protected static final VoxelShape SE_AABB_FOLD = Block.box(0.0D, 0.0D, -3.0D, 9.0D, 16.0D, 3.0D);
-	protected static final VoxelShape ES_AABB_FOLD = Block.box(-3.0D, 0.0D, 0.0D, 3.0D, 16.0D, 9.0D);
-	protected static final VoxelShape NW_AABB_FOLD = Block.box(7.0D, 0.0D, 13.0D, 16.0D, 16.0D, 19.0D);
-	protected static final VoxelShape WN_AABB_FOLD = Block.box(13.0D, 0.0D, 7.0D, 19.0D, 16.0D, 16.0D);
-	protected static final VoxelShape SW_AABB_FOLD = Block.box(7.0D, 0.0D, -3.0D, 16.0D, 16.0D, 3.0D);
-	protected static final VoxelShape WS_AABB_FOLD = Block.box(13.0D, 0.0D, 0.0D, 19.0D, 16.0D, 9.0D);
-	protected static final VoxelShape NE_AABB_FOLD = Block.box(0.0D, 0.0D, 13.0D, 9.0D, 16.0D, 19.0D);
-	protected static final VoxelShape EN_AABB_FOLD = Block.box(-3.0D, 0.0D, 7.0D, 3.0D, 16.0D, 16.0D);
-	
-	public static final BooleanProperty VISIBLE = DDBlockStateProperties.VISIBLE;
-	
 	public TallForgeCreateSlidingDoorBlock(Block from, BlockSetType blockset, boolean isFolding) {
 		super(from, blockset, isFolding);
 	}

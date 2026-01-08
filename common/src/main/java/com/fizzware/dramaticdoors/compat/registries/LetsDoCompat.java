@@ -37,28 +37,28 @@ public class LetsDoCompat
 			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_MEADOW_PINE_BARN, DDNames.SHORT_MEADOW_PINE_BARN, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("meadow", "pine_barn_door")), BlockSetType.SPRUCE, true);
 		}
 		if (Compats.isModLoaded("vinery", checker)) {
-			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_VINERY_CHERRY, DDNames.SHORT_VINERY_CHERRY, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("vinery", "dark_cherry_door")), BlockSetType.CHERRY, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_DARK_CHERRY, DDNames.SHORT_DARK_CHERRY, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("vinery", "dark_cherry_door")), BlockSetType.CHERRY, true);
 		}
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
 		if (Compats.isModLoaded("beachparty", checker)) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BEACHPARTY_PALM, new ResourceLocation("beachparty", "palm_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BEACHPARTY_PALM, new ResourceLocation("beachparty", "palm_door"), true);
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BEACHPARTY_PALM, new ResourceLocation("beachparty", "palm_door"));
 			
 			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BEACHPARTY_PALM, new ResourceLocation("beachparty", "palm_door"), true);
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BEACHPARTY_PALM, new ResourceLocation("beachparty", "palm_door"), "tall_wooden_door");
 		}
 		if (Compats.isModLoaded("bloomingnature", checker)) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_ASPEN, new ResourceLocation("bloomingnature", "aspen_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_BAOBAB, new ResourceLocation("bloomingnature", "baobab_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_CHESTNUT, new ResourceLocation("bloomingnature", "chestnut_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_EBONY, new ResourceLocation("bloomingnature", "ebony_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_FAN_PALM, new ResourceLocation("bloomingnature", "fan_palm_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_FIR, new ResourceLocation("bloomingnature", "fir_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_LARCH, new ResourceLocation("bloomingnature", "larch_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_SWAMP_CYPRESS, new ResourceLocation("bloomingnature", "swamp_cypress_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_SWAMP_OAK, new ResourceLocation("bloomingnature", "swamp_oak_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_ASPEN, new ResourceLocation("bloomingnature", "aspen_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_BAOBAB, new ResourceLocation("bloomingnature", "baobab_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_CHESTNUT, new ResourceLocation("bloomingnature", "chestnut_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_EBONY, new ResourceLocation("bloomingnature", "ebony_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_FAN_PALM, new ResourceLocation("bloomingnature", "fan_palm_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_FIR, new ResourceLocation("bloomingnature", "fir_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_LARCH, new ResourceLocation("bloomingnature", "larch_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_SWAMP_CYPRESS, new ResourceLocation("bloomingnature", "swamp_cypress_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_SWAMP_OAK, new ResourceLocation("bloomingnature", "swamp_oak_door"), true);
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BN_ASPEN, new ResourceLocation("bloomingnature", "aspen_door"));
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BN_BAOBAB, new ResourceLocation("bloomingnature", "baobab_door"));
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BN_CHESTNUT, new ResourceLocation("bloomingnature", "chestnut_door"));
@@ -89,8 +89,8 @@ public class LetsDoCompat
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BN_SWAMP_OAK, new ResourceLocation("bloomingnature", "swamp_oak_door"), "tall_letsdo_wooden_door");
 		}
 		if (Compats.isModLoaded("meadow", checker)) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MEADOW_PINE, new ResourceLocation("meadow", "pine_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MEADOW_PINE_BARN, new ResourceLocation("meadow", "pine_barn_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MEADOW_PINE, new ResourceLocation("meadow", "pine_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MEADOW_PINE_BARN, new ResourceLocation("meadow", "pine_barn_door"), true);
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MEADOW_PINE, new ResourceLocation("meadow", "pine_door"));
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MEADOW_PINE_BARN, new ResourceLocation("meadow", "pine_barn_door"));
 			
@@ -100,11 +100,11 @@ public class LetsDoCompat
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MEADOW_PINE_BARN, new ResourceLocation("meadow", "pine_barn_door"), "tall_wooden_door");
 		}
 		if (Compats.isModLoaded("vinery", checker)) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_VINERY_CHERRY, new ResourceLocation("vinery", "dark_cherry_door"));
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_VINERY_CHERRY, new ResourceLocation("vinery", "dark_cherry_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARK_CHERRY, new ResourceLocation("vinery", "dark_cherry_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DARK_CHERRY, new ResourceLocation("vinery", "dark_cherry_door"));
 			
-			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_VINERY_CHERRY, new ResourceLocation("vinery", "dark_cherry_door"), true);
-			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_VINERY_CHERRY, new ResourceLocation("vinery", "dark_cherry_door"), "tall_wooden_door");
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DARK_CHERRY, new ResourceLocation("vinery", "dark_cherry_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_DARK_CHERRY, new ResourceLocation("vinery", "dark_cherry_door"), "tall_wooden_door");
 		}
 	}
 }

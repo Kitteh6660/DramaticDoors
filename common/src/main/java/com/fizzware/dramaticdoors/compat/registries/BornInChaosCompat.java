@@ -21,8 +21,8 @@ public class BornInChaosCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MESH, new ResourceLocation("born_in_chaos_v1", "mesh_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SCORCHED_PLANKS, new ResourceLocation("born_in_chaos_v1", "scorched_planks_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MESH, new ResourceLocation("born_in_chaos_v1", "mesh_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SCORCHED_PLANKS, new ResourceLocation("born_in_chaos_v1", "scorched_planks_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MESH, new ResourceLocation("born_in_chaos_v1", "mesh_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SCORCHED_PLANKS, new ResourceLocation("born_in_chaos_v1", "scorched_planks_door"));
 		

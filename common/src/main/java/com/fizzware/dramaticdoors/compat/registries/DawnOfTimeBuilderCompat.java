@@ -22,9 +22,9 @@ public class DawnOfTimeBuilderCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARRED_SPRUCE, new ResourceLocation("dawnoftimebuilder", "charred_spruce_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_OAK, new ResourceLocation("dawnoftimebuilder", "waxed_oak_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PAPER, new ResourceLocation("dawnoftimebuilder", "paper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARRED_SPRUCE, new ResourceLocation("dawnoftimebuilder", "charred_spruce_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_OAK, new ResourceLocation("dawnoftimebuilder", "waxed_oak_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PAPER, new ResourceLocation("dawnoftimebuilder", "paper_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHARRED_SPRUCE, new ResourceLocation("dawnoftimebuilder", "charred_spruce_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WAXED_OAK, new ResourceLocation("dawnoftimebuilder", "waxed_oak_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PAPER, new ResourceLocation("dawnoftimebuilder", "paper_door"));

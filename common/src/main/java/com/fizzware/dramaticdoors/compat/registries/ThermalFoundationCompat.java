@@ -20,7 +20,7 @@ public class ThermalFoundationCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBBERWOOD, new ResourceLocation("thermal", "rubberwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBBERWOOD, new ResourceLocation("thermal", "rubberwood_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RUBBERWOOD, new ResourceLocation("thermal", "rubberwood_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RUBBERWOOD, new ResourceLocation("thermal", "rubberwood_door"), true);

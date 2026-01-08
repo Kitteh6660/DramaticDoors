@@ -22,9 +22,9 @@ public class HexereiCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HEXEREI_MAHOGANY, new ResourceLocation("hexerei", "mahogany_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HEXEREI_WILLOW, new ResourceLocation("hexerei", "willow_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HEXEREI_WITCH_HAZEL, new ResourceLocation("hexerei", "witch_hazel_door"));

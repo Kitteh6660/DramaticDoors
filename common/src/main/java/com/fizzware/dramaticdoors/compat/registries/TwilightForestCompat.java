@@ -35,14 +35,14 @@ public class TwilightForestCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CANOPY, new ResourceLocation("twilightforest", "canopy_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CANOPY, new ResourceLocation("twilightforest", "canopy_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MINEWOOD, new ResourceLocation("twilightforest", "mining_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SORTINGWOOD, new ResourceLocation("twilightforest", "sorting_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TIMEWOOD, new ResourceLocation("twilightforest", "time_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TRANSWOOD, new ResourceLocation("twilightforest", "transformation_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TWILIGHT_OAK, new ResourceLocation("twilightforest", "twilight_oak_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CANOPY, new ResourceLocation("twilightforest", "canopy_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DARKWOOD, new ResourceLocation("twilightforest", "dark_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TWILIGHT_MANGROVE, new ResourceLocation("twilightforest", "mangrove_door"));

@@ -29,10 +29,10 @@ public class BewitchmentCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BW_CYPRESS, new ResourceLocation("bewitchment", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DRAGONS_BLOOD, new ResourceLocation("bewitchment", "dragons_blood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ELDER, new ResourceLocation("bewitchment", "elder_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JUNIPER, new ResourceLocation("bewitchment", "juniper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BW_CYPRESS, new ResourceLocation("bewitchment", "cypress_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DRAGONS_BLOOD, new ResourceLocation("bewitchment", "dragons_blood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ELDER, new ResourceLocation("bewitchment", "elder_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JUNIPER, new ResourceLocation("bewitchment", "juniper_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CYPRESS, new ResourceLocation("bewitchment", "cypress_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DRAGONS_BLOOD, new ResourceLocation("bewitchment", "dragons_blood_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ELDER, new ResourceLocation("bewitchment", "elder_door"));
@@ -48,7 +48,7 @@ public class BewitchmentCompat
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_JUNIPER, new ResourceLocation("bewitchment", "juniper_door"), "tall_wooden_door");
 		
 		if (Compats.isModLoaded("bwplus", checker)) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YEW, new ResourceLocation("bwplus", "yew_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YEW, new ResourceLocation("bwplus", "yew_door"), true);
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_YEW, new ResourceLocation("bwplus", "yew_door"));
 			
 			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_YEW, new ResourceLocation("bwplus", "yew_door"), true);

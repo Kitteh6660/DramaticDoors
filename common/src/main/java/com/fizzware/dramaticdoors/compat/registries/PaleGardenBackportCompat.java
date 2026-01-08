@@ -22,18 +22,25 @@ public class PaleGardenBackportCompat
 	
 	private static void registerRecipes(CompatChecker checker) {
 		if (checker.isModLoaded("earlyupdate_two")) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PALE_OAK, new ResourceLocation("earlyupdate_two", "palewood_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PALE_OAK, new ResourceLocation("earlyupdate_two", "palewood_door"), true);
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PALE_OAK, new ResourceLocation("earlyupdate_two", "palewood_door"));
 			
 			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PALE_OAK, new ResourceLocation("earlyupdate_two", "palewood_door"), true);
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PALE_OAK, new ResourceLocation("earlyupdate_two", "palewood_door"), "tall_wooden_door");
 		}
 		if (checker.isModLoaded("palegardenbackport")) {
-			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PALE_OAK, new ResourceLocation("palegardenbackport", "pale_oak_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PALE_OAK, new ResourceLocation("palegardenbackport", "pale_oak_door"), true);
 			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PALE_OAK, new ResourceLocation("palegardenbackport", "pale_oak_door"));
 			
 			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PALE_OAK, new ResourceLocation("palegardenbackport", "pale_oak_door"), true);
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PALE_OAK, new ResourceLocation("palegardenbackport", "pale_oak_door"), "tall_wooden_door");
+		}
+		if (checker.isModLoaded("vanillabackport")) {
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PALE_OAK, new ResourceLocation("minecraft", "pale_oak_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PALE_OAK, new ResourceLocation("minecraft", "pale_oak_door"));
+			
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PALE_OAK, new ResourceLocation("minecraft", "pale_oak_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PALE_OAK, new ResourceLocation("minecraft", "pale_oak_door"), "tall_wooden_door");
 		}
 	}
 }

@@ -20,7 +20,7 @@ public class DesolationCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARRED, new ResourceLocation("desolation", "charred_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARRED, new ResourceLocation("desolation", "charred_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHARRED, new ResourceLocation("desolation", "charred_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CHARRED, new ResourceLocation("desolation", "charred_door"), true);

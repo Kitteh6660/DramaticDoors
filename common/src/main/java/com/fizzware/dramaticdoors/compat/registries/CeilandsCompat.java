@@ -22,9 +22,9 @@ public class CeilandsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CEILINUM, new ResourceLocation("ceilands", "ceilinum_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CEILINUM, new ResourceLocation("ceilands", "ceilinum_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CEILINUM, new ResourceLocation("ceilands", "ceilinum_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CEILTRUNK, new ResourceLocation("ceilands", "ceiltrunk_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LUZAWOOD, new ResourceLocation("ceilands", "luzawood_door"));

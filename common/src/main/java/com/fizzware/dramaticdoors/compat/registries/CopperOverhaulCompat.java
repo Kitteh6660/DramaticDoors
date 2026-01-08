@@ -24,10 +24,10 @@ public class CopperOverhaulCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CO_COPPER, new ResourceLocation("copperoverhaul", "copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CO_EXPOSED_COPPER, new ResourceLocation("copperoverhaul", "exposed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CO_WEATHERED_COPPER, new ResourceLocation("copperoverhaul", "weathered_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CO_OXIDIZED_COPPER, new ResourceLocation("copperoverhaul", "oxidized_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CO_COPPER, new ResourceLocation("copperoverhaul", "copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CO_EXPOSED_COPPER, new ResourceLocation("copperoverhaul", "exposed_copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CO_WEATHERED_COPPER, new ResourceLocation("copperoverhaul", "weathered_copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CO_OXIDIZED_COPPER, new ResourceLocation("copperoverhaul", "oxidized_copper_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CO_COPPER, new ResourceLocation("copperoverhaul", "copper_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CO_EXPOSED_COPPER, new ResourceLocation("copperoverhaul", "exposed_copper_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CO_WEATHERED_COPPER, new ResourceLocation("copperoverhaul", "weathered_copper_door"));

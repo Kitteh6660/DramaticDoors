@@ -1,0 +1,220 @@
+package com.fizzware.dramaticdoors.compat.registries;
+
+import com.fizzware.dramaticdoors.DDNames;
+import com.fizzware.dramaticdoors.DDRegistry;
+import com.fizzware.dramaticdoors.compat.CompatChecker;
+import com.fizzware.dramaticdoors.compat.DDCompatAdvancement;
+import com.fizzware.dramaticdoors.compat.DDCompatRecipe;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+
+// Sample compat file.
+public class KaleidoscopicCompat
+{
+	public static void registerCompat(CompatChecker checker) {
+		registerBlocksItems(checker);
+		registerRecipes(checker);
+	}
+	
+	private static void registerBlocksItems(CompatChecker checker) {
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BLEACHED, DDNames.SHORT_BLEACHED, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "bleached_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BLACK, DDNames.SHORT_BLACK, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "black_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_GRAY, DDNames.SHORT_GRAY, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "gray_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_LIGHT_GRAY, DDNames.SHORT_LIGHT_GRAY, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "light_gray_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_WHITE, DDNames.SHORT_WHITE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "white_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_RED, DDNames.SHORT_RED, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "red_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_ORANGE, DDNames.SHORT_ORANGE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "orange_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_YELLOW, DDNames.SHORT_YELLOW, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "yellow_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_LIME, DDNames.SHORT_LIME, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "lime_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_GREEN, DDNames.SHORT_GREEN, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "green_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_CYAN, DDNames.SHORT_CYAN, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "cyan_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BLUE, DDNames.SHORT_BLUE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "blue_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_PURPLE, DDNames.SHORT_PURPLE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "purple_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_MAGENTA, DDNames.SHORT_MAGENTA, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "magenta_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_PINK, DDNames.SHORT_PINK, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "pink_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_LIGHT_BLUE, DDNames.SHORT_LIGHT_BLUE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "light_blue_door")), BlockSetType.OAK, true);
+		DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BROWN, DDNames.SHORT_BROWN, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "brown_door")), BlockSetType.OAK, true);
+		/*if (Compats.isModLoaded("mint", checker)) {
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_ACORN, DDNames.SHORT_ACORN, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "acorn_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_AMBER, DDNames.SHORT_AMBER, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "amber_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_ARTICHOKE, DDNames.SHORT_ARTICHOKE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "artichoke_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_BANANA, DDNames.SHORT_BANANA, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "banana_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_CERULEAN, DDNames.SHORT_CERULEAN, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "cerulean_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_FUCHSIA, DDNames.SHORT_FUCHSIA, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "fuchsia_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_GRAPE, DDNames.SHORT_GRAPE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "grape_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_INDIGO, DDNames.SHORT_INDIGO, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "indigo_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_MAROON, DDNames.SHORT_MAROON, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "maroon_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_MAUVE, DDNames.SHORT_MAUVE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "mauve_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_MINT, DDNames.SHORT_MINT, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "mint_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_MOLD, DDNames.SHORT_MOLD, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "mold_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_NAVY, DDNames.SHORT_NAVY, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "navy_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_PEACH, DDNames.SHORT_PEACH, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "peach_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_PERIWINKLE, DDNames.SHORT_PERIWINKLE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "periwinkle_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_SAGE, DDNames.SHORT_SAGE, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "sage_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_SAP, DDNames.SHORT_SAP, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "sap_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_SHAMROCK, DDNames.SHORT_SHAMROCK, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "shamrock_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_VELVET, DDNames.SHORT_VELVET, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "velvet_door")), BlockSetType.OAK, true);
+			DDRegistry.registerDoorBlockAndItem(DDNames.TALL_VERMILION, DDNames.SHORT_VERMILION, DDRegistry.getBlockFromResourceLocation(new ResourceLocation("kaleidoscopic", "vermilion_door")), BlockSetType.OAK, true);
+		}*/
+	}
+	
+	private static void registerRecipes(CompatChecker checker) {
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLEACHED, new ResourceLocation("kaleidoscopic", "bleached_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLACK, new ResourceLocation("kaleidoscopic", "black_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GRAY, new ResourceLocation("kaleidoscopic", "gray_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIGHT_GRAY, new ResourceLocation("kaleidoscopic", "light_gray_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WHITE, new ResourceLocation("kaleidoscopic", "white_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RED, new ResourceLocation("kaleidoscopic", "red_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ORANGE, new ResourceLocation("kaleidoscopic", "orange_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YELLOW, new ResourceLocation("kaleidoscopic", "yellow_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIME, new ResourceLocation("kaleidoscopic", "lime_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GREEN, new ResourceLocation("kaleidoscopic", "green_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CYAN, new ResourceLocation("kaleidoscopic", "cyan_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLUE, new ResourceLocation("kaleidoscopic", "blue_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PURPLE, new ResourceLocation("kaleidoscopic", "purple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MAGENTA, new ResourceLocation("kaleidoscopic", "magenta_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLUE, new ResourceLocation("kaleidoscopic", "blue_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PINK, new ResourceLocation("kaleidoscopic", "pink_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIGHT_BLUE, new ResourceLocation("kaleidoscopic", "light_blue_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BROWN, new ResourceLocation("kaleidoscopic", "brown_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLEACHED, new ResourceLocation("kaleidoscopic", "bleached_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLACK, new ResourceLocation("kaleidoscopic", "black_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GRAY, new ResourceLocation("kaleidoscopic", "gray_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LIGHT_GRAY, new ResourceLocation("kaleidoscopic", "light_gray_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WHITE, new ResourceLocation("kaleidoscopic", "white_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RED, new ResourceLocation("kaleidoscopic", "red_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ORANGE, new ResourceLocation("kaleidoscopic", "orange_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_YELLOW, new ResourceLocation("kaleidoscopic", "yellow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LIME, new ResourceLocation("kaleidoscopic", "lime_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GREEN, new ResourceLocation("kaleidoscopic", "green_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CYAN, new ResourceLocation("kaleidoscopic", "cyan_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLUE, new ResourceLocation("kaleidoscopic", "blue_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PURPLE, new ResourceLocation("kaleidoscopic", "purple_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MAGENTA, new ResourceLocation("kaleidoscopic", "magenta_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLUE, new ResourceLocation("kaleidoscopic", "blue_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PINK, new ResourceLocation("kaleidoscopic", "pink_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_LIGHT_BLUE, new ResourceLocation("kaleidoscopic", "light_blue_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BROWN, new ResourceLocation("kaleidoscopic", "brown_door"));
+		
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLEACHED, new ResourceLocation("kaleidoscopic", "bleached_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLACK, new ResourceLocation("kaleidoscopic", "black_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GRAY, new ResourceLocation("kaleidoscopic", "gray_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LIGHT_GRAY, new ResourceLocation("kaleidoscopic", "light_gray_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WHITE, new ResourceLocation("kaleidoscopic", "white_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RED, new ResourceLocation("kaleidoscopic", "red_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ORANGE, new ResourceLocation("kaleidoscopic", "orange_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_YELLOW, new ResourceLocation("kaleidoscopic", "yellow_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LIME, new ResourceLocation("kaleidoscopic", "lime_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GREEN, new ResourceLocation("kaleidoscopic", "green_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CYAN, new ResourceLocation("kaleidoscopic", "cyan_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLUE, new ResourceLocation("kaleidoscopic", "blue_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PURPLE, new ResourceLocation("kaleidoscopic", "purple_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MAGENTA, new ResourceLocation("kaleidoscopic", "magenta_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BLUE, new ResourceLocation("kaleidoscopic", "blue_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PINK, new ResourceLocation("kaleidoscopic", "pink_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_LIGHT_BLUE, new ResourceLocation("kaleidoscopic", "light_blue_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BROWN, new ResourceLocation("kaleidoscopic", "brown_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLEACHED, new ResourceLocation("kaleidoscopic", "bleached_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLACK, new ResourceLocation("kaleidoscopic", "black_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GRAY, new ResourceLocation("kaleidoscopic", "gray_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LIGHT_GRAY, new ResourceLocation("kaleidoscopic", "light_gray_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WHITE, new ResourceLocation("kaleidoscopic", "white_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_RED, new ResourceLocation("kaleidoscopic", "red_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_ORANGE, new ResourceLocation("kaleidoscopic", "orange_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_YELLOW, new ResourceLocation("kaleidoscopic", "yellow_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LIME, new ResourceLocation("kaleidoscopic", "lime_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_GREEN, new ResourceLocation("kaleidoscopic", "green_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_CYAN, new ResourceLocation("kaleidoscopic", "cyan_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLUE, new ResourceLocation("kaleidoscopic", "blue_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PURPLE, new ResourceLocation("kaleidoscopic", "purple_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MAGENTA, new ResourceLocation("kaleidoscopic", "magenta_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BLUE, new ResourceLocation("kaleidoscopic", "blue_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_PINK, new ResourceLocation("kaleidoscopic", "pink_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_LIGHT_BLUE, new ResourceLocation("kaleidoscopic", "light_blue_door"), "tall_coloured_wooden_door");
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BROWN, new ResourceLocation("kaleidoscopic", "brown_door"), "tall_coloured_wooden_door");
+		/*if (Compats.isModLoaded("mint", checker)) {
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ACORN, new ResourceLocation("kaleidoscopic", "acorn_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AMBER, new ResourceLocation("kaleidoscopic", "amber_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ARTICHOKE, new ResourceLocation("kaleidoscopic", "artichoke_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BANANA, new ResourceLocation("kaleidoscopic", "banana_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CERULEAN, new ResourceLocation("kaleidoscopic", "cerulean_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FUCHSIA, new ResourceLocation("kaleidoscopic", "fuchsia_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GRAPE, new ResourceLocation("kaleidoscopic", "grape_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_INDIGO, new ResourceLocation("kaleidoscopic", "indigo_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MAROON, new ResourceLocation("kaleidoscopic", "maroon_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MAUVE, new ResourceLocation("kaleidoscopic", "mauve_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MINT, new ResourceLocation("kaleidoscopic", "kaleidoscopic_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MOLD, new ResourceLocation("kaleidoscopic", "mold_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NAVY, new ResourceLocation("kaleidoscopic", "navy_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PEACH, new ResourceLocation("kaleidoscopic", "peach_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PERIWINKLE, new ResourceLocation("kaleidoscopic", "periwinkle_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SAGE, new ResourceLocation("kaleidoscopic", "sage_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SAP, new ResourceLocation("kaleidoscopic", "sap_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SHAMROCK, new ResourceLocation("kaleidoscopic", "shamrock_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_VELVET, new ResourceLocation("kaleidoscopic", "velvet_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_VERMILION, new ResourceLocation("kaleidoscopic", "vermilion_door"), true);
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ACORN, new ResourceLocation("kaleidoscopic", "acorn_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AMBER, new ResourceLocation("kaleidoscopic", "amber_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ARTICHOKE, new ResourceLocation("kaleidoscopic", "artichoke_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BANANA, new ResourceLocation("kaleidoscopic", "banana_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CERULEAN, new ResourceLocation("kaleidoscopic", "cerulean_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FUCHSIA, new ResourceLocation("kaleidoscopic", "fuchsia_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GRAPE, new ResourceLocation("kaleidoscopic", "grape_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_INDIGO, new ResourceLocation("kaleidoscopic", "indigo_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MAROON, new ResourceLocation("kaleidoscopic", "maroon_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MAUVE, new ResourceLocation("kaleidoscopic", "mauve_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MINT, new ResourceLocation("kaleidoscopic", "kaleidoscopic_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MOLD, new ResourceLocation("kaleidoscopic", "mold_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_NAVY, new ResourceLocation("kaleidoscopic", "navy_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PEACH, new ResourceLocation("kaleidoscopic", "peach_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PERIWINKLE, new ResourceLocation("kaleidoscopic", "periwinkle_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SAGE, new ResourceLocation("kaleidoscopic", "sage_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SAP, new ResourceLocation("kaleidoscopic", "sap_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SHAMROCK, new ResourceLocation("kaleidoscopic", "shamrock_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_VELVET, new ResourceLocation("kaleidoscopic", "velvet_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_VERMILION, new ResourceLocation("kaleidoscopic", "vermilion_door"));
+			
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ACORN, new ResourceLocation("kaleidoscopic", "acorn_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_AMBER, new ResourceLocation("kaleidoscopic", "amber_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_ARTICHOKE, new ResourceLocation("kaleidoscopic", "artichoke_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BANANA, new ResourceLocation("kaleidoscopic", "banana_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_CERULEAN, new ResourceLocation("kaleidoscopic", "cerulean_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_FUCHSIA, new ResourceLocation("kaleidoscopic", "fuchsia_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_GRAPE, new ResourceLocation("kaleidoscopic", "grape_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_INDIGO, new ResourceLocation("kaleidoscopic", "indigo_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MAROON, new ResourceLocation("kaleidoscopic", "maroon_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MAUVE, new ResourceLocation("kaleidoscopic", "mauve_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MINT, new ResourceLocation("kaleidoscopic", "kaleidoscopic_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MOLD, new ResourceLocation("kaleidoscopic", "mold_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_NAVY, new ResourceLocation("kaleidoscopic", "navy_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PEACH, new ResourceLocation("kaleidoscopic", "peach_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_PERIWINKLE, new ResourceLocation("kaleidoscopic", "periwinkle_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SAGE, new ResourceLocation("kaleidoscopic", "sage_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SAP, new ResourceLocation("kaleidoscopic", "sap_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_SHAMROCK, new ResourceLocation("kaleidoscopic", "shamrock_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_VELVET, new ResourceLocation("kaleidoscopic", "velvet_door"), true);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_VERMILION, new ResourceLocation("kaleidoscopic", "vermilion_door"), true);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_ACORN, new ResourceLocation("kaleidoscopic", "acorn_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_AMBER, new ResourceLocation("kaleidoscopic", "amber_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_ARTICHOKE, new ResourceLocation("kaleidoscopic", "artichoke_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_BANANA, new ResourceLocation("kaleidoscopic", "banana_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_CERULEAN, new ResourceLocation("kaleidoscopic", "cerulean_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_FUCHSIA, new ResourceLocation("kaleidoscopic", "fuchsia_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_GRAPE, new ResourceLocation("kaleidoscopic", "grape_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_INDIGO, new ResourceLocation("kaleidoscopic", "indigo_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_MAROON, new ResourceLocation("kaleidoscopic", "maroon_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_MAUVE, new ResourceLocation("kaleidoscopic", "mauve_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_MINT, new ResourceLocation("kaleidoscopic", "kaleidoscopic_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_MOLD, new ResourceLocation("kaleidoscopic", "mold_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_NAVY, new ResourceLocation("kaleidoscopic", "navy_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_PEACH, new ResourceLocation("kaleidoscopic", "peach_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_PERIWINKLE, new ResourceLocation("kaleidoscopic", "periwinkle_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_SAGE, new ResourceLocation("kaleidoscopic", "sage_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_SAP, new ResourceLocation("kaleidoscopic", "sap_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_SHAMROCK, new ResourceLocation("kaleidoscopic", "shamrock_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_VELVET, new ResourceLocation("kaleidoscopic", "velvet_door"), "tall_coloured_wooden_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.SHORT_VERMILION, new ResourceLocation("kaleidoscopic", "vermilion_door"), "tall_coloured_wooden_door");
+		}*/
+	}
+}

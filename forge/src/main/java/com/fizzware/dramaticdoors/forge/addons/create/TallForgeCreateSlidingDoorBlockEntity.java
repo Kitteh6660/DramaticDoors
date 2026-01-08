@@ -16,6 +16,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.phys.AABB;
 
 public class TallForgeCreateSlidingDoorBlockEntity extends SmartBlockEntity
 {
@@ -41,8 +42,8 @@ public class TallForgeCreateSlidingDoorBlockEntity extends SmartBlockEntity
 		super.tick();
 		boolean open = isOpen(getBlockState());
 		boolean wasSettled = getAnimation().settled();
-		getAnimation().chase(open ? 1 : 0, .15f, Chaser.LINEAR);
-		getAnimation().tickChaser();
+		animation.chase(open ? 1 : 0, .15f, Chaser.LINEAR);
+		animation.tickChaser();
 
 		if (level.isClientSide()) {
 			if (bridgeTicks < 2 && open) {
@@ -54,31 +55,36 @@ public class TallForgeCreateSlidingDoorBlockEntity extends SmartBlockEntity
 			return;
 		}
 
-		if (!open && !wasSettled && getAnimation().settled() && !isVisible(getBlockState())) {
+		if (!open && !wasSettled && animation.settled() && !isVisible(getBlockState())) {
 			showBlockModel();
 		}
 	}
 	
-	protected void showBlockModel() {
-		level.setBlock(worldPosition, getBlockState().setValue(TallCreateSlidingDoorBlock.VISIBLE, true), 3);
-		level.playSound(null, worldPosition, SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, .5f, 1);
+	@Override
+	protected AABB createRenderBoundingBox() {
+		return super.createRenderBoundingBox().inflate(2);
 	}
 	
 	public static boolean isVisible(BlockState state) {
 		return state.getOptionalValue(DDBlockStateProperties.VISIBLE).orElse(true);
 	}
 	
-	public static boolean isOpen(BlockState state) {
-		return state.getOptionalValue(TallDoorBlock.OPEN).orElse(false);
-	}
-	
 	public boolean shouldRenderSpecial(BlockState state) {
 		return !isVisible(state) || bridgeTicks != 0;
+	}
+	
+	protected void showBlockModel() {
+		level.setBlock(worldPosition, getBlockState().setValue(TallCreateSlidingDoorBlock.VISIBLE, true), 3);
+		level.playSound(null, worldPosition, SoundEvents.IRON_DOOR_CLOSE, SoundSource.BLOCKS, .5f, 1);
 	}
 
 	@Override
 	public void addBehaviours(List<BlockEntityBehaviour> list) {}
 
+	public static boolean isOpen(BlockState state) {
+		return state.getOptionalValue(TallDoorBlock.OPEN).orElse(false);
+	}
+	
 	public LerpedFloat getAnimation() {
 		return animation;
 	}

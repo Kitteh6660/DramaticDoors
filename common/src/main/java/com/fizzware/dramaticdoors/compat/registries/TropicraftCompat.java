@@ -24,11 +24,11 @@ public class TropicraftCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_BAMBOO, new ResourceLocation("tropicraft", "bamboo_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_MAHOGANY, new ResourceLocation("tropicraft", "mahogany_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_MANGROVE, new ResourceLocation("tropicraft", "mangrove_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_PALM, new ResourceLocation("tropicraft", "palm_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_THATCH, new ResourceLocation("tropicraft", "thatch_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_BAMBOO, new ResourceLocation("tropicraft", "bamboo_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_MAHOGANY, new ResourceLocation("tropicraft", "mahogany_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_MANGROVE, new ResourceLocation("tropicraft", "mangrove_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_PALM, new ResourceLocation("tropicraft", "palm_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TC_THATCH, new ResourceLocation("tropicraft", "thatch_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TC_BAMBOO, new ResourceLocation("tropicraft", "bamboo_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TC_MAHOGANY, new ResourceLocation("tropicraft", "mahogany_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TC_MANGROVE, new ResourceLocation("tropicraft", "mangrove_door"));

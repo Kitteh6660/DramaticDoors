@@ -20,10 +20,10 @@ public class SilentGearCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHERWOOD, new ResourceLocation("silentgear", "netherwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHERWOOD, new ResourceLocation("silentgear", "netherwood_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_NETHERWOOD, new ResourceLocation("silentgear", "netherwood_door"));
 		
-		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"), true);
-		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_MORECRAFT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"), "tall_wooden_door");
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"), true);
+		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_NETHERWOOD, new ResourceLocation("morecraft", "netherwood_door"), "tall_wooden_door");
 	}
 }

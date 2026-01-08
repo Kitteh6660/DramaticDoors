@@ -33,19 +33,19 @@ public class PokecubeCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_AGED, new ResourceLocation("pokecube", "aged_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_CONCRETE, new ResourceLocation("pokecube", "concrete_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_CORRUPTED, new ResourceLocation("pokecube", "corrupted_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_DISTORTIC, new ResourceLocation("pokecube", "distortic_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_INVERTED, new ResourceLocation("pokecube", "inverted_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_MIRAGE, new ResourceLocation("pokecube", "mirage_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_TEMPORAL, new ResourceLocation("pokecube", "temporal_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_ENIGMA, new ResourceLocation("pokecube", "enigma_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_LEPPA, new ResourceLocation("pokecube", "leppa_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_NANAB, new ResourceLocation("pokecube", "nanab_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_ORAN, new ResourceLocation("pokecube", "oran_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_PECHA, new ResourceLocation("pokecube", "pecha_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_SITRUS, new ResourceLocation("pokecube", "sitrus_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_AGED, new ResourceLocation("pokecube", "aged_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_CONCRETE, new ResourceLocation("pokecube", "concrete_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_CORRUPTED, new ResourceLocation("pokecube", "corrupted_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_DISTORTIC, new ResourceLocation("pokecube", "distortic_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_INVERTED, new ResourceLocation("pokecube", "inverted_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_MIRAGE, new ResourceLocation("pokecube", "mirage_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_TEMPORAL, new ResourceLocation("pokecube", "temporal_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_ENIGMA, new ResourceLocation("pokecube", "enigma_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_LEPPA, new ResourceLocation("pokecube", "leppa_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_NANAB, new ResourceLocation("pokecube", "nanab_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_ORAN, new ResourceLocation("pokecube", "oran_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_PECHA, new ResourceLocation("pokecube", "pecha_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POKECUBE_SITRUS, new ResourceLocation("pokecube", "sitrus_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_POKECUBE_AGED, new ResourceLocation("pokecube", "aged_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_POKECUBE_CONCRETE, new ResourceLocation("pokecube", "concrete_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_POKECUBE_CORRUPTED, new ResourceLocation("pokecube", "corrupted_door"));

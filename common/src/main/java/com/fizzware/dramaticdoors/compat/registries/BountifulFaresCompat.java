@@ -22,14 +22,14 @@ public class BountifulFaresCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_CERAMIC, new ResourceLocation("bountifulfares", "ceramic_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_HOARY, new ResourceLocation("bountifulfares", "hoary_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_WALNUT, new ResourceLocation("bountifulfares", "walnut_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_CERAMIC, new ResourceLocation("bountifulfares", "ceramic_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_HOARY, new ResourceLocation("bountifulfares", "hoary_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BF_WALNUT, new ResourceLocation("bountifulfares", "walnut_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BF_CERAMIC, new ResourceLocation("bountifulfares", "ceramic_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BF_HOARY, new ResourceLocation("bountifulfares", "hoary_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BF_WALNUT, new ResourceLocation("bountifulfares", "walnut_door"));
 		
-		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BF_CERAMIC, new ResourceLocation("bountifulfares", "ceramic_door"), true);
+		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BF_CERAMIC, new ResourceLocation("bountifulfares", "ceramic_door"), false);
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BF_HOARY, new ResourceLocation("bountifulfares", "hoary_door"), true);
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_BF_WALNUT, new ResourceLocation("bountifulfares", "walnut_door"), true);
 		DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_BF_CERAMIC, new ResourceLocation("bountifulfares", "ceramic_door"), "tall_misc_door");

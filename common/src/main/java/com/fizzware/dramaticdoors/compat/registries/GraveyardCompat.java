@@ -20,7 +20,7 @@ public class GraveyardCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARK_IRON, new ResourceLocation("graveyard", "dark_iron_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DARK_IRON, new ResourceLocation("graveyard", "dark_iron_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DARK_IRON, new ResourceLocation("graveyard", "dark_iron_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_DARK_IRON, new ResourceLocation("graveyard", "dark_iron_door"));

@@ -25,12 +25,12 @@ public class PremiumWoodCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_MAGIC, new ResourceLocation("premium_wood", "magic_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_MAPLE, new ResourceLocation("premium_wood", "maple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_PURPLE_HEART, new ResourceLocation("premium_wood", "purple_heart_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_SILVERBELL, new ResourceLocation("premium_wood", "silverbell_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_TIGER, new ResourceLocation("premium_wood", "tiger_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_WILLOW, new ResourceLocation("premium_wood", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_MAGIC, new ResourceLocation("premium_wood", "magic_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_MAPLE, new ResourceLocation("premium_wood", "maple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_PURPLE_HEART, new ResourceLocation("premium_wood", "purple_heart_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_SILVERBELL, new ResourceLocation("premium_wood", "silverbell_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_TIGER, new ResourceLocation("premium_wood", "tiger_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PW_WILLOW, new ResourceLocation("premium_wood", "willow_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PW_MAGIC, new ResourceLocation("premium_wood", "magic_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PW_MAPLE, new ResourceLocation("premium_wood", "maple_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PW_PURPLE_HEART, new ResourceLocation("premium_wood", "purple_heart_door"));

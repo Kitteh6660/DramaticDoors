@@ -26,13 +26,13 @@ public class TheAbyss2Compat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLARU, new ResourceLocation("theabyss", "blaru_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOG, new ResourceLocation("theabyss", "bog_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FROZEN, new ResourceLocation("theabyss", "frozen_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ABYSSAL_JUNGLE, new ResourceLocation("theabyss", "jungle_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SAL, new ResourceLocation("theabyss", "sal_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SLIMED, new ResourceLocation("theabyss", "slimed_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_VIGILANT, new ResourceLocation("theabyss", "vigilant_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BLARU, new ResourceLocation("theabyss", "blaru_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOG, new ResourceLocation("theabyss", "bog_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FROZEN, new ResourceLocation("theabyss", "frozen_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ABYSSAL_JUNGLE, new ResourceLocation("theabyss", "jungle_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SAL, new ResourceLocation("theabyss", "sal_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SLIMED, new ResourceLocation("theabyss", "slimed_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_VIGILANT, new ResourceLocation("theabyss", "vigilant_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BLARU, new ResourceLocation("theabyss", "blaru_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BOG, new ResourceLocation("theabyss", "bog_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FROZEN, new ResourceLocation("theabyss", "frozen_door"));

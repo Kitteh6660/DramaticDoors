@@ -72,13 +72,13 @@ public class ImmersiveWeatheringCompat
     }
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EXPOSED_IRON, new ResourceLocation("immersive_weathering", "exposed_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WEATHERED_IRON, new ResourceLocation("immersive_weathering", "weathered_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUSTED_IRON, new ResourceLocation("immersive_weathering", "rusted_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_IRON, new ResourceLocation("immersive_weathering", "waxed_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_EXPOSED_IRON, new ResourceLocation("immersive_weathering", "waxed_exposed_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_WEATHERED_IRON, new ResourceLocation("immersive_weathering", "waxed_weathered_iron_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_RUSTED_IRON, new ResourceLocation("immersive_weathering", "waxed_rusted_iron_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EXPOSED_IRON, new ResourceLocation("immersive_weathering", "exposed_iron_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WEATHERED_IRON, new ResourceLocation("immersive_weathering", "weathered_iron_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUSTED_IRON, new ResourceLocation("immersive_weathering", "rusted_iron_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_IRON, new ResourceLocation("immersive_weathering", "waxed_iron_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_EXPOSED_IRON, new ResourceLocation("immersive_weathering", "waxed_exposed_iron_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_WEATHERED_IRON, new ResourceLocation("immersive_weathering", "waxed_weathered_iron_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_RUSTED_IRON, new ResourceLocation("immersive_weathering", "waxed_rusted_iron_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EXPOSED_IRON, new ResourceLocation("immersive_weathering", "exposed_iron_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WEATHERED_IRON, new ResourceLocation("immersive_weathering", "weathered_iron_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RUSTED_IRON, new ResourceLocation("immersive_weathering", "rusted_iron_door"));

@@ -30,17 +30,17 @@ public class BetterNetherCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ANCHOR_TREE, new ResourceLocation("betternether", "anchor_tree_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BONE_CIN, new ResourceLocation("betternether", "bone_cincinnasite_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BONE_REED, new ResourceLocation("betternether", "bone_reed_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MUSHROOM_FIR, new ResourceLocation("betternether", "mushroom_fir_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_MUSHROOM, new ResourceLocation("betternether", "nether_mushroom_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_REED, new ResourceLocation("betternether", "nether_reed_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_SAKURA, new ResourceLocation("betternether", "nether_sakura_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBEUS, new ResourceLocation("betternether", "rubeus_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STALAGNATE, new ResourceLocation("betternether", "stalagnate_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WART, new ResourceLocation("betternether", "wart_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_WILLOW, new ResourceLocation("betternether", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ANCHOR_TREE, new ResourceLocation("betternether", "anchor_tree_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BONE_CIN, new ResourceLocation("betternether", "bone_cincinnasite_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BONE_REED, new ResourceLocation("betternether", "bone_reed_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MUSHROOM_FIR, new ResourceLocation("betternether", "mushroom_fir_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_MUSHROOM, new ResourceLocation("betternether", "nether_mushroom_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_REED, new ResourceLocation("betternether", "nether_reed_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NETHER_SAKURA, new ResourceLocation("betternether", "nether_sakura_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBEUS, new ResourceLocation("betternether", "rubeus_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STALAGNATE, new ResourceLocation("betternether", "stalagnate_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WART, new ResourceLocation("betternether", "wart_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BN_WILLOW, new ResourceLocation("betternether", "willow_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ANCHOR_TREE, new ResourceLocation("betternether", "anchor_tree_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BONE_CIN, new ResourceLocation("betternether", "bone_cincinnasite_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BONE_REED, new ResourceLocation("betternether", "bone_reed_door"));

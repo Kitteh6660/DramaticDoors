@@ -33,20 +33,20 @@ public class PrehistoricFaunaCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AGATHOXYLON, new ResourceLocation("prehistoricfauna", "agathoxylon_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ARAUCARIA, new ResourceLocation("prehistoricfauna", "araucaria_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRACHYPHYLLUM, new ResourceLocation("prehistoricfauna", "brachyphyllum_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GINKGO, new ResourceLocation("prehistoricfauna", "ginkgo_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEIDIPHYLLUM, new ResourceLocation("prehistoricfauna", "heidiphyllum_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIRIODENDRITES, new ResourceLocation("prehistoricfauna", "liriodendrites_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_METASEQUOIA, new ResourceLocation("prehistoricfauna", "metasequoia_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NEOCALAMITES, new ResourceLocation("prehistoricfauna", "neocalamites_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROTOJUNIPEROXYLON, new ResourceLocation("prehistoricfauna", "protojuniperoxylon_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROTOPICEOXYLON, new ResourceLocation("prehistoricfauna", "protopiceoxylon_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SCHILDERIA, new ResourceLocation("prehistoricfauna", "schilderia_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TROCHODENDROIDES, new ResourceLocation("prehistoricfauna", "trochodendroides_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WOODWORTHIA, new ResourceLocation("prehistoricfauna", "woodworthia_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ZAMITES, new ResourceLocation("prehistoricfauna", "zamites_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AGATHOXYLON, new ResourceLocation("prehistoricfauna", "agathoxylon_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ARAUCARIA, new ResourceLocation("prehistoricfauna", "araucaria_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRACHYPHYLLUM, new ResourceLocation("prehistoricfauna", "brachyphyllum_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GINKGO, new ResourceLocation("prehistoricfauna", "ginkgo_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HEIDIPHYLLUM, new ResourceLocation("prehistoricfauna", "heidiphyllum_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_LIRIODENDRITES, new ResourceLocation("prehistoricfauna", "liriodendrites_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_METASEQUOIA, new ResourceLocation("prehistoricfauna", "metasequoia_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_NEOCALAMITES, new ResourceLocation("prehistoricfauna", "neocalamites_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROTOJUNIPEROXYLON, new ResourceLocation("prehistoricfauna", "protojuniperoxylon_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PROTOPICEOXYLON, new ResourceLocation("prehistoricfauna", "protopiceoxylon_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SCHILDERIA, new ResourceLocation("prehistoricfauna", "schilderia_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TROCHODENDROIDES, new ResourceLocation("prehistoricfauna", "trochodendroides_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WOODWORTHIA, new ResourceLocation("prehistoricfauna", "woodworthia_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ZAMITES, new ResourceLocation("prehistoricfauna", "zamites_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AGATHOXYLON, new ResourceLocation("prehistoricfauna", "agathoxylon_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ARAUCARIA, new ResourceLocation("prehistoricfauna", "araucaria_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BRACHYPHYLLUM, new ResourceLocation("prehistoricfauna", "brachyphyllum_door"));

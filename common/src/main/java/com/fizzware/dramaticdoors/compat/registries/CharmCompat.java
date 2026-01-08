@@ -21,8 +21,8 @@ public class CharmCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHARM_AZALEA, new ResourceLocation("charm", "azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHARM_EBONY, new ResourceLocation("charm", "ebony_door"));
 		

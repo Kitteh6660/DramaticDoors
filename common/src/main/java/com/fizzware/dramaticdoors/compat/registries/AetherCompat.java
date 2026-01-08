@@ -20,7 +20,7 @@ public class AetherCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_AETHER_SKYROOT, new ResourceLocation("aether", "skyroot_door"), true);

@@ -24,11 +24,11 @@ public class ForbiddenArcanusCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DEORUM, new ResourceLocation("forbidden_arcanus", "deorum_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ARCANE_EDELWOOD, new ResourceLocation("forbidden_arcanus", "arcane_edelwood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AURUM, new ResourceLocation("forbidden_arcanus", "aurum_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EDELWOOD, new ResourceLocation("forbidden_arcanus", "edelwood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FUNGYSS, new ResourceLocation("forbidden_arcanus", "fungyss_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_DEORUM, new ResourceLocation("forbidden_arcanus", "deorum_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ARCANE_EDELWOOD, new ResourceLocation("forbidden_arcanus", "arcane_edelwood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AURUM, new ResourceLocation("forbidden_arcanus", "aurum_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EDELWOOD, new ResourceLocation("forbidden_arcanus", "edelwood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FUNGYSS, new ResourceLocation("forbidden_arcanus", "fungyss_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_DEORUM, new ResourceLocation("forbidden_arcanus", "deorum_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ARCANE_EDELWOOD, new ResourceLocation("forbidden_arcanus", "arcane_edelwood_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AURUM, new ResourceLocation("forbidden_arcanus", "aurum_door"));

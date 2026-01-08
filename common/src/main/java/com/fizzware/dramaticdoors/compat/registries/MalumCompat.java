@@ -21,8 +21,8 @@ public class MalumCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUNEWOOD, new ResourceLocation("malum", "runewood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SOULWOOD, new ResourceLocation("malum", "soulwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUNEWOOD, new ResourceLocation("malum", "runewood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SOULWOOD, new ResourceLocation("malum", "soulwood_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RUNEWOOD, new ResourceLocation("malum", "runewood_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SOULWOOD, new ResourceLocation("malum", "soulwood_door"));
 		

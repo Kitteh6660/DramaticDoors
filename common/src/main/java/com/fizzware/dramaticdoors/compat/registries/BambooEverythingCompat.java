@@ -21,8 +21,8 @@ public class BambooEverythingCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BE_BAMBOO, new ResourceLocation("bambooeverything", "bamboo_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BE_DRY_BAMBOO, new ResourceLocation("bambooeverything", "dry_bamboo_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BE_BAMBOO, new ResourceLocation("bambooeverything", "bamboo_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BE_DRY_BAMBOO, new ResourceLocation("bambooeverything", "dry_bamboo_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BE_BAMBOO, new ResourceLocation("bambooeverything", "bamboo_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BE_DRY_BAMBOO, new ResourceLocation("bambooeverything", "dry_bamboo_door"));
 		

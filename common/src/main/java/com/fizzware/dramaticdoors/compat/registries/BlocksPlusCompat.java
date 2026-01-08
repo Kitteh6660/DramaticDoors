@@ -40,12 +40,12 @@ public class BlocksPlusCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_COPPER, new ResourceLocation("blocksplus", "copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_GOLDEN, new ResourceLocation("blocksplus", "golden_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_DIAMOND, new ResourceLocation("blocksplus", "diamond_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_EMERALD, new ResourceLocation("blocksplus", "emerald_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_NETHERITE, new ResourceLocation("blocksplus", "netherite_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_MUSHROOM, new ResourceLocation("blocksplus", "mushroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_COPPER, new ResourceLocation("blocksplus", "copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_GOLDEN, new ResourceLocation("blocksplus", "golden_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_DIAMOND, new ResourceLocation("blocksplus", "diamond_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_EMERALD, new ResourceLocation("blocksplus", "emerald_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_NETHERITE, new ResourceLocation("blocksplus", "netherite_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BP_MUSHROOM, new ResourceLocation("blocksplus", "mushroom_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BP_COPPER, new ResourceLocation("blocksplus", "copper_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BP_GOLDEN, new ResourceLocation("blocksplus", "golden_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BP_DIAMOND, new ResourceLocation("blocksplus", "diamond_door"));

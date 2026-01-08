@@ -1,12 +1,11 @@
 package com.fizzware.dramaticdoors.fabric.addons.create;
 
 import java.lang.ref.WeakReference;
-import java.util.Map;
 
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
+import com.simibubi.create.api.behaviour.movement.MovementBehaviour;
 import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
 import com.simibubi.create.content.contraptions.behaviour.MovementContext;
 import com.simibubi.create.content.contraptions.elevator.ElevatorColumn;
 import com.simibubi.create.content.contraptions.elevator.ElevatorColumn.ColumnCoords;
@@ -17,8 +16,8 @@ import com.simibubi.create.content.trains.entity.Carriage;
 import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat.Chaser;
 
+import net.createmod.catnip.animation.LerpedFloat.Chaser;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Direction.AxisDirection;
@@ -28,18 +27,12 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate.StructureBlockInfo;
 import net.minecraft.world.phys.Vec3;
 
 public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 {
-	@Override
-	public boolean renderAsNormalBlockEntity() {
-		return true;
-	}
-
 	@Override
 	public boolean mustTickWhileDisabled() {
 		return true;
@@ -57,8 +50,7 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 			tickOpen(context, open);
 		}
 
-		Map<BlockPos, BlockEntity> tes = context.contraption.presentBlockEntities;
-		if (!(tes.get(context.localPos) instanceof TallFabricCreateSlidingDoorBlockEntity sdbe)) {
+		if (!(context.contraption.getBlockEntityClientSide(context.localPos) instanceof TallFabricCreateSlidingDoorBlockEntity sdbe)) {
 			return;
 		}
 		boolean wasSettled = sdbe.getAnimation().settled();
@@ -86,10 +78,17 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 		if (info == null || !info.state().hasProperty(TallDoorBlock.OPEN)) {
 			return;
 		}
-		if (info.state().getValue(TallDoorBlock.THIRD) == TripleBlockPart.LOWER) {
+		// if (info.state().getValue(TallDoorBlock.THIRD) == TripleBlockPart.LOWER) {
 			toggleDoor(pos, contraption, info);
+		// }
+		Direction facing = getDoorFacing(context);
+		BlockPos inWorldDoor = BlockPos.containing(context.position).relative(facing);
+		BlockState inWorldDoorState = context.world.getBlockState(inWorldDoor);
+		if (inWorldDoorState.getBlock() instanceof TallDoorBlock db && inWorldDoorState.hasProperty(TallDoorBlock.OPEN)) {
+			if (inWorldDoorState.hasProperty(TallDoorBlock.FACING) && inWorldDoorState.getOptionalValue(TallDoorBlock.FACING).orElse(Direction.UP).getAxis() == facing.getAxis()) {
+				db.setOpen(null, context.world, inWorldDoorState, inWorldDoor, shouldOpen);
+			}
 		}
-
 		if (shouldOpen) {
 			context.world.playSound(null, BlockPos.containing(context.position), SoundEvents.IRON_DOOR_OPEN, SoundSource.BLOCKS, .125f, 1);
 		}
@@ -118,8 +117,9 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 	}
 
 	protected boolean shouldUpdate(MovementContext context, boolean shouldOpen) {
-		if (context.firstMovement && shouldOpen)
+		if (context.firstMovement && shouldOpen) {
 			return false;
+		}
 		if (!context.data.contains("Open")) {
 			context.data.putBoolean("Open", shouldOpen);
 			return true;
@@ -130,8 +130,9 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 	}
 
 	protected boolean shouldOpen(MovementContext context) {
-		if (context.disabled)
+		if (context.disabled) {
 			return false;
+		}
 		Contraption contraption = context.contraption;
 		boolean canOpen = context.motion.length() < 1 / 128f && !contraption.entity.isStalled() || contraption instanceof ElevatorContraption ec && ec.arrived;
 

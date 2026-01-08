@@ -24,11 +24,11 @@ public class DeepAetherCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CONBERRY, new ResourceLocation("deep_aether", "conberry_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CRUDEROOT, new ResourceLocation("deep_aether", "cruderoot_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROSEROOT, new ResourceLocation("deep_aether", "roseroot_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SUNROOT, new ResourceLocation("deep_aether", "sunroot_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YAGROOT, new ResourceLocation("deep_aether", "yagroot_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CONBERRY, new ResourceLocation("deep_aether", "conberry_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CRUDEROOT, new ResourceLocation("deep_aether", "cruderoot_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROSEROOT, new ResourceLocation("deep_aether", "roseroot_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SUNROOT, new ResourceLocation("deep_aether", "sunroot_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_YAGROOT, new ResourceLocation("deep_aether", "yagroot_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CONBERRY, new ResourceLocation("deep_aether", "conberry_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CRUDEROOT, new ResourceLocation("deep_aether", "cruderoot_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ROSEROOT, new ResourceLocation("deep_aether", "roseroot_door"));

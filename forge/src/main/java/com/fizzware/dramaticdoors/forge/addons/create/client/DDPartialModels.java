@@ -9,6 +9,7 @@ import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.createmod.catnip.data.Couple;
 import net.minecraft.resources.ResourceLocation;
 
+@SuppressWarnings("removal")
 public class DDPartialModels
 {
 	public static final Map<ResourceLocation, Couple<PartialModel>> TALL_FOLDING_DOORS = new HashMap<>();

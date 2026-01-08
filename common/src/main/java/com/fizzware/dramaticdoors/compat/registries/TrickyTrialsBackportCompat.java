@@ -221,5 +221,40 @@ public class TrickyTrialsBackportCompat
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WAXED_WEATHERED_COPPER, new ResourceLocation("minecraft_121_update", "waxedweatheredcopperdoor"), "tall_waxed_copper_door");
 			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WAXED_OXIDIZED_COPPER, new ResourceLocation("minecraft_121_update", "waxedoxidizedcopperdoor"), "tall_waxed_copper_door");
 		}
+		/*if (Compats.isModLoaded("vanillabackport", checker)) {
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPER, new ResourceLocation("vanillabackport", "copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_EXPOSED_COPPER, new ResourceLocation("vanillabackport", "exposed_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WEATHERED_COPPER, new ResourceLocation("vanillabackport", "weathered_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_OXIDIZED_COPPER, new ResourceLocation("vanillabackport", "oxidized_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_COPPER, new ResourceLocation("vanillabackport", "waxed_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_EXPOSED_COPPER, new ResourceLocation("vanillabackport", "waxed_exposed_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_WEATHERED_COPPER, new ResourceLocation("vanillabackport", "waxed_weathered_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WAXED_OXIDIZED_COPPER, new ResourceLocation("vanillabackport", "waxed_oxidized_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_COPPER, new ResourceLocation("vanillabackport", "copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_EXPOSED_COPPER, new ResourceLocation("vanillabackport", "exposed_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WEATHERED_COPPER, new ResourceLocation("vanillabackport", "weathered_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_OXIDIZED_COPPER, new ResourceLocation("vanillabackport", "oxidized_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WAXED_COPPER, new ResourceLocation("vanillabackport", "waxed_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WAXED_EXPOSED_COPPER, new ResourceLocation("vanillabackport", "waxed_exposed_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WAXED_WEATHERED_COPPER, new ResourceLocation("vanillabackport", "waxed_weathered_copper_door"));
+			DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_WAXED_OXIDIZED_COPPER, new ResourceLocation("vanillabackport", "waxed_oxidized_copper_door"));
+			
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_COPPER, new ResourceLocation("vanillabackport", "copper_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_EXPOSED_COPPER, new ResourceLocation("vanillabackport", "exposed_copper_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WEATHERED_COPPER, new ResourceLocation("vanillabackport", "weathered_copper_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_OXIDIZED_COPPER, new ResourceLocation("vanillabackport", "oxidized_copper_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WAXED_COPPER, new ResourceLocation("vanillabackport", "waxed_copper_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WAXED_EXPOSED_COPPER, new ResourceLocation("vanillabackport", "waxed_exposed_copper_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WAXED_WEATHERED_COPPER, new ResourceLocation("vanillabackport", "waxed_weathered_copper_door"), false);
+			DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_WAXED_OXIDIZED_COPPER, new ResourceLocation("vanillabackport", "waxed_oxidized_copper_door"), false);
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_COPPER, new ResourceLocation("vanillabackport", "copper_door"), "tall_copper_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_EXPOSED_COPPER, new ResourceLocation("vanillabackport", "exposed_copper_door"), "tall_copper_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WEATHERED_COPPER, new ResourceLocation("vanillabackport", "weathered_copper_door"), "tall_copper_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_OXIDIZED_COPPER, new ResourceLocation("vanillabackport", "oxidized_copper_door"), "tall_copper_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WAXED_COPPER, new ResourceLocation("vanillabackport", "copper_door"), "tall_waxed_copper_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WAXED_EXPOSED_COPPER, new ResourceLocation("vanillabackport", "waxed_exposed_copper_door"), "tall_waxed_copper_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WAXED_WEATHERED_COPPER, new ResourceLocation("vanillabackport", "waxed_weathered_copper_door"), "tall_waxed_copper_door");
+			DDCompatRecipe.createTallDoorRecipe(DDNames.TALL_WAXED_OXIDIZED_COPPER, new ResourceLocation("vanillabackport", "waxed_oxidized_copper_door"), "tall_waxed_copper_door");
+		}*/
 	}
 }

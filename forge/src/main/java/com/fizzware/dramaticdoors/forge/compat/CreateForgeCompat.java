@@ -2,6 +2,7 @@ package com.fizzware.dramaticdoors.forge.compat;
 
 import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DDRegistry;
+import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.compat.registries.CreateCompat;
 import com.fizzware.dramaticdoors.forge.addons.create.ShortDoorMovingInteraction;
 import com.fizzware.dramaticdoors.forge.addons.create.TallDoorMovingInteraction;
@@ -27,6 +28,7 @@ public class CreateForgeCompat
 
 	private static boolean initializedBehaviours = false;
 	
+	@SuppressWarnings("removal")
 	public static void registerCompat() {
 		if (!CreateCompat.initialized) {
 			CreateCompat.TALL_ANDESITE_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("create", "andesite_door"), Blocks.IRON_DOOR), BlockSetType.IRON, true);
@@ -34,12 +36,21 @@ public class CreateForgeCompat
 			CreateCompat.TALL_COPPER_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("create", "copper_door"), Blocks.IRON_DOOR), BlockSetType.IRON, true);
 			CreateCompat.TALL_FRAMED_GLASS_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("create", "framed_glass_door"), Blocks.IRON_DOOR), BlockSetType.IRON, false);
 			CreateCompat.TALL_TRAIN_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("create", "train_door"), Blocks.IRON_DOOR), BlockSetType.IRON, false);
+			if (Compats.isModLoaded("tfmg", Compats.modChecker)) {
+				CreateCompat.TALL_ALUMINUM_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("tfmg", "aluminum_door"), Blocks.IRON_DOOR), BlockSetType.IRON, true);
+				CreateCompat.TALL_STEEL_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("tfmg", "steel_door"), Blocks.IRON_DOOR), BlockSetType.IRON, true);
+				CreateCompat.TALL_HEAVY_CASING_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("tfmg", "heavy_casing_door"), Blocks.IRON_DOOR), BlockSetType.IRON, true);				
+				CreateCompat.TALL_HEAVY_PLATED_DOOR = new TallForgeCreateSlidingDoorBlock(DDRegistry.getBlockFromResourceLocation(new ResourceLocation("tfmg", "heavy_plated_door"), Blocks.IRON_DOOR), BlockSetType.IRON, true);
+			}
 		}
 		if (FMLEnvironment.dist == Dist.CLIENT) {
 	    	DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_ANDESITE, "create/tall_andesite_door");
 	    	DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_COPPER, "create/tall_copper_door");
+			if (Compats.isModLoaded("tfmg", Compats.modChecker)) {
+		    	DDPartialModels.putFoldingDoor(DDNames.TALL_TFMG_STEEL, "create/tall_steel_door");
+			}
 		}
-		CreateCompat.registerCompat();
+		CreateCompat.registerCompat(Compats.modChecker);
     	if (!initializedBehaviours) {
     		initializedBehaviours = true;
 			MovingInteractionBehaviour.REGISTRY.registerProvider(SimpleRegistry.Provider.forBlockTag(DDBlockTags.SHORT_WOODEN_DOORS, new ShortDoorMovingInteraction()));
@@ -52,6 +63,13 @@ public class CreateForgeCompat
 			MovementBehaviour.REGISTRY.register(CreateCompat.TALL_COPPER_DOOR, new TallSlidingDoorMovementBehaviour());
 			MovementBehaviour.REGISTRY.register(CreateCompat.TALL_FRAMED_GLASS_DOOR, new TallSlidingDoorMovementBehaviour());
 			MovementBehaviour.REGISTRY.register(CreateCompat.TALL_TRAIN_DOOR, new TallSlidingDoorMovementBehaviour());
+			
+			if (Compats.isModLoaded("tfmg", Compats.modChecker)) {
+				MovementBehaviour.REGISTRY.register(CreateCompat.TALL_ALUMINUM_DOOR, new TallSlidingDoorMovementBehaviour());
+				MovementBehaviour.REGISTRY.register(CreateCompat.TALL_STEEL_DOOR, new TallSlidingDoorMovementBehaviour());
+				MovementBehaviour.REGISTRY.register(CreateCompat.TALL_HEAVY_CASING_DOOR, new TallSlidingDoorMovementBehaviour());
+				MovementBehaviour.REGISTRY.register(CreateCompat.TALL_HEAVY_PLATED_DOOR, new TallSlidingDoorMovementBehaviour());				
+			}
     	}
 	}
 }

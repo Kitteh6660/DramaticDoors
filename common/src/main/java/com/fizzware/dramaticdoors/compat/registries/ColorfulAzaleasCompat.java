@@ -26,13 +26,13 @@ public class ColorfulAzaleasCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AZULE_AZALEA, new ResourceLocation("colorfulazaleas", "azule_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRIGHT_AZALEA, new ResourceLocation("colorfulazaleas", "bright_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FISS_AZALEA, new ResourceLocation("colorfulazaleas", "fiss_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROZE_AZALEA, new ResourceLocation("colorfulazaleas", "roze_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TECAL_AZALEA, new ResourceLocation("colorfulazaleas", "tecal_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TITANIUM_AZALEA, new ResourceLocation("colorfulazaleas", "titanium_azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WALNUT_AZALEA, new ResourceLocation("colorfulazaleas", "walnut_azalea_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AZULE_AZALEA, new ResourceLocation("colorfulazaleas", "azule_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BRIGHT_AZALEA, new ResourceLocation("colorfulazaleas", "bright_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_FISS_AZALEA, new ResourceLocation("colorfulazaleas", "fiss_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ROZE_AZALEA, new ResourceLocation("colorfulazaleas", "roze_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TECAL_AZALEA, new ResourceLocation("colorfulazaleas", "tecal_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TITANIUM_AZALEA, new ResourceLocation("colorfulazaleas", "titanium_azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_WALNUT_AZALEA, new ResourceLocation("colorfulazaleas", "walnut_azalea_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AZULE_AZALEA, new ResourceLocation("colorfulazaleas", "azule_azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BRIGHT_AZALEA, new ResourceLocation("colorfulazaleas", "bright_azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_FISS_AZALEA, new ResourceLocation("colorfulazaleas", "fiss_azalea_door"));

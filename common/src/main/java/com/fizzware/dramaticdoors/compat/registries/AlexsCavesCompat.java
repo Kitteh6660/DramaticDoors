@@ -22,8 +22,8 @@ public class AlexsCavesCompat
 	}
 	
 	private static void registerRecipes(CompatChecker checker) {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PEWEN, new ResourceLocation("alexscaves", "pewen_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_PEWEN, new ResourceLocation("alexscaves", "pewen_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_PEWEN, new ResourceLocation("alexscaves", "pewen_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_THORNWOOD, new ResourceLocation("alexscaves", "thornwood_door"));
 		

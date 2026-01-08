@@ -22,9 +22,9 @@ public class AncientAetherCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AEROGEL_GLASS, new ResourceLocation("ancient_aether", "aerogel_glass_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HIGHSPROOT, new ResourceLocation("ancient_aether", "highsproot_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SAKURA, new ResourceLocation("ancient_aether", "sakura_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AEROGEL_GLASS, new ResourceLocation("ancient_aether", "aerogel_glass_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HIGHSPROOT, new ResourceLocation("ancient_aether", "highsproot_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_SAKURA, new ResourceLocation("ancient_aether", "sakura_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AEROGEL_GLASS, new ResourceLocation("ancient_aether", "aerogel_glass_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HIGHSPROOT, new ResourceLocation("ancient_aether", "highsproot_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_SAKURA, new ResourceLocation("ancient_aether", "sakura_door"));

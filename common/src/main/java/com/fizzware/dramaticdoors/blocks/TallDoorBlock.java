@@ -203,7 +203,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock
             return InteractionResult.PASS;
         } 
     	else {
-        	if (Compats.SUPPLEMENTARIES_INSTALLED && (this == SupplementariesCompat.TALL_GOLD_DOOR && state.getValue(POWERED)) || (this == SupplementariesCompat.TALL_SILVER_DOOR && !state.getValue(POWERED))) {
+        	if (Compats.SUPPLEMENTARIES_INSTALLED && (this == SupplementariesCompat.TALL_GOLD_DOOR && state.getValue(POWERED))/* || (this == SupplementariesCompat.TALL_SILVER_DOOR && !state.getValue(POWERED))*/) {
         		return InteractionResult.PASS;
         	}
         	tryOpenDoubleDoor(level, state, pos);
@@ -281,7 +281,7 @@ public class TallDoorBlock extends Block implements SimpleWaterloggedBlock
             }
         }
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	if (Compats.SUPPLEMENTARIES_INSTALLED && (this == SupplementariesCompat.TALL_GOLD_DOOR || this == SupplementariesCompat.TALL_SILVER_DOOR)) {
+        	if (Compats.SUPPLEMENTARIES_INSTALLED && (this == SupplementariesCompat.TALL_GOLD_DOOR/* || this == SupplementariesCompat.TALL_SILVER_DOOR*/)) {
         		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {

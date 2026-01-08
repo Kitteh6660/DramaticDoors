@@ -22,9 +22,9 @@ public class AetherGravitationCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AERFIN, new ResourceLocation("gravitation", "aerfin_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BELADON, new ResourceLocation("gravitation", "beladon_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ENCHANTED, new ResourceLocation("gravitation", "enchanted_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AERFIN, new ResourceLocation("gravitation", "aerfin_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BELADON, new ResourceLocation("gravitation", "beladon_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_ENCHANTED, new ResourceLocation("gravitation", "enchanted_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AERFIN, new ResourceLocation("gravitation", "aerfin_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BELADON, new ResourceLocation("gravitation", "beladon_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_ENCHANTED, new ResourceLocation("gravitation", "enchanted_door"));

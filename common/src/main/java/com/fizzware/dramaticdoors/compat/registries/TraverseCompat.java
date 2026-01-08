@@ -20,7 +20,7 @@ public class TraverseCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_TRAVERSE_FIR, new ResourceLocation("traverse", "fir_door"), true);

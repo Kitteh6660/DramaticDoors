@@ -20,7 +20,7 @@ public class IntegratedDynamicsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_MENRIL, new ResourceLocation("integrateddynamics", "menril_door"), true);

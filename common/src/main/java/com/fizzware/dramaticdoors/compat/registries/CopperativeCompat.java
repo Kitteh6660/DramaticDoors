@@ -79,14 +79,14 @@ public class CopperativeCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_COPPER, new ResourceLocation("copperative", "copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_EXPOSED_COPPER, new ResourceLocation("copperative", "exposed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WEATHERED_COPPER, new ResourceLocation("copperative", "weathered_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_OXIDIZED_COPPER, new ResourceLocation("copperative", "oxidized_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WAXED_COPPER, new ResourceLocation("copperative", "waxed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WAXED_EXPOSED_COPPER, new ResourceLocation("copperative", "waxed_exposed_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WAXED_WEATHERED_COPPER, new ResourceLocation("copperative", "waxed_weathered_copper_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WAXED_OXIDIZED_COPPER, new ResourceLocation("copperative", "waxed_oxidized_copper_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_COPPER, new ResourceLocation("copperative", "copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_EXPOSED_COPPER, new ResourceLocation("copperative", "exposed_copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WEATHERED_COPPER, new ResourceLocation("copperative", "weathered_copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_OXIDIZED_COPPER, new ResourceLocation("copperative", "oxidized_copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WAXED_COPPER, new ResourceLocation("copperative", "waxed_copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WAXED_EXPOSED_COPPER, new ResourceLocation("copperative", "waxed_exposed_copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WAXED_WEATHERED_COPPER, new ResourceLocation("copperative", "waxed_weathered_copper_door"), false);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_COPPERATIVE_WAXED_OXIDIZED_COPPER, new ResourceLocation("copperative", "waxed_oxidized_copper_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_COPPERATIVE_COPPER, new ResourceLocation("copperative", "copper_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_COPPERATIVE_EXPOSED_COPPER, new ResourceLocation("copperative", "exposed_copper_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_COPPERATIVE_WEATHERED_COPPER, new ResourceLocation("copperative", "weathered_copper_door"));

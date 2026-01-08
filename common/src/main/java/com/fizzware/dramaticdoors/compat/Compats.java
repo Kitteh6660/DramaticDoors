@@ -69,8 +69,17 @@ public class Compats
 		if (isModLoaded("alexscaves", checker)) {
 			AlexsCavesCompat.registerCompat(checker);
 		}
+		if (isModLoaded("allthemodium", checker)) {
+			AllthemodiumCompat.registerCompat();
+		}
 		if (isModLoaded("architects_palette", checker)) {
 			ArchitectsPaletteCompat.registerCompat();
+		}
+		if (isModLoaded("ars_nouveau", checker)) {
+			ArsNouveauCompat.registerCompat(checker);
+		}
+		if (isModLoaded("arts_and_crafts", checker)) {
+			ArtsAndCraftsCompat.registerCompat();
 		}
 		if (isModLoaded("atum", checker)) {
 			AtumCompat.registerCompat();
@@ -90,9 +99,9 @@ public class Compats
 		if (isModLoaded("betternether", checker)) {
 			BetterNetherCompat.registerCompat();
 		}
-		/*if (isModLoaded("thebetweenlands", checker)) {
-			BetweenlandsCompat.registerCompat(); // NYI: Not Yet Implemented
-		}*/
+		if (isModLoaded("thebetweenlands", checker)) {
+			BetweenlandsCompat.registerCompat();
+		}
 		if (isModLoaded("bewitchment", checker)) {
 			BewitchmentCompat.registerCompat(checker);
 		}
@@ -153,8 +162,14 @@ public class Compats
 		if (isModLoaded("createdeco", checker)) {
 			CreateDecoCompat.registerCompat();
 		}
-		if (isModLoaded("create_things_and_misc", checker)) {
-			CreateMiscThingsCompat.registerCompat();
+		/*if (isModLoaded("tfmg", checker)) { // NYI
+			CreateTFMGCompat.registerCompat();
+		}*/
+		if (isModLoaded("cozyfoods", checker)) {
+			CozyFoodsCompat.registerCompat();
+		}
+		if (isModLoaded("crabbersdelight", checker)) {
+			CrabbersDelightCompat.registerCompat();
 		}
 		if (isModLoaded("darkerdepths", checker)) {
 			DarkerDepthsCompat.registerCompat();
@@ -170,6 +185,9 @@ public class Compats
 		}
 		if (isModLoaded("desolation", checker)) {
 			DesolationCompat.registerCompat();
+		}
+		if (isModLoaded("dungeonsdelight", checker)) {
+			DungeonsDelightCompat.registerCompat();
 		}
 		if (isModLoaded("dustrial_decor", checker)) {
 			DustrialDecorCompat.registerCompat();
@@ -192,6 +210,9 @@ public class Compats
 				HabitatCompat.registerCompat();
 			}
 		}
+		if (isModLoaded("eternal_starlight", checker)) {
+			EternalStarlightCompat.registerCompat();
+		}
 		if (isModLoaded("phantasm", checker)) {
 			EndPhantasmCompat.registerCompat();
 		}
@@ -200,6 +221,9 @@ public class Compats
 		}
 		if (isModLoaded("enlightened_end", checker)) {
 			EnlightenedEndCompat.registerCompat();
+		}
+		if (isModLoaded("enderio", checker)) {
+			EnderIOCompat.registerCompat();
 		}
 		if (isModLoaded("everythingcopper", checker)) {
 			EverythingCopperCompat.registerCompat();
@@ -240,6 +264,9 @@ public class Compats
 		if (isModLoaded("integrateddynamics", checker)) {
 			IntegratedDynamicsCompat.registerCompat();
 		}
+		if (isModLoaded("kaleidoscopic", checker)) {
+			KaleidoscopicCompat.registerCompat(checker);
+		}
 		if (isModLoaded("doapi", checker)) {
 			LetsDoCompat.registerCompat(checker);
 		}
@@ -251,6 +278,9 @@ public class Compats
 		}
 		if (isModLoaded("modern_glass_doors", checker)) {
 			ModernGlassDoorsCompat.registerCompat();
+		}
+		if (isModLoaded("modernlife", checker) && isModLoaded("modernlifepatch", checker)) {
+			ModernLifeCompat.registerCompat();
 		}
 		if (isModLoaded("ms", checker)) {
 			MoShizCompat.registerCompat();
@@ -275,6 +305,12 @@ public class Compats
 		}
 		if (isModLoaded("newworld", checker)) {
 			NewWorldCompat.registerCompat();
+		}
+		if (isModLoaded("oreganized", checker)) {
+			OreganizedCompat.registerCompat();
+		}
+		if (isModLoaded("outer_end", checker)) {
+			OuterEndCompat.registerCompat();
 		}
     	if (isModLoaded("pokecube", checker)) {
     		PokecubeCompat.registerCompat();
@@ -339,6 +375,9 @@ public class Compats
 		if (isModLoaded("undergarden", checker)) {
 			UndergardenCompat.registerCompat();
 		}
+		if (isModLoaded("viavens_flowers", checker)) {
+			ViavensFlowersCompat.registerCompat();
+		}
 		if (isModLoaded("wilderwild", checker)) {
 			WilderWildCompat.registerCompat();
 		}
@@ -365,12 +404,9 @@ public class Compats
     	if (isModLoaded("tricky_trials", checker) || isModLoaded("trials", checker) || isModLoaded("copperandtuffbackport", checker) || isModLoaded("minecraft_121_update", checker)) {
     		TrickyTrialsBackportCompat.registerCompat(checker);
     	}
-    	if (isModLoaded("earlyupdate_two", checker) || isModLoaded("palegardenbackport", checker)) {
+    	if (isModLoaded("earlyupdate_two", checker) || isModLoaded("palegardenbackport", checker) || isModLoaded("vanillabackport", checker)) {
     		PaleGardenBackportCompat.registerCompat(checker);
     	}
-		if (isModLoaded("modernlife", checker) && isModLoaded("modernlifepatch", checker)) {
-			ModernLifeCompat.registerCompat();
-		}
     	initializedCompat = true;
     }
     

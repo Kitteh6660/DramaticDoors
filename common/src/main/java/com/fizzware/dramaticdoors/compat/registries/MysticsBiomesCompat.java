@@ -25,12 +25,12 @@ public class MysticsBiomesCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_MAPLE, new ResourceLocation("mysticsbiomes", "maple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_PEACH, new ResourceLocation("mysticsbiomes", "peach_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_SEA_FOAM, new ResourceLocation("mysticsbiomes", "sea_foam_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_MAPLE, new ResourceLocation("mysticsbiomes", "maple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_PEACH, new ResourceLocation("mysticsbiomes", "peach_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_SEA_FOAM, new ResourceLocation("mysticsbiomes", "sea_foam_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_MB_STRAWBERRY, new ResourceLocation("mysticsbiomes", "strawberry_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_CHERRY, new ResourceLocation("mysticsbiomes", "cherry_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_JACARANDA, new ResourceLocation("mysticsbiomes", "jacaranda_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_MB_MAPLE, new ResourceLocation("mysticsbiomes", "maple_door"));

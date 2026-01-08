@@ -23,10 +23,10 @@ public class AdAstraCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AA_STEEL, new ResourceLocation("ad_astra", "steel_door"), false);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AERONOS, new ResourceLocation("ad_astra", "aeronos_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GLACIAN, new ResourceLocation("ad_astra", "glacian_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_STROPHAR, new ResourceLocation("ad_astra", "strophar_door"));

@@ -21,8 +21,8 @@ public class EndlessBiomesCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CHESTNUT, new ResourceLocation("endlessbiomes", "penumbra_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_HOLLY, new ResourceLocation("endlessbiomes", "twisted_door"));
 		

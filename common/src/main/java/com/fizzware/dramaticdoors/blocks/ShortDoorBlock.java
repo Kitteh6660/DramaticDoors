@@ -155,7 +155,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
             return InteractionResult.PASS;
         } 
     	else {
-        	if (Compats.SUPPLEMENTARIES_INSTALLED && (this == SupplementariesCompat.SHORT_GOLD_DOOR && state.getValue(POWERED)) || (this == SupplementariesCompat.SHORT_SILVER_DOOR && !state.getValue(POWERED))) {
+        	if (Compats.SUPPLEMENTARIES_INSTALLED && (this == SupplementariesCompat.SHORT_GOLD_DOOR && state.getValue(POWERED))/* || (this == SupplementariesCompat.SHORT_SILVER_DOOR && !state.getValue(POWERED))*/) {
         		return InteractionResult.PASS;
         	}
         	tryOpenDoubleDoor(level, state, pos);
@@ -220,7 +220,7 @@ public class ShortDoorBlock extends Block implements SimpleWaterloggedBlock {
     public void neighborChanged(BlockState state, Level level, BlockPos pos, Block blockIn, BlockPos fromPos, boolean isMoving) {
         boolean flag = level.hasNeighborSignal(pos);
         if (blockIn != this && flag != state.getValue(POWERED)) {
-        	if (Compats.SUPPLEMENTARIES_INSTALLED && this == SupplementariesCompat.SHORT_GOLD_DOOR || this == SupplementariesCompat.SHORT_SILVER_DOOR) {
+        	if (Compats.SUPPLEMENTARIES_INSTALLED && this == SupplementariesCompat.SHORT_GOLD_DOOR/* || this == SupplementariesCompat.SHORT_SILVER_DOOR*/) {
         		level.setBlock(pos, state.setValue(POWERED, flag), 2);
         	}
         	else {

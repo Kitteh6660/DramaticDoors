@@ -20,7 +20,7 @@ public class TechRebornCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBBER, new ResourceLocation("techreborn", "rubber_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RUBBER, new ResourceLocation("techreborn", "rubber_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RUBBER, new ResourceLocation("techreborn", "rubber_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RUBBER, new ResourceLocation("techreborn", "rubber_door"), true);

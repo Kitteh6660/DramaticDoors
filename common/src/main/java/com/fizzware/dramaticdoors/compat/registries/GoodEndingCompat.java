@@ -21,8 +21,8 @@ public class GoodEndingCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GE_CYPRESS, new ResourceLocation("goodending", "cypress_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_GE_MUDDY_OAK, new ResourceLocation("goodending", "muddy_oak_door"));
 		

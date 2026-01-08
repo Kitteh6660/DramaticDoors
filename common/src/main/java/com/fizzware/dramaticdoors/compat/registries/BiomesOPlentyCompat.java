@@ -32,19 +32,19 @@ public class BiomesOPlentyCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_DEAD, new ResourceLocation("biomesoplenty", "dead_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_EMPYREAL, new ResourceLocation("biomesoplenty", "empyreal_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_FIR, new ResourceLocation("biomesoplenty", "fir_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_HELLBARK, new ResourceLocation("biomesoplenty", "hellbark_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_JACARANDA, new ResourceLocation("biomesoplenty", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAGIC, new ResourceLocation("biomesoplenty", "magic_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAHOGANY, new ResourceLocation("biomesoplenty", "mahogany_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAPLE, new ResourceLocation("biomesoplenty", "maple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_PALM, new ResourceLocation("biomesoplenty", "palm_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_PINE, new ResourceLocation("biomesoplenty", "pine_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_REDWOOD, new ResourceLocation("biomesoplenty", "redwood_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_UMBRAN, new ResourceLocation("biomesoplenty", "umbran_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_WILLOW, new ResourceLocation("biomesoplenty", "willow_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_DEAD, new ResourceLocation("biomesoplenty", "dead_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_EMPYREAL, new ResourceLocation("biomesoplenty", "empyreal_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_FIR, new ResourceLocation("biomesoplenty", "fir_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_HELLBARK, new ResourceLocation("biomesoplenty", "hellbark_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_JACARANDA, new ResourceLocation("biomesoplenty", "jacaranda_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAGIC, new ResourceLocation("biomesoplenty", "magic_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAHOGANY, new ResourceLocation("biomesoplenty", "mahogany_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_MAPLE, new ResourceLocation("biomesoplenty", "maple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_PALM, new ResourceLocation("biomesoplenty", "palm_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_PINE, new ResourceLocation("biomesoplenty", "pine_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_REDWOOD, new ResourceLocation("biomesoplenty", "redwood_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_UMBRAN, new ResourceLocation("biomesoplenty", "umbran_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_BOP_WILLOW, new ResourceLocation("biomesoplenty", "willow_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BOP_DEAD, new ResourceLocation("biomesoplenty", "dead_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BOP_EMPYREAL, new ResourceLocation("biomesoplenty", "empyreal_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_BOP_FIR, new ResourceLocation("biomesoplenty", "fir_door"));

@@ -33,20 +33,20 @@ public class TerraqueousCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_LIGHT_CLOUD, new ResourceLocation("terraqueous", "light_cloud_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_DENSE_CLOUD, new ResourceLocation("terraqueous", "dense_cloud_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_STORM_CLOUD, new ResourceLocation("terraqueous", "storm_cloud_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_APPLE, new ResourceLocation("terraqueous", "apple_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_BANANA, new ResourceLocation("terraqueous", "banana_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_CHERRY, new ResourceLocation("terraqueous", "cherry_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_COCONUT, new ResourceLocation("terraqueous", "coconut_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_LEMON, new ResourceLocation("terraqueous", "lemon_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_MANGO, new ResourceLocation("terraqueous", "mango_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_MULBERRY, new ResourceLocation("terraqueous", "mulberry_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_ORANGE, new ResourceLocation("terraqueous", "orange_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PEACH, new ResourceLocation("terraqueous", "peach_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PEAR, new ResourceLocation("terraqueous", "pear_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PLUM, new ResourceLocation("terraqueous", "plum_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_LIGHT_CLOUD, new ResourceLocation("terraqueous", "light_cloud_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_DENSE_CLOUD, new ResourceLocation("terraqueous", "dense_cloud_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_STORM_CLOUD, new ResourceLocation("terraqueous", "storm_cloud_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_APPLE, new ResourceLocation("terraqueous", "apple_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_BANANA, new ResourceLocation("terraqueous", "banana_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_CHERRY, new ResourceLocation("terraqueous", "cherry_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_COCONUT, new ResourceLocation("terraqueous", "coconut_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_LEMON, new ResourceLocation("terraqueous", "lemon_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_MANGO, new ResourceLocation("terraqueous", "mango_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_MULBERRY, new ResourceLocation("terraqueous", "mulberry_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_ORANGE, new ResourceLocation("terraqueous", "orange_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PEACH, new ResourceLocation("terraqueous", "peach_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PEAR, new ResourceLocation("terraqueous", "pear_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_TQ_PLUM, new ResourceLocation("terraqueous", "plum_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TQ_LIGHT_CLOUD, new ResourceLocation("terraqueous", "light_cloud_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TQ_DENSE_CLOUD, new ResourceLocation("terraqueous", "dense_cloud_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_TQ_STORM_CLOUD, new ResourceLocation("terraqueous", "storm_cloud_door"));

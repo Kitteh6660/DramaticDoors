@@ -22,9 +22,9 @@ public class QuarkCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_QUARK_ANCIENT, new ResourceLocation("quark", "ancient_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_QUARK_AZALEA, new ResourceLocation("quark", "azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_QUARK_BLOSSOM, new ResourceLocation("quark", "blossom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_QUARK_ANCIENT, new ResourceLocation("quark", "ancient_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_QUARK_AZALEA, new ResourceLocation("quark", "azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_QUARK_BLOSSOM, new ResourceLocation("quark", "blossom_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_QUARK_ANCIENT, new ResourceLocation("quark", "ancient_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_QUARK_AZALEA, new ResourceLocation("quark", "azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_QUARK_BLOSSOM, new ResourceLocation("quark", "blossom_door"));

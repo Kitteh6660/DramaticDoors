@@ -20,7 +20,7 @@ public class CobblemonCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_APRICORN, new ResourceLocation("cobblemon", "apricorn_door"), true);

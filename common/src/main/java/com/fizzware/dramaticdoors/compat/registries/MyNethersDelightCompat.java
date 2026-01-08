@@ -20,7 +20,7 @@ public class MyNethersDelightCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POWDERY, new ResourceLocation("mynethersdelight", "powdery_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_POWDERY, new ResourceLocation("mynethersdelight", "powdery_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_POWDERY, new ResourceLocation("mynethersdelight", "powdery_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_POWDERY, new ResourceLocation("mynethersdelight", "powdery_door"), true);

@@ -6,6 +6,7 @@ import com.fizzware.dramaticdoors.forge.addons.create.TallForgeCreateSlidingDoor
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.simibubi.create.foundation.blockEntity.renderer.SafeBlockEntityRenderer;
 
 import dev.engine_room.flywheel.lib.model.baked.PartialModel;
 import net.createmod.catnip.data.Couple;
@@ -15,7 +16,6 @@ import net.createmod.catnip.render.CachedBuffers;
 import net.createmod.catnip.render.SuperByteBuffer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider.Context;
 import net.minecraft.core.Direction;
 import net.minecraft.util.Mth;
@@ -24,12 +24,12 @@ import net.minecraft.world.level.block.state.properties.DoorHingeSide;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.registries.ForgeRegistries;
 
-public class TallSlidingDoorBlockRenderer implements BlockEntityRenderer<TallForgeCreateSlidingDoorBlockEntity>
+public class TallSlidingDoorBlockRenderer extends SafeBlockEntityRenderer<TallForgeCreateSlidingDoorBlockEntity>
 {		
 	public TallSlidingDoorBlockRenderer(Context context) {}
 	
 	@Override
-	public final void render(TallForgeCreateSlidingDoorBlockEntity be, float partialTicks, PoseStack posestack, MultiBufferSource buffer, int light, int overlay) {
+	public final void renderSafe(TallForgeCreateSlidingDoorBlockEntity be, float partialTicks, PoseStack posestack, MultiBufferSource buffer, int light, int overlay) {
 		BlockState blockState = be.getBlockState();
 		if (!be.shouldRenderSpecial(blockState)) {
 			return;

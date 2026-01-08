@@ -21,8 +21,8 @@ public class AurorasDecorationsCompat
 	}
 
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AD_AZALEA, new ResourceLocation("aurorasdeco", "azalea_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AD_JACARANDA, new ResourceLocation("aurorasdeco", "jacaranda_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AD_AZALEA, new ResourceLocation("aurorasdeco", "azalea_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_AD_JACARANDA, new ResourceLocation("aurorasdeco", "jacaranda_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AD_AZALEA, new ResourceLocation("aurorasdeco", "azalea_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_AD_JACARANDA, new ResourceLocation("aurorasdeco", "jacaranda_door"));
 		

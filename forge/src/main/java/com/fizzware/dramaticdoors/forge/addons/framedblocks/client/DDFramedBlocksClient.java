@@ -13,6 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import xfacthd.framedblocks.api.util.ClientUtils;
 
+@SuppressWarnings("removal")
 public class DDFramedBlocksClient
 {
 	protected static final RegistryObject<Block> TALL_FRAMED_DOOR_REGISTRY = RegistryObject.create(new ResourceLocation(DramaticDoors.MOD_ID, DDNames.TALL_FRAMED), ForgeRegistries.BLOCKS);

@@ -18,7 +18,7 @@ import oshi.util.tuples.Pair;
 
 public class RenderHandler
 {
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings("removal")
 	public static void onInitializeClient() {
 		for (Pair<String, Block> pair : DDRegistry.DOOR_BLOCKS_TO_REGISTER) {
 			if (SpecialDoorRenderList.TRANSLUCENT_DOORS.contains(pair.getA())) {

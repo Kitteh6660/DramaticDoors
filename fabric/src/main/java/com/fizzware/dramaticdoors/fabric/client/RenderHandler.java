@@ -3,6 +3,7 @@ package com.fizzware.dramaticdoors.fabric.client;
 import com.fizzware.dramaticdoors.DDNames;
 import com.fizzware.dramaticdoors.DDRegistry;
 import com.fizzware.dramaticdoors.client.SpecialDoorRenderList;
+import com.fizzware.dramaticdoors.compat.Compats;
 import com.fizzware.dramaticdoors.fabric.FabricUtils;
 import com.fizzware.dramaticdoors.fabric.addons.create.client.DDPartialModels;
 import com.fizzware.dramaticdoors.fabric.addons.create.client.TallSlidingDoorBlockRenderer;
@@ -30,6 +31,9 @@ public class RenderHandler implements ClientModInitializer
 		if (FabricUtils.INSTANCE.isModLoaded("create")) {
 	    	DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_ANDESITE, "create/tall_andesite_door");
 	    	DDPartialModels.putFoldingDoor(DDNames.TALL_CREATE_COPPER, "create/tall_copper_door");
+	    	if (Compats.isModLoaded("tfmg", Compats.modChecker)) {
+		    	DDPartialModels.putFoldingDoor(DDNames.TALL_TFMG_STEEL, "create/tall_steel_door");
+	    	}
 			BlockEntityRenderers.register(CreateFabricCompat.TALL_SLIDING_DOOR_BLOCK_ENTITY, TallSlidingDoorBlockRenderer::new);
 		}
 	}

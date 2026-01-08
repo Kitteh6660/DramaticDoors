@@ -22,9 +22,9 @@ public class HorizonsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_REDBUD, new ResourceLocation("horizons", "redbud_door"));
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CYPRESS, new ResourceLocation("horizons", "cypress_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_REDBUD, new ResourceLocation("horizons", "redbud_door"), true);
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_CYPRESS, new ResourceLocation("horizons", "cypress_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_JACARANDA, new ResourceLocation("horizons", "jacaranda_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_REDBUD, new ResourceLocation("horizons", "redbud_door"));
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_CYPRESS, new ResourceLocation("horizons", "cypress_door"));

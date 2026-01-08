@@ -20,7 +20,7 @@ public class EnhancedMushroomsCompat
 	}
 	
 	private static void registerRecipes() {
-		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RED_MUSHROOM, new ResourceLocation("enhanced_mushrooms", "mushroom_door"));
+		DDCompatAdvancement.createRecipeAdvancement(DDNames.SHORT_RED_MUSHROOM, new ResourceLocation("enhanced_mushrooms", "mushroom_door"), true);
 		DDCompatAdvancement.createRecipeAdvancement(DDNames.TALL_RED_MUSHROOM, new ResourceLocation("enhanced_mushrooms", "mushroom_door"));
 		
 		DDCompatRecipe.createShortDoorRecipe(DDNames.SHORT_RED_MUSHROOM, new ResourceLocation("enhanced_mushrooms", "mushroom_door"), true);

@@ -26,7 +26,7 @@ public class DDConfigFabric
 		configProvider.addKeyValuePair(new Pair<>(DDConfigCommon.CONFIG_DEV_MODE, false), "Development mode ensures that all compat doors are always registered regardless of whether mods are installed or not, for development purposes.");
 		configProvider.addNewLine();
 		configProvider.addCategory(DDConfigCommon.CATEGORY_MIXINS);
-		configProvider.addKeyValuePair(new Pair<>(DDConfigCommon.CONFIG_WATERLOGGABLE_DOORS, true), "Allows doors to be waterlogged. Enable to allow waterlogging, disable for compatibility with certain mods.  Requires restart after changing.");
+		configProvider.addKeyValuePair(new Pair<>(DDConfigCommon.CONFIG_WATERLOGGABLE_DOORS, true), "Allows doors to be waterlogged. Enable to allow waterlogging, disable for compatibility with certain mods. Currently, this only affects regular doors.  Requires restart after changing.");
 		configProvider.addKeyValuePair(new Pair<>(DDConfigCommon.CONFIG_WATERLOGGABLE_GATES, true), "Allows fence gates to be waterlogged. Enable to allow waterlogging, disable for compatibility with certain mods.  Requires restart after changing.");
 	}
 

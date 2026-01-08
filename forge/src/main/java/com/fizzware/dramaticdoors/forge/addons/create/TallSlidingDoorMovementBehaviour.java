@@ -1,7 +1,6 @@
 package com.fizzware.dramaticdoors.forge.addons.create;
 
 import java.lang.ref.WeakReference;
-import java.util.Map;
 
 import com.fizzware.dramaticdoors.blocks.TallDoorBlock;
 import com.fizzware.dramaticdoors.state.properties.TripleBlockPart;
@@ -28,10 +27,11 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate.StructureBlockInfo;
 import net.minecraft.world.phys.Vec3;
+
+import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorMovementBehaviour;
 
 public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 {
@@ -52,8 +52,7 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 			tickOpen(context, open);
 		}
 
-		Map<BlockPos, BlockEntity> tes = context.contraption.presentBlockEntities;
-		if (!(tes.get(context.localPos) instanceof TallForgeCreateSlidingDoorBlockEntity sdbe)) {
+		if (!(context.contraption.getBlockEntityClientSide(context.localPos) instanceof TallForgeCreateSlidingDoorBlockEntity sdbe)) {
 			return;
 		}
 		boolean wasSettled = sdbe.getAnimation().settled();
@@ -84,6 +83,14 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 
 		toggleDoor(pos, contraption, info);
 
+		Direction facing = getDoorFacing(context);
+		BlockPos inWorldDoor = BlockPos.containing(context.position).relative(facing);
+		BlockState inWorldDoorState = context.world.getBlockState(inWorldDoor);
+		if (inWorldDoorState.getBlock() instanceof TallDoorBlock db && inWorldDoorState.hasProperty(TallDoorBlock.OPEN)) {
+			if (inWorldDoorState.hasProperty(TallDoorBlock.FACING) && inWorldDoorState.getOptionalValue(TallDoorBlock.FACING).orElse(Direction.UP).getAxis() == facing.getAxis()) {
+				db.setOpen(null, context.world, inWorldDoorState, inWorldDoor, shouldOpen);
+			}
+		}
 		if (shouldOpen) {
 			context.world.playSound(null, BlockPos.containing(context.position), SoundEvents.IRON_DOOR_OPEN, SoundSource.BLOCKS, .125f, 1);
 		}
@@ -134,9 +141,11 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 			return false;
 		}
 
-		if (context.temporaryData instanceof WeakReference<?> wr && wr.get() instanceof DoorControlBehaviour dcb)
-			if (dcb.blockEntity != null && !dcb.blockEntity.isRemoved())
+		if (context.temporaryData instanceof WeakReference<?> wr && wr.get() instanceof DoorControlBehaviour dcb) {
+			if (dcb.blockEntity != null && !dcb.blockEntity.isRemoved()) {
 				return shouldOpenAt(dcb, context);
+			}
+		}
 
 		context.temporaryData = null;
 		DoorControlBehaviour doorControls = null;

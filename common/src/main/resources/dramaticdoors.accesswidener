@@ -1,4 +1,4 @@
-accessWidener	v1	named
+accessWidener	v2	named
 
 # Widens the access of certain mobs to make mixin possible.
 accessible field net/minecraft/world/entity/Mob goalSelector Lnet/minecraft/world/entity/ai/goal/GoalSelector;
@@ -7,5 +7,3 @@ accessible method net/minecraft/world/level/block/Block registerDefaultState (Ln
 accessible method net/minecraft/world/level/block/FenceGateBlock isWall (Lnet/minecraft/world/level/block/state/BlockState;)Z
 accessible method net/minecraft/world/level/block/DoorBlock getHinge (Lnet/minecraft/world/item/context/BlockPlaceContext;)Lnet/minecraft/world/level/block/state/properties/DoorHingeSide;
 accessible method net/minecraft/world/entity/ai/behavior/InteractWithDoor rememberDoorToClose (Lnet/minecraft/world/entity/ai/behavior/declarative/MemoryAccessor;Ljava/util/Optional;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Ljava/util/Optional;
-# accessible method net/minecraft/world/entity/ai/behavior/InteractWithDoor isMobComingThroughDoor (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;)Z
-# accessible method net/minecraft/world/entity/ai/behavior/InteractWithDoor isDoorTooFarAway (Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/GlobalPos;)Z

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dramaticdoors:item/short_vf_golden_chain_door"
+  }
+}

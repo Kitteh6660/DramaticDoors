@@ -1,0 +1,364 @@
+{
+  "variants": {
+    "facing=east,third=lower,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom"
+    },
+    "facing=east,third=lower,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom"
+    },
+    "facing=east,third=lower,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 90
+    },
+    "facing=east,third=lower,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 90
+    },
+    "facing=east,third=lower,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom"
+    },
+    "facing=east,third=lower,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom"
+    },
+    "facing=east,third=lower,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 270
+    },
+    "facing=east,third=lower,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 270
+    },
+    "facing=east,third=middle,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle"
+    },
+    "facing=east,third=middle,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle"
+    },
+    "facing=east,third=middle,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 90
+    },
+    "facing=east,third=middle,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 90
+    },
+    "facing=east,third=middle,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle"
+    },
+    "facing=east,third=middle,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle"
+    },
+    "facing=east,third=middle,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 270
+    },
+    "facing=east,third=middle,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 270
+    },
+    "facing=east,third=upper,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top"
+    },
+    "facing=east,third=upper,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top"
+    },
+    "facing=east,third=upper,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 90
+    },
+    "facing=east,third=upper,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 90
+    },
+    "facing=east,third=upper,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top"
+    },
+    "facing=east,third=upper,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top"
+    },
+    "facing=east,third=upper,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 270
+    },
+    "facing=east,third=upper,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 270
+    },
+    "facing=north,third=lower,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 270
+    },
+    "facing=north,third=lower,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 270
+    },
+    "facing=north,third=lower,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom"
+    },
+    "facing=north,third=lower,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom"
+    },
+    "facing=north,third=lower,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 270
+    },
+    "facing=north,third=lower,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 270
+    },
+    "facing=north,third=lower,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 180
+    },
+    "facing=north,third=lower,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 180
+    },
+   "facing=north,third=middle,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 270
+    },
+    "facing=north,third=middle,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 270
+    },
+    "facing=north,third=middle,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle"
+    },
+    "facing=north,third=middle,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle"
+    },
+    "facing=north,third=middle,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 270
+    },
+    "facing=north,third=middle,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 270
+    },
+    "facing=north,third=middle,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 180
+    },
+    "facing=north,third=middle,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 180
+    },
+    "facing=north,third=upper,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 270
+    },
+    "facing=north,third=upper,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 270
+    },
+    "facing=north,third=upper,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top"
+    },
+    "facing=north,third=upper,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top"
+    },
+    "facing=north,third=upper,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 270
+    },
+    "facing=north,third=upper,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 270
+    },
+    "facing=north,third=upper,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 180
+    },
+    "facing=north,third=upper,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 180
+    },
+    "facing=south,third=lower,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 90
+    },
+    "facing=south,third=lower,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 90
+    },
+    "facing=south,third=lower,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 180
+    },
+    "facing=south,third=lower,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 180
+    },
+    "facing=south,third=lower,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 90
+    },
+    "facing=south,third=lower,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 90
+    },
+    "facing=south,third=lower,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom"
+    },
+    "facing=south,third=lower,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom"
+    },
+    "facing=south,third=middle,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 90
+    },
+    "facing=south,third=middle,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 90
+    },
+    "facing=south,third=middle,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 180
+    },
+    "facing=south,third=middle,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 180
+    },
+    "facing=south,third=middle,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 90
+    },
+    "facing=south,third=middle,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 90
+    },
+    "facing=south,third=middle,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle"
+    },
+    "facing=south,third=middle,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle"
+    },
+    "facing=south,third=upper,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 90
+    },
+    "facing=south,third=upper,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 90
+    },
+    "facing=south,third=upper,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 180
+    },
+    "facing=south,third=upper,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 180
+    },
+    "facing=south,third=upper,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 90
+    },
+    "facing=south,third=upper,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 90
+    },
+    "facing=south,third=upper,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top"
+    },
+    "facing=south,third=upper,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top"
+    },
+    "facing=west,third=lower,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 180
+    },
+    "facing=west,third=lower,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 180
+    },
+    "facing=west,third=lower,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 270
+    },
+    "facing=west,third=lower,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 270
+    },
+    "facing=west,third=lower,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 180
+    },
+    "facing=west,third=lower,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 180
+    },
+    "facing=west,third=lower,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 90
+    },
+    "facing=west,third=lower,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_bottom",
+      "y": 90
+    },
+    "facing=west,third=middle,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 180
+    },
+    "facing=west,third=middle,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 180
+    },
+    "facing=west,third=middle,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 270
+    },
+    "facing=west,third=middle,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 270
+    },
+    "facing=west,third=middle,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 180
+    },
+    "facing=west,third=middle,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 180
+    },
+    "facing=west,third=middle,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 90
+    },
+    "facing=west,third=middle,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_middle",
+      "y": 90
+    },
+    "facing=west,third=upper,hinge=left,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 180
+    },
+    "facing=west,third=upper,hinge=left,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 180
+    },
+    "facing=west,third=upper,hinge=left,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 270
+    },
+    "facing=west,third=upper,hinge=left,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 270
+    },
+    "facing=west,third=upper,hinge=right,open=false,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 180
+    },
+    "facing=west,third=upper,hinge=right,open=false,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 180
+    },
+    "facing=west,third=upper,hinge=right,open=true,visible=false": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 90
+    },
+    "facing=west,third=upper,hinge=right,open=true,visible=true": {
+      "model": "dramaticdoors:block/create/tall_steel_door_top",
+      "y": 90
+    }
+  }
+}

@@ -94,6 +94,8 @@
     {"id": "dramaticdoors:short_flesh_door", "required": false},
     {"id": "dramaticdoors:short_full_flesh_door", "required": false},
     {"id": "dramaticdoors:short_fleshkin_door", "required": false},
+    {"id": "dramaticdoors:short_dark_steel_door", "required": false},
+    {"id": "dramaticdoors:short_lead_door", "required": false},
     {"id": "dramaticdoors:short_soulcopper_door", "required": false},
     {"id": "dramaticdoors:short_iron_glass_door", "required": false},
     {"id": "dramaticdoors:short_ms_iron_bar_door", "required": false},

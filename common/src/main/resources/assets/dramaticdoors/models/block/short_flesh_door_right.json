@@ -1,0 +1,6 @@
+{
+  "parent": "dramaticdoors:block/door_short_right",
+  "textures": {
+    "texture": "dramaticdoors:block/short_flesh_door"
+  }
+}

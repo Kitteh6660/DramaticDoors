@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "dramaticdoors:block/tall_ff_redlove_sliding_door_bottom",
+    "top": "dramaticdoors:block/tall_ff_redlove_sliding_door_top"
+  }
+}

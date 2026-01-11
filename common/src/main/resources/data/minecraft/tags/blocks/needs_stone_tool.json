@@ -4,7 +4,6 @@
     {"id": "dramaticdoors:short_steel_door", "required": false},
     {"id": "dramaticdoors:short_locked_steel_door", "required": false},
     {"id": "dramaticdoors:tall_steel_door", "required": false},
-    {"id": "dramaticdoors:tall_locked_steel_door", "required": false},
-    {"id": "dramaticdoors:tall_mlp_iron_glass_door", "required": false}
+    {"id": "dramaticdoors:tall_locked_steel_door", "required": false}
   ]
 }

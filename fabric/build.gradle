@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'idea'
-	id 'eclipse'
+    id 'eclipse'
     id 'maven-publish'
     id 'fabric-loom'
 }
@@ -11,16 +11,16 @@ base {
 repositories {
     maven { url "https://maven.shedaniel.me/" }
     maven { url "https://maven.terraformersmc.com/releases" }
-	maven { url "https://cursemaven.com" } 
-	// All the maven repositories I have to declare just for Create Fabric :(
+    maven { url "https://cursemaven.com" } 
+    // All the maven repositories I have to declare just for Create Fabric :(
     maven { url "https://maven.createmod.net" }
     maven { url "https://maven.tterrag.com/" }
     maven { url "https://mvn.devos.one/snapshots/" }
     maven { url "https://mvn.devos.one/releases/" }
-	maven { url "https://maven.cafeteria.dev/releases" }
-	maven { url "https://maven.jamieswhiteshirt.com/libs-release" }
-	maven { url "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" }
-	maven { url "https://jitpack.io/" }
+    maven { url "https://maven.cafeteria.dev/releases" }
+    maven { url "https://maven.jamieswhiteshirt.com/libs-release" }
+    maven { url "https://raw.githubusercontent.com/Fuzss/modresources/main/maven" }
+    maven { url "https://jitpack.io/" }
 }
 dependencies {
     minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
@@ -31,12 +31,12 @@ dependencies {
         exclude module: "fabric-api"
     }
     implementation project(":common")
-	implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
-	modImplementation("curse.maven:macaws-doors-378646:4649888")
-    modImplementation("com.simibubi.create:create-fabric-${rootProject.minecraft_version}:${rootProject.create_fabric_version}")
-	modImplementation "curse.maven:architectury-api-419699:4663009"
+    implementation group: 'com.google.code.findbugs', name: 'jsr305', version: '3.0.1'
+    modImplementation("curse.maven:macaws-doors-378646:4649888")
+    modImplementation("com.simibubi.create:create-fabric:${create_fabric_version}")
+    modImplementation "curse.maven:architectury-api-419699:4663009"
     modImplementation "curse.maven:cloth-config-348521:5729104"
-	modImplementation "curse.maven:minecraft-transit-railway-266707:6330576"
+    modImplementation "curse.maven:minecraft-transit-railway-266707:6330576"
 }
 
 var commonAW = project(":common").file("src/main/resources/dramaticdoors.accesswidener")
@@ -83,6 +83,13 @@ sourceSets {
     }
 }
 
+java {
+	withSourcesJar()
+
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}
+
 tasks.withType(JavaCompile).configureEach {
     source(project(":common").sourceSets.main.allSource)
 }
@@ -94,7 +101,7 @@ tasks.named("sourcesJar", Jar) {
 }
 
 tasks.withType(Jar).configureEach {
-	duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
 
 processResources {

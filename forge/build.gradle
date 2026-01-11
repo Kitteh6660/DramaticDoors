@@ -11,7 +11,7 @@ base {
 mixin {
     // Only uncomment if you need to generate the refmap. Remember to edit the refmap for the merged JAR file!
     if (!file('src/main/resources/${rootProject.mod_id}.refmap.json').exists()) {
-         add(sourceSets.main, "${rootProject.mod_id}.refmap.json")
+        add(sourceSets.main, "${rootProject.mod_id}.refmap.json")
     }
 }
 minecraft {

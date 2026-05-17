@@ -51,8 +51,8 @@ public class TallSlidingDoorMovementBehaviour implements MovementBehaviour
 		if (!context.world.isClientSide()) {
 			tickOpen(context, open);
 		}
-		Map<BlockPos, BlockEntity> tes = context.contraption.presentBlockEntities;
-		if (!(tes.get(context.localPos) instanceof TallNeoForgeCreateSlidingDoorBlockEntity sdbe)) {
+		BlockEntity be = context.contraption.getBlockEntityClientSide(context.localPos);
+		if (!(be instanceof TallNeoForgeCreateSlidingDoorBlockEntity sdbe)) {
 			return;
 		}
 		boolean wasSettled = sdbe.animation.settled();
